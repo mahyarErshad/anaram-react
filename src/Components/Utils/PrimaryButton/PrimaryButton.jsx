@@ -1,8 +1,8 @@
 import React from 'react'
 
-function PrimaryButton() {
+function PrimaryButton(props) {
   return (
-    <button className='rounded-5px'>
+    <button className={`${props.className} rounded-5px `}>
 
     </button>
   )
