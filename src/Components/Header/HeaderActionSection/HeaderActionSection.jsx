@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
-import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
+import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
 
 function HeaderActionSection() {
