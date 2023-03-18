@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: yekanBakh;
-  src: url("./assets/fonts/YekanBakh-Light.woff") format("woff");
+  src: url("./assets/fonts/YekanBakhFaNum-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("./assets/fonts/YekanBakh-Regular.woff") format("woff");
+  src: url("./assets/fonts/YekanBakhFaNum-Regular.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("./assets/fonts/YekanBakh-SemiBold.woff") format("woff");
-  font-weight: 500;
+  src: url("./assets/fonts/YekanBakhFaNum-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("./assets/fonts/YekanBakh-Bold.woff") format("woff");
+  src: url("./assets/fonts/YekanBakhFaNum-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -59,12 +59,12 @@ body,
   justify-content: center;
   align-items: center;
 }
-.rounded-5px{
+.rounded-5px {
   border-radius: 5px;
 }
-nav ul li:first-child{
+nav ul li:first-child {
   padding-right: 0;
 }
-nav ul li:last-child{
+nav ul li:last-child {
   border-left: none;
 }
