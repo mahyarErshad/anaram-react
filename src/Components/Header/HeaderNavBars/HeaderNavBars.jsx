@@ -10,7 +10,7 @@ function HeaderNavBars() {
         <NavLinks hasIcon text="باتری بر اساس تکنولوژی " />
         <NavLinks text="درباره آنارام" />
         <NavLinks text="تماس با آنارام" />
-        <NavLinks text="وارتا" />
+        <NavLinks textColor="text-primary6" text="وارتا" />
       </ul>
     </nav>
   );
