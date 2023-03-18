@@ -10,7 +10,7 @@ module.exports = {
         primary6: "#1A4499",
         // Neutral colors
         NeutralN10: "#FAFAFA",
-        Neutral300: "#575757",
+        NeutralN300: "#575757",
       },
     },
   },
