@@ -36,6 +36,14 @@
   box-sizing: border-box;
   font-family: yekanBakh, Arial, Helvetica, sans-serif;
 }
+:root {
+  /* Primary colors */
+  --primary1: "#E8ECF5";
+  --primary2: "#F8F8F8";
+
+  /* Neutral Colors */
+  --NeutralN10: "#FAFAFA";
+}
 html,
 body,
 #__next {
