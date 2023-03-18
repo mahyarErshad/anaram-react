@@ -1,7 +1,12 @@
 import React from "react";
+import HeaderWrapper from "./Components/Header/HeaderWrapper/HeaderWrapper";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <HeaderWrapper />
+    </>
+  );
 }
 
 export default App;
