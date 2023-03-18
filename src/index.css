@@ -62,3 +62,9 @@ body,
 .rounded-5px{
   border-radius: 5px;
 }
+nav ul li:first-child{
+  padding-right: 0;
+}
+nav ul li:last-child{
+  border-left: none;
+}
