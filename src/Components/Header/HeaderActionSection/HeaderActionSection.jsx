@@ -1,7 +1,6 @@
-import SearchBox from "@/components/Utils/SearchBox/SearchBox";
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/images/logo.svg";
+import logo from "../../../assets/images/logo.svg";
 
 function HeaderActionSection() {
   return (
