@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: yekanBakh;
-  src: url("/fonts/YekanBakh-Light.woff") format("woff");
+  src: url("./assets/fonts/YekanBakh-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("/fonts/YekanBakh-Regular.woff") format("woff");
+  src: url("./assets/fonts/YekanBakh-Regular.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("/fonts/YekanBakh-SemiBold.woff") format("woff");
+  src: url("./assets/fonts/YekanBakh-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: yekanBakh;
-  src: url("/public/fonts/YekanBakh-Bold.woff") format("woff");
+  src: url("./assets/fonts/YekanBakh-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -43,7 +43,7 @@ body,
   height: 100%;
   direction: rtl;
 }
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
