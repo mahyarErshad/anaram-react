@@ -10,8 +10,9 @@ function HeaderActionSection() {
         <Logo />
         <SearchBox className="flex-grow" />
       </div>
-      <div className="flex-center gap-6">
+      <div className="flex-center gap-4">
         <PrimaryButton />
+        
       </div>
     </div>
   );
