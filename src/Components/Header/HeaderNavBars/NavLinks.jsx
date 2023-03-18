@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as Icon } from "../../../assets/images/arrow-icon-toBottom.svg";
 
 function NavLinks(props) {
   return (
