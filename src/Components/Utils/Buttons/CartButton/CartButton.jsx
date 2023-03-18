@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { ReactComponent as Icon } from "../../../../assets/images/bag-icon.svg";
 
 function CartButton() {
   return (
-    <div>CartButton</div>
-  )
+    <button className="flex-center">
+      <Icon />
+    </button>
+  );
 }
 
-export default CartButton
+export default CartButton;
