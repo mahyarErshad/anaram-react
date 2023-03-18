@@ -56,3 +56,6 @@ body,
   justify-content: center;
   align-items: center;
 }
+.rounded-5px{
+  border-radius: 5px;
+}
