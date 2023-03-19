@@ -24,3 +24,9 @@
   height: 1.625rem;
   border: 0.0938rem solid #dedede;
 }
+.pagination-navigation-wrapper {
+  position: absolute;
+  z-index: 100;
+  bottom: 3%;
+  right: 8%;
+}
