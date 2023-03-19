@@ -1,5 +1,6 @@
 import React from "react";
 import NavLinks from "./NavLinks";
+import phoneIcon from "../../../assets/images/icons/phone-icon.svg"
 
 function HeaderNavBars() {
   return (
