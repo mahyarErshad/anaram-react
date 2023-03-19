@@ -1,7 +1,6 @@
 .swiper-pagination {
   position: relative !important;
   width: fit-content !important;
-  margin-bottom: 1rem;
 }
 .swiper-pagination-bullet {
   background-color: #fff;
