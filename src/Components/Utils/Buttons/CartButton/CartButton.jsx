@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Icon } from "../../../../assets/images/bag-icon.svg";
+import { ReactComponent as Icon } from "../../../../assets/images/icons/bag-icon.svg";
 
 function CartButton() {
   return (

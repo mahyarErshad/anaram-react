@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as UserIcon } from "../../../../assets/images/user-icon.svg";
+import { ReactComponent as UserIcon } from "../../../../assets/images/icons/user-icon.svg";
 import styles from "./styles.module.css"
 
 function PrimaryButton(props) {
