@@ -56,8 +56,10 @@ export default function MainPageSlider() {
           <div onClick={prevHandler} className="swiper-button-prev flex-center">
             <PrevIcon />
           </div>
-          <div className="swiper-pagination flex-center cursor-pointer gap-2"></div>
-          <div onClick={nextHandler} className="swiper-button-next"></div>
+          <div className="swiper-pagination flex-center cursor-pointer"></div>
+          <div onClick={nextHandler} className="swiper-button-next flex-center">
+          <PrevIcon className="mirror" />
+          </div>
         </div>
       </Swiper>
     </>
