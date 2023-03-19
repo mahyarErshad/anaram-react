@@ -1,6 +1,5 @@
 .swiper-pagination {
-  position: absolute !important;
-  right: 8% !important;
+  position: relative !important;
   width: fit-content !important;
   margin-bottom: 1rem;
 }
