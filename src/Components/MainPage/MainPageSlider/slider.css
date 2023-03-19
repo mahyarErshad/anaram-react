@@ -8,6 +8,7 @@
   transition: all ease 0.3s;
   width: 0.5rem;
   height: 0.5rem;
+  margin: 0 0.25rem;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--NeutralN70);
@@ -20,8 +21,8 @@
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 50%;
-  width: 1.625rem;
-  height: 1.625rem;
+  width: 2rem;
+  height: 2rem;
   border: 1.5px solid #dedede;
   cursor: pointer;
 }

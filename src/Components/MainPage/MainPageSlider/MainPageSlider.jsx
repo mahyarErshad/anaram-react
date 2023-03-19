@@ -37,10 +37,10 @@ export default function MainPageSlider() {
         keyboard={{
           enabled: true,
         }}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         rewind={true}
         modules={[Pagination, Keyboard, Autoplay]}
         className="mySwiper"
@@ -58,7 +58,7 @@ export default function MainPageSlider() {
           </div>
           <div className="swiper-pagination flex-center cursor-pointer"></div>
           <div onClick={nextHandler} className="swiper-button-next flex-center">
-          <PrevIcon className="mirror" />
+            <PrevIcon className="mirror" />
           </div>
         </div>
       </Swiper>
