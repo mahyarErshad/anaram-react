@@ -1,8 +1,11 @@
 import React from 'react'
+import MainPageSlider from '../MainPageSlider/MainPageSlider'
 
 function MainPageWrapper() {
   return (
-    <div>MainPageWrapper</div>
+    <>
+        <MainPageSlider />
+    </>
   )
 }
 
