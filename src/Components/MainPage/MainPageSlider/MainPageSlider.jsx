@@ -8,17 +8,21 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination,Keyboard } from "swiper";
 
 export default function MainPageSlider() {
   return (
     <>
       <Swiper
         navigation={true}
+        loop={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Navigation, Pagination]}
+        keyboard={{
+          enabled: true,
+        }}
+        modules={[Navigation, Pagination,Keyboard]}
         className="mySwiper"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
