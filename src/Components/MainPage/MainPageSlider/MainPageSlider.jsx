@@ -52,7 +52,7 @@ export default function MainPageSlider() {
             </SwiperSlide>
           );
         })}
-        <div className="pagination-navigation-wrapper w-fit flex-center gap-3">
+        <div className="pagination-navigation-wrapper w-fit flex-center gap-2">
           <div onClick={prevHandler} className="swiper-button-prev flex-center">
             <PrevIcon />
           </div>
