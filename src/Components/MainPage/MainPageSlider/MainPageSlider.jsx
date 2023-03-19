@@ -22,9 +22,12 @@ export default function MainPageSlider() {
     <>
       <Swiper
         navigation={true}
-        loop={true}
         pagination={{
           clickable: true,
+          el: ".swiper-pagination",
+          renderBullet: function () {
+            return `<span class="swiper-pagination-bullet"></span>`;
+          },
         }}
         keyboard={{
           enabled: true,
@@ -44,6 +47,7 @@ export default function MainPageSlider() {
             </SwiperSlide>
           );
         })}
+        <div className="swiper-pagination"></div>
       </Swiper>
     </>
   );
