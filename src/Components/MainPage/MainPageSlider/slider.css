@@ -3,3 +3,10 @@
   right: 18% !important;
   width: fit-content !important;
 }
+.swiper-pagination-bullet{
+    background-color: #fff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    
+}
