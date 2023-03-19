@@ -14,6 +14,11 @@ function HeaderNavBars() {
           <NavLinks textColor="text-primary6" text="وارتا" />
         </ul>
       </nav>
+      <div className="flex-center gap-3">
+        <a href="tel:02177989898" className="text-sm font-semibold transition-all hover:text-primary6">
+           ۷۷۹۸۹۸۹۸ - ۰۲۱ 
+        </a>
+      </div>
     </section>
   );
 }
