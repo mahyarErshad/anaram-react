@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Navigation, Pagination,Keyboard } from "swiper";
+import { Autoplay, Navigation, Pagination, Keyboard } from "swiper";
 
 export default function MainPageSlider() {
   return (
@@ -22,7 +22,12 @@ export default function MainPageSlider() {
         keyboard={{
           enabled: true,
         }}
-        modules={[Navigation, Pagination,Keyboard]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        rewind={true}
+        modules={[Navigation, Pagination, Keyboard, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
