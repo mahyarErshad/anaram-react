@@ -29,10 +29,10 @@ export default function MainPageSlider() {
         keyboard={{
           enabled: true,
         }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // }}
         rewind={true}
         modules={[Navigation, Pagination, Keyboard, Autoplay]}
         className="mySwiper"

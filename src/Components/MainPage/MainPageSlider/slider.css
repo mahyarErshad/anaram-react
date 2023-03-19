@@ -8,5 +8,6 @@
     opacity: 1;
 }
 .swiper-pagination-bullet-active{
-    
+    background-color: var(--NeutralN70);
+    width: 1rem;
 }
