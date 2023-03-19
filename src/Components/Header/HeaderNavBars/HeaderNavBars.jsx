@@ -4,7 +4,7 @@ import { ReactComponent as PhoneIcon } from "../../../assets/images/icons/phone-
 
 function HeaderNavBars() {
   return (
-    <section className="flex items-center justify-between">
+    <section className="flex items-center justify-between max-w-[101.5625rem] self-center w-full">
       <nav>
         <ul className="flex justify-start">
           <NavLinks hasIcon text="باتری بر اساس سایز " />
@@ -16,9 +16,7 @@ function HeaderNavBars() {
         </ul>
       </nav>
       <a href="tel:02177989898" className="flex-center gap-3 hover:text-primary6">
-        <span className="text-sm font-semibold transition-all">
-          ۷۷۹۸۹۸۹۸ - ۰۲۱
-        </span>
+        <span className="text-sm font-semibold transition-all">۷۷۹۸۹۸۹۸ - ۰۲۱</span>
         <PhoneIcon />
       </a>
     </section>
