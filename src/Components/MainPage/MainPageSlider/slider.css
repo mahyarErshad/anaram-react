@@ -1,13 +1,19 @@
 .swiper-pagination {
   position: absolute !important;
-  right: 18% !important;
+  right: 8% !important;
   width: fit-content !important;
+  margin-bottom: 1rem;
 }
-.swiper-pagination-bullet{
-    background-color: #fff;
-    opacity: 1;
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  transition: all ease 0.3s;
+  width: 0.5rem;
+  height: 0.5rem;
 }
-.swiper-pagination-bullet-active{
-    background-color: var(--NeutralN70);
-    width: 1rem;
+.swiper-pagination-bullet-active {
+  background-color: var(--NeutralN70);
+  width: 1.5rem;
+  border-radius: 1rem;
+  height: 0.5rem;
 }
