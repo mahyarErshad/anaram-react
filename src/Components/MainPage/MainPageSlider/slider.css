@@ -22,7 +22,8 @@
   border-radius: 50%;
   width: 1.625rem;
   height: 1.625rem;
-  border: 0.0938rem solid #dedede;
+  border: 1.5px solid #dedede;
+  cursor: pointer;
 }
 .pagination-navigation-wrapper {
   position: absolute;

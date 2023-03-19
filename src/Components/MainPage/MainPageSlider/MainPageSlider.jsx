@@ -52,9 +52,9 @@ export default function MainPageSlider() {
           );
         })}
         <div className="pagination-navigation-wrapper w-fit flex-center gap-3">
-          <div onClick={prevHandler} className="bg-yellow-300 h-12 w-12 cursor-pointer"></div>
+          <div onClick={prevHandler} className="swiper-button-prev"></div>
           <div className="swiper-pagination flex-center cursor-pointer gap-2"></div>
-          <div onClick={nextHandler} className="bg-yellow-300 h-12 w-12 cursor-pointer"></div>
+          <div onClick={nextHandler} className="swiper-button-next"></div>
         </div>
       </Swiper>
     </>
