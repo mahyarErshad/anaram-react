@@ -13,6 +13,7 @@ import { Autoplay, Navigation, Pagination, Keyboard } from "swiper";
 // image imports
 import xbox from "../../../assets/images/Sliders/Xbox.jpg"
 import light1 from "../../../assets/images/Sliders/light1.jpg"
+import light2 from "../../../assets/images/Sliders/light2.jpg"
 
 export default function MainPageSlider() {
   return (
