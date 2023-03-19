@@ -16,6 +16,7 @@ import light1 from "../../../assets/images/Sliders/light1.jpg"
 import light2 from "../../../assets/images/Sliders/light2.jpg"
 
 export default function MainPageSlider() {
+    const images = [xbox, light1, light2]
   return (
     <>
       <Swiper
