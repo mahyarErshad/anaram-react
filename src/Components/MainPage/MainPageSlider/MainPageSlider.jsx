@@ -10,6 +10,9 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Navigation, Pagination, Keyboard } from "swiper";
 
+// image imports
+import xbox from "../../../assets/images/Sliders/Xbox.jpg"
+
 export default function MainPageSlider() {
   return (
     <>
