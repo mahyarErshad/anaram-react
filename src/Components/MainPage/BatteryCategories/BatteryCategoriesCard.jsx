@@ -1,9 +1,10 @@
 import React from "react";
 import stage from "../../../assets/images/data/battery-categories/stage.png";
+import styles from "./style.module.css"
 
 function BatteryCategoriesCard({data}) {
   return (
-    <figure className="flex-center flex-col cursor-pointer">
+    <figure className={`flex-center flex-col cursor-pointer ${styles.card}`}>
       <img className="mb-2 max-h-[5.75rem] object-contain" src={data.image} alt={data.text} />
       <img className="mb-3" src={stage} alt="stage for batteries" />
       <figcaption className="text-NeutralN300 text-base">{data.text}</figcaption>
