@@ -10,7 +10,7 @@ function HeaderMenuOpenOnHover() {
           return (
             <li className="px-[3.1875rem] flex-center flex-col gap-4 border-l min-h-[9.8125rem] border-NeutralN30 cursor-pointer" key={index}>
               <img src={item.image} alt={item.text} />
-              <h2>{item.text}</h2>
+              <h2 className="text-xs text-[#616161]">{item.text}</h2>
             </li>
           );
         })}
