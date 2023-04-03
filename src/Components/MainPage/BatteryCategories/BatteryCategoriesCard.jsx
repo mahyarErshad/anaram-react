@@ -2,7 +2,9 @@ import React from 'react'
 
 function BatteryCategoriesCard() {
   return (
-    <div>BatteryCategoriesCard</div>
+    <figure className='flex flex-col'>
+
+    </figure>
   )
 }
 
