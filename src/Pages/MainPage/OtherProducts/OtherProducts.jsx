@@ -2,7 +2,9 @@ import React from 'react'
 
 function OtherProducts() {
   return (
-    <div>OtherProducts</div>
+    <section className="w-full px-4 mt-16 flex-center">
+    
+    </section>
   )
 }
 
