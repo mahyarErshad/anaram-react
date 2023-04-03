@@ -5,7 +5,7 @@ import red from "../../assets/images/data/battery-categories/red.png";
 import green from "../../assets/images/data/battery-categories/green.png";
 import coin from "../../assets/images/data/battery-categories/coin.png";
 
-const BatteryCategories = [
+const BatteryCategoriesData = [
   {
     image: black,
     text: "باتری قلمی",
@@ -31,4 +31,4 @@ const BatteryCategories = [
     text: "باتری سکه ای",
   },
 ];
-export default BatteryCategories;
+export default BatteryCategoriesData;
