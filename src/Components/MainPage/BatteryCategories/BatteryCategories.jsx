@@ -1,5 +1,6 @@
 import React from "react";
 import BatteryCategoriesCard from "./BatteryCategoriesCard";
+import BatteryCategoriesData from "../../../lib/BatteryCategories/BatteryCategoriesData";
 
 function BatteryCategories() {
   return (
@@ -9,9 +10,10 @@ function BatteryCategories() {
       </h2>
       <div className="flex-center pt-8 pb-6 max-w-[82.5rem] bg-NeutralN10 border border-NeutralN30 rounded-2xl px-1">
       {
-        
+        BatteryCategoriesData.map((data,index)=>{
+            return <BatteryCategoriesCard key={index} data={data} />
+        })
       }
-        <BatteryCategoriesCard />
       </div>
     </section>
   );
