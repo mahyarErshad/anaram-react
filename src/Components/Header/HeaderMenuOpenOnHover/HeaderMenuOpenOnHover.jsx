@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 function HeaderMenuOpenOnHover(props) {
   return (
-    <div className="absolute flex-center bg-transparent max-w-[103.125rem] opacity-0 top-[11rem] right-0 z-50 w-full cursor-default">
+    <div className="absolute flex-center bg-transparent max-w-[103.125rem] opacity-0 top-[11rem] z-50 w-full cursor-default right-[50%]">
       <ul className={`${styles.container} md:w-full w-full bg-white flex justify-start items-center px-6 pt-6 pb-8 cursor-default`}>
         {props.data.map((item, index) => {
           return (
