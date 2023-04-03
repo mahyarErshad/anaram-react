@@ -1,0 +1,3 @@
+.card:hover img:first-child{
+    transform: translateY(-0.5rem);
+}
