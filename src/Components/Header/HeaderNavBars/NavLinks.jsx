@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as Icon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
 import HeaderMenuOpenOnHover from "../HeaderMenuOpenOnHover/HeaderMenuOpenOnHover";
+import styles from "./styles.module.css"
 
 function NavLinks(props) {
   return (
