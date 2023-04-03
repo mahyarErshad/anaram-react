@@ -23,6 +23,10 @@ const headerDropDownMockData = [
     text: "باتری بزرگ",
   },
   {
+    image: recharge,
+    text: "باتری کتابی",
+  },
+  {
     image: coin,
     text: "باتری سکه ای",
   },
