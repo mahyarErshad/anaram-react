@@ -2,7 +2,9 @@ import React from 'react'
 
 function OtherProductsCards() {
   return (
-    <div>OtherProductsCards</div>
+    <figure>
+        
+    </figure>
   )
 }
 

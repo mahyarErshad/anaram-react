@@ -7,7 +7,9 @@ function OtherProducts() {
       <h2 className="text-xl font-bold text-NeutralN500">
         محصولات دیگر <strong className="text-xl font-bold text-primary6">آنارام</strong>
       </h2>
-      <OtherProductsCards />
+      <div className="w-full flex-center max-lg:flex-wrap">
+        <OtherProductsCards />
+      </div>
     </section>
   );
 }
