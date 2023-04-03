@@ -6,7 +6,7 @@ import headerDropDownMockData from "../../../lib/HeaderDropDownMockData/HeaderDr
 
 function NavLinks(props) {
   return (
-    <li className={`flex-center gap-2 text-sm ${props.textColor || "text-NeutralN300"} cursor-pointer px-6 py-7 border-l border-NeutralN30 font-semibold ${styles.navlink}`}>
+    <li className={`flex-center gap-2 text-sm ${props.textColor || "text-NeutralN300"} cursor-pointer px-6 py-7 font-semibold ${styles.navlink}`}>
       {props.text}
       {props.hasIcon && <Icon />}
       {props.hasIcon && <HeaderMenuOpenOnHover data={headerDropDownMockData} />}
