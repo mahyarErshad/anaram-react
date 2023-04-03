@@ -1,3 +1,11 @@
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 44%;
+  background-color: #ebebeb;
+}
 .navlink div {
   transform: scaleY(0) translateX(50%);
   transform-origin: top;
