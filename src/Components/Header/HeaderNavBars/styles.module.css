@@ -7,4 +7,7 @@
   opacity: 1;
   transform: scaleY(1) translateX(50%);
 }
-
+.navlink:last-child span{
+  display: none;
+  visibility: hidden;
+}
