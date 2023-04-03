@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as Icon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
 import HeaderMenuOpenOnHover from "../HeaderMenuOpenOnHover/HeaderMenuOpenOnHover";
 import styles from "./styles.module.css";
-import headerDropDownMockData from "../../../lib/HeaderDropDownMockData/HeaderDropDownMockData";
+import headerDropDownMockData from "../../../lib/HeaderDropDownMock/HeaderDropDownMockData";
 
 function NavLinks(props) {
   return (
