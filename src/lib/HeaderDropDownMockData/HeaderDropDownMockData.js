@@ -1,9 +1,9 @@
-import black from "../../assets/images/dropdown-data/aaa-black.png";
-import red from "../../assets/images/dropdown-data/aa-red.png";
-import yellow from "../../assets/images/dropdown-data/c-yellow.png";
-import blue from "../../assets/images/dropdown-data/d-blue.png";
-import recharge from "../../assets/images/dropdown-data/recharge-v9.png";
-import coin from "../../assets/images/dropdown-data/coin.png";
+import black from "../../assets/images/data/dropdown/aaa-black.png";
+import red from "../../assets/images/data/dropdown/aa-red.png";
+import yellow from "../../assets/images/data/dropdown/c-yellow.png";
+import blue from "../../assets/images/data/dropdown/d-blue.png";
+import recharge from "../../assets/images/data/dropdown/recharge-v9.png";
+import coin from "../../assets/images/data/dropdown/coin.png";
 
 const headerDropDownMockData = [
   {

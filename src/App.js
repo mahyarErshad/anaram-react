@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderWrapper from "./Components/Header/HeaderWrapper/HeaderWrapper";
-import MainPageWrapper from "./Components/MainPage/MainPageWrapper/MainPageWrapper";
+import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
 
 function App() {
   return (
