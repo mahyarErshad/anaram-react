@@ -6,3 +6,4 @@ const headerDropDownMockData = [
     text: "باتری قلمی",
   },
 ];
+export default headerDropDownMockData
