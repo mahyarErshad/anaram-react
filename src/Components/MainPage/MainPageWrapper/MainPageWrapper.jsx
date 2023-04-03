@@ -1,12 +1,14 @@
-import React from 'react'
-import MainPageSlider from '../MainPageSlider/MainPageSlider'
+import React from "react";
+import MainPageSlider from "../MainPageSlider/MainPageSlider";
+import BatteryCategories from "../BatteryCategories/BatteryCategories";
 
 function MainPageWrapper() {
   return (
     <>
-        <MainPageSlider />
+      <MainPageSlider />
+      <BatteryCategories />
     </>
-  )
+  );
 }
 
-export default MainPageWrapper
+export default MainPageWrapper;
