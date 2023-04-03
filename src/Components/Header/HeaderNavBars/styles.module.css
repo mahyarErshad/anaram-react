@@ -1,3 +1,9 @@
-.navlink:hover div{
-    opacity: 1;
+.navlink div {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 250ms linear, opacity 0.1s;
+}
+.navlink:hover div {
+  opacity: 1;
+  transform: scaleY(1);
 }
