@@ -3,6 +3,7 @@ import red from "../../assets/images/dropdown-data/aa-red.png";
 import yellow from "../../assets/images/dropdown-data/c-yellow.png";
 import blue from "../../assets/images/dropdown-data/d-blue.png";
 import recharge from "../../assets/images/dropdown-data/recharge-v9.png";
+import coin from "../../assets/images/dropdown-data/coin.png";
 
 const headerDropDownMockData = [
   {
@@ -22,8 +23,8 @@ const headerDropDownMockData = [
     text: "باتری بزرگ",
   },
   {
-    image: recharge,
-    text: "باتری کتابی",
+    image: coin,
+    text: "باتری سکه ای",
   },
 ];
-export default headerDropDownMockData
+export default headerDropDownMockData;
