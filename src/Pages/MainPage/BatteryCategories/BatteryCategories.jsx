@@ -4,7 +4,7 @@ import BatteryCategoriesData from "../../../lib/BatteryCategories/BatteryCategor
 
 function BatteryCategories() {
   return (
-    <section className="container mt-16 flex-col gap-6">
+    <section className="container mt-16 gap-6">
       <h2 className="text-xl font-bold text-NeutralN500">
         انواع باتری <strong className="text-xl font-bold text-primary6">وارتا</strong>
       </h2>

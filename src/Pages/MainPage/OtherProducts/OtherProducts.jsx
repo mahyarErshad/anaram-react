@@ -4,7 +4,7 @@ import OtherProductsData from "../../../lib/OtherProducts/OtherProductsData";
 
 function OtherProducts() {
   return (
-    <section className="w-full px-4 mt-16 flex-center flex-col gap-40">
+    <section className="container mt-16 gap-40">
       <h2 className="text-xl font-bold text-NeutralN500">
         محصولات دیگر <strong className="text-xl font-bold text-primary6">آنارام</strong>
       </h2>
