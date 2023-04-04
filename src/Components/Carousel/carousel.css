@@ -20,6 +20,11 @@
   height: 100%;
   object-fit: cover;
 }
-.carousel-button-next.swiper-button-disabled {
-  fill: red;
+.carousel-button-next,
+.carousel-button-prev {
+  stroke: #4366ab;
+}
+.carousel-button-next.swiper-button-disabled,
+.carousel-button-prev.swiper-button-disabled {
+  stroke: #9dafd3;
 }
