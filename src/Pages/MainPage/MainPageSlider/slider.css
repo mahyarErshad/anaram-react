@@ -33,3 +33,11 @@
   bottom: 3%;
   right: 8%;
 }
+.main-slider-button-prev svg path,
+.main-slider-button-next svg path {
+  transition: all 0.3s;
+}
+.main-slider-button-prev:hover svg path,
+.main-slider-button-next:hover svg path {
+  stroke: var(--NeutralN70);
+}
