@@ -4,7 +4,7 @@ import HeaderNavBars from "../HeaderNavBars/HeaderNavBars";
 
 function HeaderWrapper() {
   return (
-    <header className="pt-4 px-4 flex flex-col gap-6">
+    <header className="pt-4 px-4 flex flex-col gap-6 bg-white">
       <HeaderActionSection />
       <HeaderNavBars />
     </header>
