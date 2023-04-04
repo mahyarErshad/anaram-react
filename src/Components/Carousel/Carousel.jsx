@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+// import required modules
+
 
 function Carousel() {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -29,6 +36,17 @@ function Carousel() {
           </button>
         </div>
       </div>
+      <Swiper
+        onSwiper={(swiper) => setSwiperRef(swiper)}
+        className="carousel"
+      >
+            <SwiperSlide>
+              <h1>awefsfgs</h1>
+            </SwiperSlide>
+            <SwiperSlide>
+              <h1>awefsfgs</h1>
+            </SwiperSlide>
+      </Swiper>
     </section>
   );
 }
