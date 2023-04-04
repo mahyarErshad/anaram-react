@@ -5,8 +5,7 @@ import { ReactComponent as PrevIcon } from "../../assets/images/icons/prev-icon.
 
 // Import Swiper styles
 import "swiper/css";
-import "./carousel.css"
-
+import "./carousel.css";
 
 function Carousel() {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -28,23 +27,20 @@ function Carousel() {
         </div>
         <div className="flex-center gap-2">
           <button onClick={prevHandler} className="main-slider-button-prev flex-center">
-            sdfsdfgsfd
+            <PrevIcon />
           </button>
           <button onClick={nextHandler} className="main-slider-button-next flex-center">
-            sfgsdgfsd
+            <PrevIcon className="mirror" />
           </button>
         </div>
       </div>
-      <Swiper
-        onSwiper={(swiper) => setSwiperRef(swiper)}
-        className="carousel swiper"
-      >
-            <SwiperSlide>
-              <h1>awefsfgs</h1>
-            </SwiperSlide>
-            <SwiperSlide>
-              <h1>awefsfgs</h1>
-            </SwiperSlide>
+      <Swiper onSwiper={(swiper) => setSwiperRef(swiper)} className="carousel swiper">
+        <SwiperSlide>
+          <h1>awefsfgs</h1>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1>awefsfgs</h1>
+        </SwiperSlide>
       </Swiper>
     </section>
   );
