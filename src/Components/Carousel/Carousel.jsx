@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
 
 // Import Swiper styles
@@ -27,9 +26,6 @@ function Carousel() {
           </button>
         </div>
       </div>
-      <Swiper>
-        <SwiperSlide>sfsgdfgd</SwiperSlide>
-      </Swiper>
     </section>
   );
 }
