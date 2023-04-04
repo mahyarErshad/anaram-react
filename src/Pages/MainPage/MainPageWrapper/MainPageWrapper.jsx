@@ -6,12 +6,12 @@ import Carousel from "../../../Components/Carousel/Carousel";
 
 function MainPageWrapper() {
   return (
-    <>
+    <main className="pb-8">
       <MainPageSlider />
       <BatteryCategories />
       <OtherProducts />
       <Carousel />
-    </>
+    </main>
   );
 }
 
