@@ -29,7 +29,6 @@ function Carousel() {
           <button onClick={prevHandler} className="main-slider-button-prev flex-center">
             sdfsdfgsfd
           </button>
-          <div className="swiper-pagination flex-center cursor-pointer"></div>
           <button onClick={nextHandler} className="main-slider-button-next flex-center">
             sfgsdgfsd
           </button>
@@ -37,7 +36,7 @@ function Carousel() {
       </div>
       <Swiper
         onSwiper={(swiper) => setSwiperRef(swiper)}
-        className="carousel"
+        className="carousel swiper"
       >
             <SwiperSlide>
               <h1>awefsfgs</h1>
