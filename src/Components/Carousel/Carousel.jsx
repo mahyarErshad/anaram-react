@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ReactComponent as PrevIcon } from "../../assets/images/icons/prev-icon.svg";
+import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -27,10 +27,10 @@ function Carousel() {
         </div>
         <div className="flex-center gap-2">
           <button onClick={prevHandler} className="main-slider-button-prev flex-center">
-            <PrevIcon />
+            <ButtonIcon />
           </button>
           <button onClick={nextHandler} className="main-slider-button-next flex-center">
-            <PrevIcon className="mirror" />
+            <ButtonIcon className="mirror" />
           </button>
         </div>
       </div>
