@@ -53,11 +53,11 @@ export default function MainPageSlider() {
           );
         })}
         <div className="pagination-navigation-wrapper w-fit flex-center gap-2">
-          <button onClick={prevHandler} className="swiper-button-prev flex-center">
+          <button onClick={prevHandler} className="main-slider-button-prev flex-center">
             <PrevIcon />
           </button>
           <div className="swiper-pagination flex-center cursor-pointer"></div>
-          <button onClick={nextHandler} className="swiper-button-next flex-center">
+          <button onClick={nextHandler} className="main-slider-button-next flex-center">
             <PrevIcon className="mirror" />
           </button>
         </div>
