@@ -78,4 +78,5 @@ nav ul li:last-child {
   padding-right: 1rem;
   width: 100%;
   max-width: 1320px;
+  display: flex;
 }
