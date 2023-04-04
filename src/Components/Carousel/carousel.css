@@ -22,6 +22,7 @@
 }
 .carousel-button-next,
 .carousel-button-prev {
+  transition: all 0.3s;
   stroke: #4366ab;
 }
 .carousel-button-next.swiper-button-disabled,
