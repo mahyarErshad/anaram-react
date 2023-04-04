@@ -34,7 +34,6 @@ function Carousel() {
       </div>
       <Swiper
         navigation={{
-          enabled: true,
           nextEl: ".carousel-button-next",
           prevEl: ".carousel-button-prev",
         }}
