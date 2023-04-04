@@ -8,13 +8,13 @@ import "swiper/css";
 import "./carousel.css";
 
 function Carousel() {
-  const [swiperRef, setSwiperRef] = useState(null);
+  const [carouselRef, setCarouselRef] = useState("carousel");
   const prevHandler = () => {
-    swiperRef.slidePrev();
+    carouselRef.slidePrev();
   };
 
   const nextHandler = () => {
-    swiperRef.slideNext();
+    carouselRef.slideNext();
   };
   return (
     <section className="container mt-[5.625rem] gap-7">
@@ -34,13 +34,9 @@ function Carousel() {
           </button>
         </div>
       </div>
-      <Swiper onSwiper={(swiper) => setSwiperRef(swiper)} className="carousel swiper">
-        <SwiperSlide>
-          <h1>awefsfgs</h1>
-        </SwiperSlide>
-        <SwiperSlide>
-          <h1>awefsfgs</h1>
-        </SwiperSlide>
+      <Swiper onSwiper={(swiper) => setCarouselRef(swiper)}>
+        <SwiperSlide>sfsgdfgd</SwiperSlide>
+        <SwiperSlide>sfsgdfgd</SwiperSlide>
       </Swiper>
     </section>
   );

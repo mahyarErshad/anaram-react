@@ -18,7 +18,7 @@ import { ReactComponent as PrevIcon } from "../../../assets/images/icons/prev-ic
 
 export default function MainPageSlider() {
   const images = [xbox, light1, light2];
-  const [swiperRef, setSwiperRef] = useState(null);
+  const [swiperRef, setSwiperRef] = useState("slider");
   const prevHandler = () => {
     swiperRef.slidePrev();
   };
