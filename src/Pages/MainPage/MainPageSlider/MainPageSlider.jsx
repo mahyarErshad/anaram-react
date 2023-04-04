@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./slider.css";
 
 // import required modules
-import { Autoplay, Pagination, Keyboard } from "swiper";
+import { Autoplay, Pagination, Keyboard, Navigation } from "swiper";
 
 // image imports
 import xbox from "../../../assets/images/Sliders/Xbox.jpg";
@@ -18,18 +19,9 @@ import { ReactComponent as PrevIcon } from "../../../assets/images/icons/prev-ic
 
 export default function MainPageSlider() {
   const images = [xbox, light1, light2];
-  const [swiperRef, setSwiperRef] = useState(null);
-  const prevHandler = () => {
-    swiperRef.slidePrev();
-  };
-
-  const nextHandler = () => {
-    swiperRef.slideNext();
-  };
   return (
     <>
       <Swiper
-        onSwiper={(swiper) => setSwiperRef(swiper)}
         pagination={{
           clickable: true,
           el: ".swiper-pagination",
@@ -37,12 +29,16 @@ export default function MainPageSlider() {
         keyboard={{
           enabled: true,
         }}
+        navigation={{
+          nextEl: ".main-slider-button-next",
+          prevEl: ".main-slider-button-prev",
+        }}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
         rewind={true}
-        modules={[Pagination, Keyboard, Autoplay]}
+        modules={[Pagination, Keyboard, Autoplay, Navigation]}
         className="mySwiper"
       >
         {images.map((image, index) => {
@@ -53,11 +49,11 @@ export default function MainPageSlider() {
           );
         })}
         <div className="pagination-navigation-wrapper w-fit flex-center gap-2">
-          <button onClick={prevHandler} className="main-slider-button-prev flex-center">
+          <button className="main-slider-button-prev flex-center">
             <PrevIcon />
           </button>
           <div className="swiper-pagination flex-center cursor-pointer"></div>
-          <button onClick={nextHandler} className="main-slider-button-next flex-center">
+          <button className="main-slider-button-next flex-center">
             <PrevIcon className="mirror" />
           </button>
         </div>
