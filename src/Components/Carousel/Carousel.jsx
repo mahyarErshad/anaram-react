@@ -24,15 +24,22 @@ function Carousel() {
           </h3>
         </div>
         <div className="flex-center gap-2">
-          {/* <button className="carousel-button-prev flex-center">
+          <button className="carousel-button-prev flex-center">
             <ButtonIcon className="mirror" />
           </button>
           <button className="carousel-button-next flex-center">
             <ButtonIcon />
-          </button> */}
+          </button>
         </div>
       </div>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+        navigation={{
+          nextEl: ".carousel-button-next",
+          prevEl: ".carousel-button-prev",
+        }}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
