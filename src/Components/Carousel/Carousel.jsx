@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ReactComponent as PrevIcon } from "../../assets/images/icons/prev-icon.svg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -25,7 +26,7 @@ function Carousel() {
             تخفیفات این هفته <strong className="text-primary6">آنارام</strong>
           </h3>
         </div>
-        <div>
+        <div className="flex-center gap-2">
           <button onClick={prevHandler} className="main-slider-button-prev flex-center">
             sdfsdfgsfd
           </button>
