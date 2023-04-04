@@ -2,7 +2,7 @@ import React from "react";
 import MainPageSlider from "../MainPageSlider/MainPageSlider";
 import BatteryCategories from "../BatteryCategories/BatteryCategories";
 import OtherProducts from "../OtherProducts/OtherProducts";
-import DiscountSection from "../DiscountSection/DiscountSection";
+import Carousel from "../../../Components/Carousel/Carousel";
 
 function MainPageWrapper() {
   return (
@@ -10,7 +10,7 @@ function MainPageWrapper() {
       <MainPageSlider />
       <BatteryCategories />
       <OtherProducts />
-      <DiscountSection />
+      <Carousel />
     </>
   );
 }

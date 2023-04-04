@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactComponent as PercentageIcon } from "../../../assets/images/icons/percentage-icon.svg";
+import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 
-function DiscountSection() {
+function Carousel() {
   return (
     <section className="container mt-[5.625rem]">
       <div className="flex w-full justify-between items-center">
@@ -16,4 +16,4 @@ function DiscountSection() {
   );
 }
 
-export default DiscountSection;
+export default Carousel;
