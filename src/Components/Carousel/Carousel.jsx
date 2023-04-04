@@ -1,9 +1,6 @@
 import React from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
-
-// Import Swiper styles
-import "swiper/css";
 import "./carousel.css";
 
 function Carousel() {
