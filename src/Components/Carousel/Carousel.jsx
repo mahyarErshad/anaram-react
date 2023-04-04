@@ -27,10 +27,10 @@ function Carousel() {
         </div>
         <div className="flex-center gap-2">
           <button onClick={prevHandler} className="main-slider-button-prev flex-center">
-            <ButtonIcon />
+            <ButtonIcon className="mirror" />
           </button>
           <button onClick={nextHandler} className="main-slider-button-next flex-center">
-            <ButtonIcon className="mirror" />
+            <ButtonIcon />
           </button>
         </div>
       </div>
