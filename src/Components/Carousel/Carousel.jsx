@@ -2,6 +2,17 @@ import React from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
 
+// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "./carousel.css";
+
+// import required modules
+import { Navigation } from "swiper";
+
 function Carousel() {
   return (
     <section className="container mt-[5.625rem] gap-7">
@@ -13,14 +24,25 @@ function Carousel() {
           </h3>
         </div>
         <div className="flex-center gap-2">
-          <button className="flex-center">
+          {/* <button className="carousel-button-prev flex-center">
             <ButtonIcon className="mirror" />
           </button>
-          <button className="flex-center">
+          <button className="carousel-button-next flex-center">
             <ButtonIcon />
-          </button>
+          </button> */}
         </div>
       </div>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
     </section>
   );
 }
