@@ -11,6 +11,7 @@ function Carousel() {
             تخفیفات این هفته <strong className="text-primary6">آنارام</strong>
           </h3>
         </div>
+        <div></div>
       </div>
     </section>
   );
