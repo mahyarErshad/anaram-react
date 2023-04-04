@@ -1,4 +1,5 @@
 import React from "react";
+import stage from "../../../assets/images/data/other-products/stage.png"
 
 function OtherProductsCards({ data }) {
   return (
