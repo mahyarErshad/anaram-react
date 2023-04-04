@@ -1,10 +1,8 @@
 import React from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
-import "./carousel.css";
 
 function Carousel() {
-
   return (
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
@@ -15,10 +13,10 @@ function Carousel() {
           </h3>
         </div>
         <div className="flex-center gap-2">
-          <button className="carousel-button-prev flex-center">
+          <button className="flex-center">
             <ButtonIcon className="mirror" />
           </button>
-          <button className="carousel-button-next flex-center">
+          <button className="flex-center">
             <ButtonIcon />
           </button>
         </div>
