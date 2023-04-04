@@ -17,7 +17,7 @@ function Carousel() {
     swiperRef.slideNext();
   };
   return (
-    <section className="container mt-[5.625rem]">
+    <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
         <div className="flex-center gap-2">
           <PercentageIcon />
