@@ -23,7 +23,7 @@ function ProductCardWithDiscount() {
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
       </div>
       <div className="flex-center gap-1 w-full">
-        <PrimaryButton text="افزودن به سبد" icon={<CartIcon stroke="white" />}  />
+        <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon stroke="white" />} />
       </div>
     </figure>
   );
