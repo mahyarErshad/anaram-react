@@ -29,6 +29,12 @@ function ProductCardWithDiscount() {
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
+      <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 ">
+      <div className="flex flex-col justify-between items-center h-full w-1/4">
+      <span className="text-xs font-semibold ">۲۴</span>
+      <span>روز</span>
+      </div>
+      </div>
     </figure>
   );
 }
