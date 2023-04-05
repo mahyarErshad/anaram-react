@@ -14,3 +14,6 @@
     top: 50%;
     transform: translateY(-200%);
 }
+.card:hover img{
+    transform: scale(1.09);
+}

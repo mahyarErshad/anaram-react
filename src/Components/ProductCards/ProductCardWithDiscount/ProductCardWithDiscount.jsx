@@ -15,7 +15,7 @@ function ProductCardWithDiscount() {
   return (
     <figure className={`${styles.card} pt-3 pb-[0.875rem] px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col cursor-pointer`}>
       <div className="flex-center h-2/4 mb-4 relative">
-        <img className="mt-5" src={batteryImage} alt="battery" />
+        <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
         <ProductCardDiscountSection percentage="۵۰" />
         <ProductCardRatingSection rating="۴.۵" />
       </div>
