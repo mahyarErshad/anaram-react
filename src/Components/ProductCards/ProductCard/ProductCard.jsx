@@ -31,10 +31,10 @@ function ProductCard() {
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
       <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 mb-1">
-      <ProductCardTimeCounter number="۰۶" text="ثانیه" />
-      <ProductCardTimeCounter number="۲۴" text="دقیقه" />
-      <ProductCardTimeCounter number="۱۲" text="ساعت" />
-      <ProductCardTimeCounter number="۲" text="روز" />
+      <ProductCardTimeCounter number={6} text="ثانیه" />
+      <ProductCardTimeCounter number={24} text="دقیقه" />
+      <ProductCardTimeCounter number={12} text="ساعت" />
+      <ProductCardTimeCounter number={2} text="روز" />
       </div>
     </figure>
   );
