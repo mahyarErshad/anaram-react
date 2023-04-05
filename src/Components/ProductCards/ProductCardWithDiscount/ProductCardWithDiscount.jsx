@@ -6,6 +6,7 @@ import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSe
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
+import { ReactComponent as CompareArrowsIcon } from "../../../assets/images/icons/compare-arrows.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function ProductCardWithDiscount() {
