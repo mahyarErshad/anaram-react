@@ -30,7 +30,7 @@ function ProductCardWithDiscount() {
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
       <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 ">
-      <div className="flex flex-col justify-between items-center h-full w-1/4">
+      <div className="flex flex-col justify-between items-center h-full w-1/4 border-r border-NeutralN30">
       <span className="text-xs font-semibold text-Magenta">۲۴</span>
       <span className="text-[0.5rem] text-NeutralN50">روز</span>
       </div>
