@@ -1,8 +1,8 @@
 import React from "react";
 
-function SmallButton({icon}) {
+function SmallButton({icon, className}) {
   return (
-    <button className="flex-center w-12 h-12 bg-NeutralN10 rounded-5px">
+    <button className={`${className} flex-center bg-NeutralN10 rounded-5px`}>
       {icon}
     </button>
   ); 
