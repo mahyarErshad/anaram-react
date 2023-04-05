@@ -4,6 +4,6 @@ export const convertToPersian = (number) => {
 };
 export function separateNumberByThousand(number) {
   let newNumber = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  newNumber = persian(newNumber);
+  newNumber = convertToPersian(newNumber);
   return newNumber;
 }
