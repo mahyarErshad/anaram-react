@@ -1,3 +1,6 @@
 .discount-percentage{
     background-image: url(../../../assets/images/icons/product-card-discount-background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
