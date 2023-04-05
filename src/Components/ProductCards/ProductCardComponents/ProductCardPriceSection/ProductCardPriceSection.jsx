@@ -7,7 +7,10 @@ function ProductCardPriceSection({ discountText }) {
   return (
     <span className={`${textStyles} flex-center gap-1 font-semibold`}>
       ۱۰۲,۰۰۰
-      <TomanIconBlack className="w-[0.9375rem] h-[0.6875rem] -translate-y-[0.125rem]" />
+      {
+
+        discountText ? <TomanIconGray className="w-[0.9375rem] h-[0.6875rem] -translate-y-[0.125rem]" /> : <TomanIconBlack className="w-[0.9375rem] h-[0.6875rem] -translate-y-[0.125rem]" />
+      }
     </span>
   );
 }
