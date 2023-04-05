@@ -11,6 +11,7 @@ module.exports = {
         primary6: "#1A4499",
         // Neutral colors
         NeutralN10: "#FAFAFA",
+        NeutralN20: "#F5F5F5",
         NeutralN30: "#EBEBEB",
         NeutralN70: "#A3A3A3",
         NeutralN90: "#858585",
