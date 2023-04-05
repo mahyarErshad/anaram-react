@@ -23,7 +23,7 @@ function ProductCardWithDiscount() {
         <ProductCardPriceSection price="۱۰۲,۰۰۰" discountText />
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
       </div>
-      <div className="flex-center gap-1 w-full">
+      <div className="flex-center gap-1 w-full mb-3">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
