@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../style/productCard.module.css"
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
-import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
+import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareArrowsIcon } from "../../../assets/images/icons/compare-arrows.svg";
@@ -12,7 +12,7 @@ import ProductCardDiscountSection from "../ProductCardComponents/ProductCardDisc
 import ProductCardTitleSection from "../ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
 import ProductCardTimeCounter from "../ProductCardComponents/ProductCardTimeCounter/ProductCardTimeCounter";
 
-function ProductCardWithDiscount() {
+function ProductCard() {
   return (
     <figure className={`${styles.card} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col cursor-pointer transition-all duration-300`}>
       <div className="flex-center h-2/4 mb-4 relative">
@@ -40,4 +40,4 @@ function ProductCardWithDiscount() {
   );
 }
 
-export default ProductCardWithDiscount;
+export default ProductCard;
