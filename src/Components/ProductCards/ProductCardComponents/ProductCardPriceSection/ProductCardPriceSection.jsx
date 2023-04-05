@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as TomanIconBlack } from "../../../../assets/images/icons/toman-icon-black.svg";
 import { ReactComponent as TomanIconGray } from "../../../../assets/images/icons/toman-icon-gray.svg";
+import styles from "../../style/productCard.module.css"
 
 function ProductCardPriceSection({ discountText }) {
   const textStyles = discountText ? "text-NeutralN90  text-[0.75rem]" : "text-NeutralN700 text-sm";
