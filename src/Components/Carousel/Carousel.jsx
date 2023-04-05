@@ -12,6 +12,7 @@ import "./carousel.css";
 
 // import required modules
 import { Navigation } from "swiper";
+import ProductCardWithDiscount from "../Cards/ProductCardWithDiscount/ProductCardWithDiscount";
 
 function Carousel() {
   return (
@@ -45,6 +46,8 @@ function Carousel() {
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
       </Swiper>
+      <br />
+      <ProductCardWithDiscount />
     </section>
   );
 }
