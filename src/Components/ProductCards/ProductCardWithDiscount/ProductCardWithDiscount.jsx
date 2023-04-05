@@ -1,6 +1,6 @@
 import React from "react";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
-import starIcon from "../../../assets/images/icons/product-card-star.svg";
+import { ReactComponent as StarIcon } from "../../../assets/images/icons/product-card-star.svg";
 import { ReactComponent as TomanIcon } from "../../../assets/images/icons/toman-icon.svg";
 import styles from "../style/productCard.module.css";
 
@@ -12,7 +12,7 @@ function ProductCardWithDiscount() {
         <span className={`${styles["discount-percentage"]} text-white absolute -top-1 -right-1 h-[2.1875rem] w-[2.1875rem] flex-center text-[0.8125rem] font-normal`}>۵۰٪</span>
         <div className="absolute -top-1 -left-1 flex-center gap-[0.125rem]">
           <span className="font-semibold text-xs text-primary6 translate-y-[0.0625rem]">۴.۵</span>
-          <img src={starIcon} alt="star icon" />
+          <StarIcon />
         </div>
       </div>
       <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600 mb-4">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
