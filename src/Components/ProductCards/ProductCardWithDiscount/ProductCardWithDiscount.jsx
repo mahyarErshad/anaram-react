@@ -8,6 +8,7 @@ import { ReactComponent as CompareArrowsIcon } from "../../../assets/images/icon
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import ProductCardRatingSection from "../ProductCardComponents/ProductCardRatingSection/ProductCardRatingSection";
 import ProductCardDiscountSection from "../ProductCardComponents/ProductCardDiscountSection/ProductCardDiscountSection";
+import ProductCardTitleSection from "../ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
 
 function ProductCardWithDiscount() {
   return (
@@ -17,7 +18,7 @@ function ProductCardWithDiscount() {
         <ProductCardDiscountSection percentage="۵۰" />
         <ProductCardRatingSection rating="۴.۵" />
       </div>
-      <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600 mb-4">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
+      <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
       <div className="flex justify-between items-center w-full mb-3">
         <ProductCardPriceSection price="۱۰۲,۰۰۰" discountText />
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
