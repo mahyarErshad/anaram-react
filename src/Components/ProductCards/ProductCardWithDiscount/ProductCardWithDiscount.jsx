@@ -5,6 +5,7 @@ import styles from "../style/productCard.module.css";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
+import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function ProductCardWithDiscount() {
   return (
@@ -24,6 +25,7 @@ function ProductCardWithDiscount() {
       </div>
       <div className="flex-center gap-1 w-full">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
+        <SmallButton />
       </div>
     </figure>
   );
