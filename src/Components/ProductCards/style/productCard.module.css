@@ -22,6 +22,11 @@
 }
 .card::after{
   content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(100%);
+  
 }
 .counter:first-child {
   border-right: none;
