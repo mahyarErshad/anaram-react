@@ -2,7 +2,9 @@ import React from 'react'
 
 function ProductCardWithDiscount() {
   return (
-    <div>ProductCardWithDiscount</div>
+    <figure>
+      
+    </figure>
   )
 }
 
