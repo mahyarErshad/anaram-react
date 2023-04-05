@@ -24,13 +24,16 @@
   content: "";
   position: absolute;
   bottom: 0;
-  right: 50%;
-  transform: translateX(100%);
-  
+  right: 0;
+  width: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #e0144c;
+  height: 0.3125rem;
 }
 .counter:first-child {
   border-right: none;
 }
 .card:hover div div span:last-child {
-  color: #e0144c !important;
+  color: #e0144c;
 }
