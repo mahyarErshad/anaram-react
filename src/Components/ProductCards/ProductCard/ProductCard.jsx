@@ -22,8 +22,8 @@ function ProductCard() {
       </div>
       <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
       <div className="flex justify-between items-center w-full mb-3">
-        <ProductCardPriceSection price="۱۰۲,۰۰۰" discountText />
-        <ProductCardPriceSection price="۱۰۲,۰۰۰" />
+        <ProductCardPriceSection price={200000} discountText />
+        <ProductCardPriceSection price={100000} />
       </div>
       <div className="flex-center gap-1 w-full mb-3">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
