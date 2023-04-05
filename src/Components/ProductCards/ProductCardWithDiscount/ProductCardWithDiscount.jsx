@@ -2,6 +2,7 @@ import React from "react";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import { ReactComponent as StarIcon } from "../../../assets/images/icons/product-card-star.svg";
 import styles from "../style/productCard.module.css";
+import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 
 function ProductCardWithDiscount() {
   return (
@@ -16,7 +17,7 @@ function ProductCardWithDiscount() {
       </div>
       <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600 mb-4">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
       <div className="flex justify-between items-center w-full">
-
+        <ProductCardPriceSection />
       </div>
     </figure>
   );
