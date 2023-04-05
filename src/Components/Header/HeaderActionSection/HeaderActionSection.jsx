@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
 import { ReactComponent as UserIcon } from "../../../assets/images/icons/user-icon.svg";
+import { ReactComponent as bagIcon } from "../../../assets/images/icons/bag-icon.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function HeaderActionSection() {
