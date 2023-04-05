@@ -19,6 +19,8 @@ module.exports = {
         NeutralN500: "#3B3B3B",
         NeutralN600: "#2E2E2E",
         NeutralN700: "#1C1C1C",
+        // magenta
+        Magenta: "#E0144C",
       },
     },
   },
