@@ -1,9 +1,9 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
-import CartButton from "../../Utils/Buttons/CartButton/CartButton";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
 import { ReactComponent as UserIcon } from "../../../assets/images/icons/user-icon.svg";
+import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function HeaderActionSection() {
   return (
@@ -14,7 +14,7 @@ function HeaderActionSection() {
       </div>
       <div className="flex-center gap-4">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
-        <CartButton />
+        <SmallButton />
       </div>
     </div>
   );
