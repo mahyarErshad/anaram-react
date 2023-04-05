@@ -3,7 +3,8 @@ import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import { ReactComponent as StarIcon } from "../../../assets/images/icons/product-card-star.svg";
 import styles from "../style/productCard.module.css";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
-import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton"
+import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
+// import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon-white.svg";
 
 function ProductCardWithDiscount() {
   return (
@@ -22,7 +23,7 @@ function ProductCardWithDiscount() {
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
       </div>
       <div className="flex-center gap-1 w-full">
-      <PrimaryButton text="افزودن به سبد" />
+        <PrimaryButton text="افزودن به سبد" />
       </div>
     </figure>
   );

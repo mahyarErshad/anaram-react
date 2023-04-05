@@ -4,7 +4,7 @@ import { ReactComponent as Icon } from "../../../../assets/images/icons/bag-icon
 function CartButton() {
   return (
     <button className="flex-center w-12 h-12 bg-NeutralN10 rounded-5px">
-      <Icon />
+      <Icon stroke="#575757" />
     </button>
   );
 }
