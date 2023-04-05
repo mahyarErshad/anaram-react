@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../../style/productCard.module.css"
 
 function ProductCardTimeCounter({number , text}) {
   return (
