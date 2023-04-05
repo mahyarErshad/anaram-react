@@ -4,3 +4,13 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.lineThrough::before{
+    content: "";
+    position: absolute;
+    background-color: #858585;
+    height: 0.0625rem;
+    width: 120%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-200%);
+}
