@@ -5,6 +5,7 @@ import styles from "../style/productCard.module.css";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
+import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function ProductCardWithDiscount() {
