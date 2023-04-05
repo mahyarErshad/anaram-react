@@ -14,7 +14,7 @@ function ProductCardWithDiscount() {
           <img src={starIcon} alt="star icon" />
         </div>
       </div>
-      <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
+      <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600 mb-4">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
     </figure>
   );
 }
