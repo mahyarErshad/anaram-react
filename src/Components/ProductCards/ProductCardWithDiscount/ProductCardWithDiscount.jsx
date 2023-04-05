@@ -4,7 +4,7 @@ import { ReactComponent as StarIcon } from "../../../assets/images/icons/product
 import styles from "../style/productCard.module.css";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
-// import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon-white.svg";
+import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 
 function ProductCardWithDiscount() {
   return (
@@ -23,7 +23,7 @@ function ProductCardWithDiscount() {
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
       </div>
       <div className="flex-center gap-1 w-full">
-        <PrimaryButton text="افزودن به سبد" />
+        <PrimaryButton text="افزودن به سبد" icon={<CartIcon stroke="white" />}  />
       </div>
     </figure>
   );
