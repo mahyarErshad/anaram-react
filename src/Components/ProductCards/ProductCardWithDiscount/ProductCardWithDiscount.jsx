@@ -30,7 +30,7 @@ function ProductCardWithDiscount() {
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
-      <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 ">
+      <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 mb-1">
       <ProductCardTimeCounter number="۰۶" text="ثانیه" />
       <ProductCardTimeCounter number="۲۴" text="دقیقه" />
       <ProductCardTimeCounter number="۱۲" text="ساعت" />
