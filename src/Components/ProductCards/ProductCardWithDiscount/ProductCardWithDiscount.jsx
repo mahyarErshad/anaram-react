@@ -3,7 +3,7 @@ import styles from "../style/productCard.module.css"
 
 function ProductCardWithDiscount() {
   return (
-    <figure>
+    <figure className={`${styles.card} pt-3 pb-[0.875rem] px-3 rounded-lg bg-white border border-NeutralN30`}>
       
     </figure>
   )
