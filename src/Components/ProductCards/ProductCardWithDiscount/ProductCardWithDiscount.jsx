@@ -13,7 +13,7 @@ function ProductCardWithDiscount() {
   return (
     <figure className=" pt-3 pb-[0.875rem] px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col">
       <div className="flex-center h-2/4 mb-4 relative">
-        <img className="object-contain" src={batteryImage} alt="battery" />
+        <img className="mt-5" src={batteryImage} alt="battery" />
         <span className={`${styles["discount-percentage"]} text-white absolute -top-1 -right-1 h-[2.1875rem] w-[2.1875rem] flex-center text-[0.8125rem] font-normal`}>۵۰٪</span>
         <div className="absolute -top-1 -left-1 flex-center gap-[0.125rem]">
           <span className="font-semibold text-xs text-primary6 translate-y-[0.0625rem]">۴.۵</span>
@@ -28,6 +28,7 @@ function ProductCardWithDiscount() {
       <div className="flex-center gap-1 w-full">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
+        <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
     </figure>
   );
