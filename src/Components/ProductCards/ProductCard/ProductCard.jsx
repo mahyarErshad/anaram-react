@@ -17,7 +17,7 @@ function ProductCard() {
     <figure className={`${styles.card} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col cursor-pointer transition-all duration-300`}>
       <div className="flex-center h-2/4 mb-4 relative">
         <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
-        <ProductCardDiscountSection percentage="۵۰" />
+        <ProductCardDiscountSection percentage={50} />
         <ProductCardRatingSection rating="۴.۵" />
       </div>
       <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
