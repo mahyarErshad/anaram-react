@@ -10,6 +10,7 @@ import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import ProductCardRatingSection from "../ProductCardComponents/ProductCardRatingSection/ProductCardRatingSection";
 import ProductCardDiscountSection from "../ProductCardComponents/ProductCardDiscountSection/ProductCardDiscountSection";
 import ProductCardTitleSection from "../ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
+import ProductCardTimeCounter from "../ProductCardComponents/ProductCardTimeCounter/ProductCardTimeCounter";
 
 function ProductCardWithDiscount() {
   return (
@@ -30,7 +31,7 @@ function ProductCardWithDiscount() {
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
       <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 ">
-
+      <ProductCardTimeCounter />
       </div>
     </figure>
   );
