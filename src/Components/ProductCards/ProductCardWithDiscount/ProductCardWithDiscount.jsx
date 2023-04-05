@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../style/productCard.module.css"
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
