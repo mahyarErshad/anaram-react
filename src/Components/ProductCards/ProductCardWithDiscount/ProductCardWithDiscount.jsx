@@ -1,5 +1,6 @@
 import React from "react";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
+import starIcon from "../../../assets/images/icons/product-card-star.svg";
 import styles from "../style/productCard.module.css";
 
 function ProductCardWithDiscount() {
