@@ -26,7 +26,7 @@ function ProductCardWithDiscount() {
       </div>
       <div className="flex-center gap-1 w-full">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
-        <SmallButton icon={<HeartIcon />} />
+        <SmallButton className="p-2" icon={<HeartIcon />} />
       </div>
     </figure>
   );
