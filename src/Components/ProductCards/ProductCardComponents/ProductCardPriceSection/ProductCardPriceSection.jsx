@@ -3,7 +3,7 @@ import { ReactComponent as TomanIcon } from "../../../../assets/images/icons/tom
 
 function ProductCardPriceSection() {
   return (
-    <span className="flex-center gap-1">
+    <span className="flex-center gap-1 text-NeutralN700 text-sm font-semibold">
       ۱۰۲,۰۰۰
       <TomanIcon />
     </span>
