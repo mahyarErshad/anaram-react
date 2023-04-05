@@ -1,6 +1,5 @@
 import React from "react";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
-import styles from "../style/productCard.module.css";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
@@ -8,13 +7,14 @@ import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-
 import { ReactComponent as CompareArrowsIcon } from "../../../assets/images/icons/compare-arrows.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import ProductCardRatingSection from "../ProductCardComponents/ProductCardRatingSection/ProductCardRatingSection";
+import ProductCardDiscountSection from "../ProductCardComponents/ProductCardDiscountSection/ProductCardDiscountSection";
 
 function ProductCardWithDiscount() {
   return (
     <figure className=" pt-3 pb-[0.875rem] px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col">
       <div className="flex-center h-2/4 mb-4 relative">
         <img className="mt-5" src={batteryImage} alt="battery" />
-        <span className={`${styles["discount-percentage"]} text-white absolute -top-1 -right-1 h-[2.1875rem] w-[2.1875rem] flex-center text-[0.8125rem] font-normal`}>۵۰٪</span>
+        <ProductCardDiscountSection percentage="۵۰" />
         <ProductCardRatingSection rating="۴.۵" />
       </div>
       <figcaption className="text-xs font-semibold max-w-[11rem] leading-[1.125rem] text-NeutralN600 mb-4">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</figcaption>
