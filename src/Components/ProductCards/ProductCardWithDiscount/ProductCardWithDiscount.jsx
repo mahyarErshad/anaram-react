@@ -20,6 +20,9 @@ function ProductCardWithDiscount() {
         <ProductCardPriceSection price="۱۰۲,۰۰۰" discountText />
         <ProductCardPriceSection price="۱۰۲,۰۰۰" />
       </div>
+      <div>
+        
+      </div>
     </figure>
   );
 }

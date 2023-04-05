@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import CartButton from "../../Utils/Buttons/CartButton/CartButton";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
+import { ReactComponent as UserIcon } from "../../../assets/images/icons/user-icon.svg";
 
 function HeaderActionSection() {
   return (
@@ -12,7 +13,7 @@ function HeaderActionSection() {
         <SearchBox className="flex-grow" />
       </div>
       <div className="flex-center gap-4">
-        <PrimaryButton />
+        <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
         <CartButton />
       </div>
     </div>
