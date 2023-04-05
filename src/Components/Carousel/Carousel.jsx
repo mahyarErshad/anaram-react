@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
-import ProductCardWithDiscount from "../ProductCards/ProductCardWithDiscount/ProductCardWithDiscount";
+import ProductCard from "../ProductCards/ProductCard/ProductCard";
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,7 +47,7 @@ function Carousel() {
         <SwiperSlide>Slide 2</SwiperSlide>
       </Swiper>
       <br />
-      <ProductCardWithDiscount />
+      <ProductCard />
     </section>
   );
 }
