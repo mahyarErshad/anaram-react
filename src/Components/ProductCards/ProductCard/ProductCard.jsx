@@ -14,7 +14,7 @@ import ProductCardTimeCounter from "../ProductCardComponents/ProductCardTimeCoun
 
 function ProductCard(props) {
   return (
-    <figure className={`${styles.card} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col cursor-pointer transition-all duration-300`}>
+    <figure className={`${styles.card} ${props.discountCard && styles.after} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex flex-col cursor-pointer transition-all duration-300`}>
       <div className="flex-center h-2/4 mb-4 relative">
         <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
         {props.discountCard && <ProductCardDiscountSection percentage={50} />}

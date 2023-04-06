@@ -11,7 +11,7 @@ function MainPageWrapper() {
       <MainPageSlider />
       <BatteryCategories />
       <OtherProducts />
-      <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} discountCard />
+      <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />}  />
     </main>
   );
 }
