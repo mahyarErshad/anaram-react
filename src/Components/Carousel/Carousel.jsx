@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as PercentageIcon } from "../../assets/images/icons/percentage-icon.svg";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
 import ProductCard from "../ProductCards/ProductCard/ProductCard";
 
@@ -21,7 +20,7 @@ function Carousel(props) {
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
         <div className="flex-center gap-2">
-          <PercentageIcon />
+          {props.icon}
           <h3 className="text-xl text-NeutralN500 font-bold">
            {props.title} <strong className="text-primary6">آنارام</strong>
           </h3>
