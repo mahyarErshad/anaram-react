@@ -15,7 +15,7 @@ import "./carousel.css";
 // import required modules
 import { Navigation, FreeMode } from "swiper";
 
-function Carousel() {
+function Carousel(props) {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   return (
     <section className="container mt-[5.625rem] gap-7">
@@ -23,7 +23,7 @@ function Carousel() {
         <div className="flex-center gap-2">
           <PercentageIcon />
           <h3 className="text-xl text-NeutralN500 font-bold">
-            تخفیفات این هفته <strong className="text-primary6">آنارام</strong>
+           {props.title} <strong className="text-primary6">آنارام</strong>
           </h3>
         </div>
         <div className="flex-center gap-2">

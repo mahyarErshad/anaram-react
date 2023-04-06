@@ -24,7 +24,7 @@ function ProductCard() {
       <div className="flex justify-between items-center w-full mb-3">
         <ProductCardPriceSection price={200000} discountText />
         <ProductCardPriceSection price={100000} />
-      </div>
+      </div>     
       <div className="flex-center gap-1 w-full mb-3">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />

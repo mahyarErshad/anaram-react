@@ -10,7 +10,7 @@ function MainPageWrapper() {
       <MainPageSlider />
       <BatteryCategories />
       <OtherProducts />
-      <Carousel />
+      <Carousel title="تخفیفات این هفته" />
     </main>
   );
 }
