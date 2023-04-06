@@ -48,7 +48,7 @@ function Carousel(props) {
         {arr.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <ProductCard />
+              <ProductCard discountCard={props.discountCard} />
             </SwiperSlide>
           );
         })}
