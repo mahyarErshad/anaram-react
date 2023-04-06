@@ -38,16 +38,42 @@ function Carousel() {
           nextEl: ".carousel-button-next",
           prevEl: ".carousel-button-prev",
         }}
+        slidesPerView={"auto"}
+        spaceBetween={16}
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProductCard />
+        </SwiperSlide>
       </Swiper>
-      <br />
-      <ProductCard />
     </section>
   );
 }
