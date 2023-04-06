@@ -9,12 +9,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/free-mode";
 import "./carousel.css";
 
 // import required modules
-import { Navigation } from "swiper";
+import { Navigation, FreeMode } from "swiper";
 
 function Carousel() {
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   return (
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
@@ -40,39 +42,17 @@ function Carousel() {
         }}
         slidesPerView={"auto"}
         spaceBetween={16}
-        modules={[Navigation]}
+        modules={[Navigation, FreeMode]}
+        freeMode={true}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProductCard />
-        </SwiperSlide>
+        {arr.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <ProductCard />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </section>
   );
