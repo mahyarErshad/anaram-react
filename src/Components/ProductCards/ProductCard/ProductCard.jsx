@@ -25,13 +25,13 @@ function ProductCard(props) {
         {props.discountCard && <ProductCardPriceSection price={200000} discountText />}
         <ProductCardPriceSection price={100000} />
       </div>
-      <div className="flex-center gap-1 w-full mb-3">
+      <div className="flex-center gap-1 w-full">
         <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
         <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
       </div>
       {props.discountCard && (
-        <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 mb-1">
+        <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 mb-1 mt-3">
           <ProductCardTimeCounter number={6} text="ثانیه" />
           <ProductCardTimeCounter number={24} text="دقیقه" />
           <ProductCardTimeCounter number={12} text="ساعت" />
