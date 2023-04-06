@@ -21,8 +21,8 @@ function ProductCard(props) {
         <ProductCardRatingSection rating={4.5} />
       </div>
       <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
-      <div className="flex justify-between items-center w-full mb-3">
-        <ProductCardPriceSection price={200000} discountText />
+      <div className={`flex ${props.discountCard ? "justify-between" : "justify-end"} items-center w-full mb-3`}>
+        {props.discountCard && <ProductCardPriceSection price={200000} discountText />}
         <ProductCardPriceSection price={100000} />
       </div>
       <div className="flex-center gap-1 w-full mb-3">
