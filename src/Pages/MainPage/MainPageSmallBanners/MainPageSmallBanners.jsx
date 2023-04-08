@@ -2,7 +2,7 @@ import React from 'react'
 
 function MainPageSmallBanners() {
   return (
-    <div>MainPageSmallBanners</div>
+    <section className='container bg-transparent flex-center gap-6'>MainPageSmallBanners</section>
   )
 }
 
