@@ -6,3 +6,4 @@ function randomizeClass() {
   }
   return result;
 }
+export default randomizeClass
