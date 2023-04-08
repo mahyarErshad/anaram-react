@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as ButtonIcon } from "../../assets/images/icons/carousel-button-arrow.svg";
 import ProductCard from "../ProductCards/ProductCard/ProductCard";
+import randomizeClassName from "../../lib/function/randomizeClasses";
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +17,8 @@ import { Navigation, FreeMode } from "swiper";
 
 function Carousel(props) {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const nextButton = randomizeClassName()
+  const prevButton = randomizeClassName()
   return (
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
