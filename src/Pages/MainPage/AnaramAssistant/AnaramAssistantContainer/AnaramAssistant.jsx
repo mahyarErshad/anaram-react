@@ -9,8 +9,10 @@ function AnaramAssistant() {
         دستیار <strong className="text-primary6">آنارام</strong>
       </h2>
       <p className="max-w-[71.75rem] text-base text-NeutralN300">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-      <div className="flex-center gap-6 mt-[2.5rem]">
+      <div className="flex-center gap-8 mt-[2.5rem] flex-wrap">
         <AssistantHelperBox number="1" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" />
+        <AssistantHelperBox number="2" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" />
+        <AssistantHelperBox number="3" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" />
       </div>
     </section>
   );
