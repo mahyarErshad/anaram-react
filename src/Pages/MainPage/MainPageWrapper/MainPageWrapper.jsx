@@ -5,6 +5,7 @@ import OtherProducts from "../OtherProducts/OtherProducts";
 import Carousel from "../../../Components/Carousel/Carousel";
 import { ReactComponent as PercentageIcon } from "../../../assets/images/icons/percentage-icon.svg";
 import AnaramAssistant from "../AnaramAssistant/AnaramAssistantContainer/AnaramAssistant";
+import MainPageSmallBanners from "../MainPageSmallBanners/MainPageSmallBanners";
 
 function MainPageWrapper() {
   return (
@@ -14,6 +15,7 @@ function MainPageWrapper() {
       <OtherProducts />
       <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} discountCard />
       <AnaramAssistant />
+      <MainPageSmallBanners />
     </main>
   );
 }
