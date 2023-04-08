@@ -9,7 +9,7 @@ function AnaramAssistant() {
       </h2>
       <p className="max-w-[71.75rem] text-base text-NeutralN300">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
       <div className="flex-center gap-6 mt-[2.5rem]">
-        <div className="bg-gradient-to-b from-[#5F34CC] to-[#22134A] rounded-2xl py-3 px-6 z-20 flex justify-start items-center flex-col gap-4 min-h-[11.4375rem]">
+        <div className={`bg-gradient-to-b from-[#5F34CC] to-[#22134A] rounded-2xl py-3 px-6 z-10 flex justify-start items-center flex-col gap-4 min-h-[11.4375rem] relative ${styles["background-shape"]}`}>
           <span className="poppins text-2xl font-light text-white opacity-50">1</span>
           <span className="text-2xl font-semibold text-white ">انتخاب دستگاه</span>
           <p className="text-[9px] text-NeutralN30 max-w-[8.9375rem]">دستگاهی که میخواهی برایش باتری بخری را انتخاب کن</p>
