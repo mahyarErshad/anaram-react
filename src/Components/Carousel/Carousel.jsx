@@ -17,30 +17,30 @@ import { Navigation, FreeMode } from "swiper";
 
 function Carousel(props) {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  const nextButton = randomizeClassName()
-  const prevButton = randomizeClassName()
+  const nextButton = randomizeClassName();
+  const prevButton = randomizeClassName();
   return (
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
         <div className="flex-center gap-2">
           {props.icon}
           <h3 className="text-xl text-NeutralN500 font-bold">
-           {props.title} <strong className="text-primary6">آنارام</strong>
+            {props.title} <strong className="text-primary6">آنارام</strong>
           </h3>
         </div>
         <div className="flex-center gap-2">
-          <button className="carousel-button-prev flex-center">
+          <button className={`carousel-button-prev ${prevButton}`}>
             <ButtonIcon className="mirror" />
           </button>
-          <button className="carousel-button-next flex-center">
+          <button className={`carousel-button-next ${nextButton}`}>
             <ButtonIcon />
           </button>
         </div>
       </div>
       <Swiper
         navigation={{
-          nextEl: ".carousel-button-next",
-          prevEl: ".carousel-button-prev",
+          nextEl: `.${nextButton}`,
+          prevEl: `.${prevButton}`,
         }}
         slidesPerView={"auto"}
         spaceBetween={16}
