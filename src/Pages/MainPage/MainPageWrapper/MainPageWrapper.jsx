@@ -18,7 +18,7 @@ function MainPageWrapper() {
       <AnaramAssistant />
       <MainPageSmallBanners />
       <Carousel title="پر فروش ترین محصولات" icon={<PercentageIcon />} />
-      
+      <img className="w-full rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
     </main>
   );
 }
