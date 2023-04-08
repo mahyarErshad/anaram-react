@@ -7,6 +7,7 @@ import { ReactComponent as PercentageIcon } from "../../../assets/images/icons/p
 import AnaramAssistant from "../AnaramAssistant/AnaramAssistantContainer/AnaramAssistant";
 import MainPageSmallBanners from "../MainPageSmallBanners/MainPageSmallBanners";
 import deliveryBanner from "../../../assets/images/delivery-banner.png"
+import NestedCarousel from "../NestedCarousel/NestedCarousel";
 
 function MainPageWrapper() {
   return (
@@ -19,6 +20,7 @@ function MainPageWrapper() {
       <MainPageSmallBanners />
       <Carousel title="پر فروش ترین محصولات" icon={<PercentageIcon />} />
       <img className="w-full rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
+      <NestedCarousel />
     </main>
   );
 }
