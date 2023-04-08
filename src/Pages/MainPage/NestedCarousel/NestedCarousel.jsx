@@ -25,18 +25,18 @@ function NestedCarousel() {
           </h3>
         </div>
         <div className="flex-center gap-2">
-          <button className="nested-carousel-button-prev flex-center">
+          <button className="carousel-button-prev flex-center">
             <ButtonIcon className="mirror" />
           </button>
-          <button className="nested-carousel-button-next flex-center">
+          <button className="carousel-button-next flex-center">
             <ButtonIcon />
           </button>
         </div>
       </div>
       <Swiper
         navigation={{
-          nextEl: ".nested-carousel-button-next",
-          prevEl: ".nested-carousel-button-prev",
+          nextEl: ".carousel-button-next",
+          prevEl: ".carousel-button-prev",
         }}
         slidesPerView={"auto"}
         spaceBetween={16}
