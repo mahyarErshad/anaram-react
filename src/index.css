@@ -29,9 +29,6 @@
   font-weight: 700;
   font-style: normal;
 }
-.poppins {
-  font-family: "Poppins";
-}
 
 * {
   margin: 0;
@@ -70,6 +67,9 @@ body,
   height: 100%;
   direction: rtl;
   background-color: var(--background-color);
+}
+.poppins {
+  font-family: "Poppins";
 }
 .flex-center {
   display: flex;
