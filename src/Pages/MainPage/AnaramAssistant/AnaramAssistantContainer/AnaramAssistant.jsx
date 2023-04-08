@@ -15,7 +15,7 @@ function AnaramAssistant() {
         <AssistantHelperBox number="2" title="انتخاب باتری" description="سایز باتری را انتخاب کن (قلمی ُ نیم قلمی ُ‌کتابی و ...)" gradientFrom="from-[#47A8BD]" gradientTo="to-[#00829E]" />
         <AssistantHelperBox number="3" title="بقیش باما" description="دستیار آنارام به صورت هوشمند لیستی از باتری هایی که مناسب شما هست را نمایش میده" gradientFrom="from-[#C53950]" gradientTo="to-[#790013]" />
       </div>
-      <PrimaryButton />
+      <PrimaryButton text="بزن بریم" className="mt-16 py-3 px-[4.625rem]" />
     </section>
   );
 }
