@@ -5,7 +5,8 @@ import banner2 from "../../../assets/images/data/small-banners/banner2.jpg"
 function MainPageSmallBanners() {
   return (
     <section className='container bg-transparent flex-center gap-6'>
-
+    <img src={banner1} alt='Banner for advertising batteries for customers' />
+    <img src={banner2} alt='Banner for advertising batteries for customers' />
     </section>
   )
 }
