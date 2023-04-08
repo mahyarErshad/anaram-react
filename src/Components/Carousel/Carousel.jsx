@@ -29,10 +29,10 @@ function Carousel(props) {
           </h3>
         </div>
         <div className="flex-center gap-2">
-          <button className={`carousel-button-prev ${prevButton}`}>
+          <button className={`carousel-button ${prevButton}`}>
             <ButtonIcon className="mirror" />
           </button>
-          <button className={`carousel-button-next ${nextButton}`}>
+          <button className={`carousel-button ${nextButton}`}>
             <ButtonIcon />
           </button>
         </div>
