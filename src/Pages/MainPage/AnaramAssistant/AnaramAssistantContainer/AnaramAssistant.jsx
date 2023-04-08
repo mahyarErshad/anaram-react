@@ -11,6 +11,7 @@ function AnaramAssistant() {
       <div className="flex-center gap-6 mt-[2.5rem]">
         <div className="bg-gradient-to-b from-[#5F34CC] to-[#22134A] rounded-2xl py-3 px-6 z-20 flex flex-col gap-4">
         <span className="poppins text-2xl font-light text-white opacity-50">1</span>
+        <span className="text-2xl font-semibold text-white ">انتخاب دستگاه</span>
         </div>
       </div>
     </section>
