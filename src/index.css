@@ -37,8 +37,8 @@
   font-family: yekanBakh, Arial, Helvetica, sans-serif;
 }
 :root {
-  /* background image */
-  --background-image: #f7f8fc;
+  /* background color */
+  --background-color: #f7f8fc;
   /* Primary colors */
   --primary1: #e8ecf5;
   --primary2: #c8d2e7;
@@ -66,7 +66,7 @@ body,
   width: 100%;
   height: 100%;
   direction: rtl;
-  background-color: var(--background-image);
+  background-color: var(--background-color);
 }
 .flex-center {
   display: flex;
