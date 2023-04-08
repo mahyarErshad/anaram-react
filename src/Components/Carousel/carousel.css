@@ -21,6 +21,9 @@
 .carousel-button-prev {
   transition: all 0.3s;
   stroke: #4366ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-button-next.swiper-button-disabled,
 .carousel-button-prev.swiper-button-disabled {
