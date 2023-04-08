@@ -2,7 +2,9 @@ import React from 'react'
 
 function NestedCarousel() {
   return (
-    <div>NestedCarousel</div>
+    <section className='container mt-20'>
+    
+    </section>
   )
 }
 
