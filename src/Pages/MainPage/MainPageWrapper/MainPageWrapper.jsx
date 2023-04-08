@@ -16,6 +16,7 @@ function MainPageWrapper() {
       <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} discountCard />
       <AnaramAssistant />
       <MainPageSmallBanners />
+      <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} />
     </main>
   );
 }
