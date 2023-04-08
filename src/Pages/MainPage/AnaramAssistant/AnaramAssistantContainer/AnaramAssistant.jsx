@@ -12,7 +12,7 @@ function AnaramAssistant() {
       <div className="flex-center gap-8 mt-[2.5rem] flex-wrap">
         <AssistantHelperBox number="1" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" />
         <AssistantHelperBox number="2" title="انتخاب باتری" description="سایز باتری را انتخاب کن (قلمی ُ نیم قلمی ُ‌کتابی و ...)" gradientFrom="from-[#47A8BD]" gradientTo="to-[#00829E]" />
-        <AssistantHelperBox number="3" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" />
+        <AssistantHelperBox number="3" title="بقیش باما" description="دستیار آنارام به صورت هوشمند لیستی از باتری هایی که مناسب شما هست را نمایش میده" gradientFrom="from-[#C53950]" gradientTo="to-[#790013]" />
       </div>
     </section>
   );
