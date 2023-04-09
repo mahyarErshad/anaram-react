@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/styles.module.css";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
+import { ReactComponent as LocationIcon } from "../../../assets/images/icons/location.svg";
 
 function FooterContainer() {
   return (
