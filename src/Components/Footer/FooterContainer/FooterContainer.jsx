@@ -5,7 +5,7 @@ import { ReactComponent as LocationIcon } from "../../../assets/images/icons/loc
 import { ReactComponent as PhoneIcon } from "../../../assets/images/icons/phone-icon.svg";
 import FooterAddress from "../FooterComponents/FooterAddress/FooterAddress";
 import FooterNavLinks from "../FooterComponents/FooterNavLinks/FooterNavLinks";
-import { customerServicesData, helpShopingData } from "../../../lib/footerNavLinksData/footerNavLinksData";
+import { anaramNavLinksData, customerServicesData, helpShopingData } from "../../../lib/footerNavLinksData/footerNavLinksData";
 
 function FooterContainer() {
   return (
@@ -20,6 +20,7 @@ function FooterContainer() {
         <nav className={`${styles.nav} flex justify-between items-start`}>
           <FooterNavLinks data={helpShopingData} />
           <FooterNavLinks data={customerServicesData} />
+          <FooterNavLinks data={anaramNavLinksData} />
         </nav>
       </section>
     </footer>
