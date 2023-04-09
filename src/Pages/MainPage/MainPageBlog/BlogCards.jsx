@@ -8,7 +8,7 @@ function BlogCards() {
       <figcaption className="text-right text-sm font-semibold text-NeutralN600 mt-4">علت شارژ نشدن باتری های موبایل</figcaption>
       <p className="text-[0.6875rem] text-right w-full leading-6 mt-4 max-w-[17.5rem] text-NeutralN100">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، </p>
       <div className="mt-8 w-full flex justify-between items-center">
-        <span className="text-[0.5625rem]">۱۴۰۱/۰۷/۱۹</span>
+        <span className="text-[0.5625rem] text-NeutralN80">۱۴۰۱/۰۷/۱۹</span>
       </div>
     </figure>
   );
