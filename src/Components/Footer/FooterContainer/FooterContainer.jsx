@@ -15,8 +15,8 @@ function FooterContainer() {
           <FooterAddress icon={<LocationIcon />} text="خیابان شریعتی، خیابان سهروردی شمالی، کوچه پنجم، پلاک ۱۲، واحد ۳" />
           <FooterAddress icon={<PhoneIcon className="h-4 w-4" />} text="74645308 - 023" />
         </address>
-        <nav className="flex justify-between items-start">
-          <span className="text-base text-primary6 py-4 border-b-2 border-NeutralN40"></span>
+        <nav className={`${styles.nav} flex justify-between items-start`}>
+          <span className="text-base text-primary6 pb-4 border-b-2 border-NeutralN40 font-semibold">راهنمای خرید</span>
           <ul>
             <li></li>
           </ul>
