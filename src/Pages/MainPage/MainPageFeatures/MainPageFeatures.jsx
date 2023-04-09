@@ -1,6 +1,7 @@
 import React from "react";
 import MainPageFeatureCards from "./MainPageFeatureCards";
 import { ReactComponent as MedalIcon } from "../../../assets/images/main-page-features/medal.svg";
+import { ReactComponent as TruckIcon } from "../../../assets/images/main-page-features/truck.svg";
 
 function MainPageFeatures() {
   return (
