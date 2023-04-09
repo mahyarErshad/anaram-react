@@ -14,7 +14,7 @@ import CallToAction from "../CallToAction/CallToAction";
 
 function MainPageWrapper() {
   return (
-    <main className="pb-8">
+    <main>
       <MainPageSlider />
       <BatteryCategories />
       <OtherProducts />
