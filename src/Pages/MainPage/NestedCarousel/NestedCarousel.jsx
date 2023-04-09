@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as ButtonIcon } from "../../../assets/images/icons/carousel-button-arrow.svg";
 import randomizeClassName from "../../../lib/function/randomizeClasses";
 
@@ -16,13 +16,14 @@ import { Navigation, FreeMode } from "swiper";
 import ProductCard from "../../../Components/ProductCards/ProductCard/ProductCard";
 
 function NestedCarousel() {
+  const [swiperRef, setSwiperRef] = useState(null);
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   const nextButton = randomizeClassName();
   const prevButton = randomizeClassName();
   return (
     <section className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
-        <div className="flex-center">
+        <div onClick={() => swiperRef.slideTo(0)} className="flex-center">
           <h3 className="text-xl text-NeutralN500 font-bold">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
@@ -37,6 +38,7 @@ function NestedCarousel() {
         </div>
       </div>
       <Swiper
+        onSwiper={(swiper) => setSwiperRef(swiper)}
         navigation={{
           nextEl: `.${nextButton}`,
           prevEl: `.${prevButton}`,
