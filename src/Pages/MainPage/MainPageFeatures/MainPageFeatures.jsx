@@ -3,6 +3,7 @@ import MainPageFeatureCards from "./MainPageFeatureCards";
 import { ReactComponent as MedalIcon } from "../../../assets/images/main-page-features/medal.svg";
 import { ReactComponent as TruckIcon } from "../../../assets/images/main-page-features/truck.svg";
 import { ReactComponent as CreditCardIcon } from "../../../assets/images/main-page-features/credit-card.svg";
+import { ReactComponent as CustomerSupportIcon } from "../../../assets/images/main-page-features/customer-support.svg";
 
 function MainPageFeatures() {
   return (
