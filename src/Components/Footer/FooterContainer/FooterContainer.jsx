@@ -6,6 +6,7 @@ import { ReactComponent as PhoneIcon } from "../../../assets/images/icons/phone-
 import FooterAddress from "../FooterComponents/FooterAddress/FooterAddress";
 import FooterNavLinks from "../FooterComponents/FooterNavLinks/FooterNavLinks";
 import { anaramNavLinksData, customerServicesData, helpShopingData } from "../../../lib/footerNavLinksData/footerNavLinksData";
+import eNamadImage from "../../../assets/images/icons/e-namad.jpg";
 
 function FooterContainer() {
   return (
@@ -22,6 +23,11 @@ function FooterContainer() {
           <FooterNavLinks data={customerServicesData} />
           <FooterNavLinks data={anaramNavLinksData} />
         </nav>
+        <div className={`${styles.eNamad} flex gap-2`}>
+          <img className="w-[6.5625rem] h-[7.125rem]" src={eNamadImage} alt="e-namad" />
+          <img className="w-[6.5625rem] h-[7.125rem]" src={eNamadImage} alt="e-namad" />
+          <img className="w-[6.5625rem] h-[7.125rem]" src={eNamadImage} alt="e-namad" />
+        </div>
       </section>
     </footer>
   );
