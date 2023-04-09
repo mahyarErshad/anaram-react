@@ -9,6 +9,7 @@ import MainPageSmallBanners from "../MainPageSmallBanners/MainPageSmallBanners";
 import deliveryBanner from "../../../assets/images/delivery-banner.png";
 import NestedCarousel from "../NestedCarousel/NestedCarousel";
 import MainPageBlog from "../MainPageBlog/MainPageBlog";
+import MainPageFeatures from "../MainPageFeatures/MainPageFeatures";
 
 function MainPageWrapper() {
   return (
@@ -23,6 +24,7 @@ function MainPageWrapper() {
       <img className="w-full rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
       <NestedCarousel />
       <MainPageBlog />
+      <MainPageFeatures />
     </main>
   );
 }
