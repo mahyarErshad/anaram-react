@@ -17,7 +17,7 @@ function FooterContainer() {
         </address>
         <nav className={`${styles.nav} flex justify-between items-start`}>
           <span className="text-base text-primary6 pb-4 border-b-2 border-NeutralN40 font-semibold">راهنمای خرید</span>
-          <ul>
+          <ul className="flex flex-col justify-start items-start gap-3">
             <li></li>
           </ul>
         </nav>
