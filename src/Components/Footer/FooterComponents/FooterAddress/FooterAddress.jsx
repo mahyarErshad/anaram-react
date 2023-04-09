@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function FooterAddress() {
+function FooterAddress(props) {
   return (
-    <div>FooterAddress</div>
-  )
+    <div className="flex-center gap-2 not-italic">
+      {props.icon}
+      <p className="text-sm text-NeutralN90">{props.info}</p>
+    </div>
+  );
 }
 
-export default FooterAddress
+export default FooterAddress;
