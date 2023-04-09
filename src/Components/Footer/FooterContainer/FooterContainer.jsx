@@ -16,12 +16,7 @@ function FooterContainer() {
           <FooterAddress icon={<PhoneIcon className="h-4 w-4" />} text="74645308 - 023" />
         </address>
         <nav className={`${styles.nav} flex justify-between items-start`}>
-          <div className="flex flex-col gap-4">
-            <span className="text-base text-primary6 pb-3 border-b-2 border-NeutralN40 font-semibold">راهنمای خرید</span>
-            <ul className="flex flex-col justify-start items-start gap-3">
-              <li className="text-sm text-NeutralN200 font-semibold">شیوه های پرداخت</li>
-            </ul>
-          </div>
+
         </nav>
       </section>
     </footer>
