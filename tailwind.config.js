@@ -18,6 +18,7 @@ module.exports = {
         NeutralN50: "#BFBFBF",
         NeutralN70: "#A3A3A3",
         NeutralN90: "#858585",
+        NeutralN100: "#757575",
         NeutralN300: "#575757",
         NeutralN500: "#3B3B3B",
         NeutralN600: "#2E2E2E",
