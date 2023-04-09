@@ -1,4 +1,5 @@
 import React from "react";
+import icon from "../../../assets/images/icons/carousel-button-arrow.svg"
 import image from "../../../assets/images/data/blog-cards/battery.jpg";
 
 function BlogCards() {
