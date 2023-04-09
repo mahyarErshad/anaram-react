@@ -10,3 +10,9 @@ export const customerServicesData = [
     navLinks: ["پرسش های متداول", "حریم خصوصی", "محصولات"],
   },
 ];
+export const anaramNavLinksData = [
+  {
+    title: "آنارام",
+    navLinks: ["تماس با آنارام", "درباره آنارام", "بلاگ"],
+  },
+];
