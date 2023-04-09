@@ -2,7 +2,9 @@ import React from 'react'
 
 function BlogCards() {
   return (
-    <div>BlogCards</div>
+    <figure>
+        
+    </figure>
   )
 }
 
