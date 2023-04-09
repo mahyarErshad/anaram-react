@@ -10,6 +10,7 @@ import deliveryBanner from "../../../assets/images/delivery-banner.png";
 import NestedCarousel from "../NestedCarousel/NestedCarousel";
 import MainPageBlog from "../MainPageBlog/MainPageBlog";
 import MainPageFeatures from "../MainPageFeatures/MainPageFeatures";
+import CallToAction from "../CallToAction/CallToAction";
 
 function MainPageWrapper() {
   return (
@@ -25,6 +26,7 @@ function MainPageWrapper() {
       <NestedCarousel />
       <MainPageBlog />
       <MainPageFeatures />
+      <CallToAction />
     </main>
   );
 }
