@@ -1,4 +1,5 @@
 import React from "react";
+import BlogCards from "./BlogCards";
 
 function MainPageBlog() {
   return (
@@ -7,7 +8,7 @@ function MainPageBlog() {
         مجله <strong className="text-primary6">آنارام</strong>
       </h2>
       <div className="flex-center gap-6 w-full flex-wrap">
-      
+        <BlogCards />
       </div>
     </section>
   );
