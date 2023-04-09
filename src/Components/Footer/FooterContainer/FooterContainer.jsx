@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import { ReactComponent as LocationIcon } from "../../../assets/images/icons/location.svg";
 import { ReactComponent as PhoneIcon } from "../../../assets/images/icons/phone-icon.svg";
 import FooterAddress from "../FooterComponents/FooterAddress/FooterAddress";
+import FooterNavLinks from "../FooterComponents/FooterNavLinks/FooterNavLinks";
 
 function FooterContainer() {
   return (
@@ -16,7 +17,7 @@ function FooterContainer() {
           <FooterAddress icon={<PhoneIcon className="h-4 w-4" />} text="74645308 - 023" />
         </address>
         <nav className={`${styles.nav} flex justify-between items-start`}>
-
+          <FooterNavLinks />
         </nav>
       </section>
     </footer>
