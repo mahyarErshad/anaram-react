@@ -14,7 +14,7 @@ import "../../../Components/Carousel/carousel.css";
 // import required modules
 import { Navigation, FreeMode } from "swiper";
 import ProductCard from "../../../Components/ProductCards/ProductCard/ProductCard";
-import { Tabs } from "react-tabs";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 function NestedCarousel() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -22,11 +22,17 @@ function NestedCarousel() {
   const prevButton = randomizeClassName();
   return (
     <Tabs className="container mt-[5.625rem] gap-7">
-      <div className="flex w-full justify-between items-center">
-        <div className="flex-center mr-2">
+      <div className="flex justify-between items-center w-full">
+        <div className="flex-center gap-12 mr-2">
           <h3 className="text-xl text-NeutralN500 font-bold">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
+          <div>
+            <TabList>
+              <Tab>Title 1</Tab>
+              <Tab>Title 2</Tab>
+            </TabList>
+          </div>
         </div>
         <div className="flex-center gap-2">
           <button className={`carousel-button ${prevButton}`}>
@@ -37,25 +43,30 @@ function NestedCarousel() {
           </button>
         </div>
       </div>
-      <Swiper
-        navigation={{
-          nextEl: `.${nextButton}`,
-          prevEl: `.${prevButton}`,
-        }}
-        slidesPerView={"auto"}
-        spaceBetween={16}
-        modules={[Navigation, FreeMode]}
-        freeMode={true}
-        className="mySwiper"
-      >
-        {arr.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <ProductCard />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+      <TabPanel>
+        <Swiper
+          navigation={{
+            nextEl: `.${nextButton}`,
+            prevEl: `.${prevButton}`,
+          }}
+          slidesPerView={"auto"}
+          spaceBetween={16}
+          modules={[Navigation, FreeMode]}
+          freeMode={true}
+          className="mySwiper"
+        >
+          {arr.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ProductCard />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </TabPanel>
+      <TabPanel>
+        <h2>Any content 2</h2>
+      </TabPanel>
     </Tabs>
   );
 }
