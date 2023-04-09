@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function MainPageFeatureCards() {
+function MainPageFeatureCards(props) {
   return (
-    <div>MainPageFeatureCards</div>
-  )
+    <div className="flex-center gap-6">
+      <div className="flex-center bg-NeutralN10 rounded-[0.3125rem] p-4 w-[4.5rem] h-[4.5rem]">
+        {props.icon}
+      </div>
+    </div>
+  );
 }
 
-export default MainPageFeatureCards
+export default MainPageFeatureCards;
