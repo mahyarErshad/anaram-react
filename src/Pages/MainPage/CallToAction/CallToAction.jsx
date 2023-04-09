@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function CallToAction() {
-  return (
-    <div>CallToAction</div>
-  )
+  return <section className="w-full h-[12.25rem] flex-center flex-col gap-8">
+    
+  </section>;
 }
 
-export default CallToAction
+export default CallToAction;
