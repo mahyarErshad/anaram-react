@@ -16,12 +16,10 @@ function FooterContainer() {
           <FooterAddress icon={<PhoneIcon className="h-4 w-4" />} text="74645308 - 023" />
         </address>
         <nav className="flex justify-between items-start">
-        <span className="text-base text-primary6 py-4 border-b"></span>
-            <ul>
-                <li>
-
-                </li>
-            </ul>
+          <span className="text-base text-primary6 py-4 border-b-2 border-NeutralN40"></span>
+          <ul>
+            <li></li>
+          </ul>
         </nav>
       </section>
     </footer>
