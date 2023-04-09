@@ -11,6 +11,7 @@ function MainPageFeatures() {
       <MainPageFeatureCards icon={<MedalIcon />} text="ضمانت اصلات کالا" />
       <MainPageFeatureCards icon={<TruckIcon />} text="ارسال به سراسر کشور" />
       <MainPageFeatureCards icon={<CreditCardIcon />} text="پرداخت امن" />
+      <MainPageFeatureCards icon={<CustomerSupportIcon />} text="مشاوره رایگان خرید" />
     </section>
   );
 }
