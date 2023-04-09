@@ -6,6 +6,9 @@ function MainPageBlog() {
       <h2 className="font-bold text-xl text-NeutralN500">
         مجله <strong className="text-primary6">آنارام</strong>
       </h2>
+      <div className="flex-center gap-6 w-full flex-wrap">
+      
+      </div>
     </section>
   );
 }
