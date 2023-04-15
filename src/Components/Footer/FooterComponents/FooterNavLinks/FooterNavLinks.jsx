@@ -1,7 +1,6 @@
 import React from "react";
 
 function FooterNavLinks({ data }) {
-  console.log(data[0].navLinks);
   return (
     <div className="flex flex-col gap-4">
       <span className="text-base text-primary6 pb-3 border-b-2 border-NeutralN40 font-semibold">{data[0].title}</span>
