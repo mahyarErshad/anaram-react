@@ -18,7 +18,7 @@ function HeaderActionSection() {
       <div className="flex-center gap-4 relative">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
         <SmallButton className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
-        <HeaderShoppingCartModal open={openCart} setOpen={setOpenCart} />
+        <HeaderShoppingCartModal open={openCart} />
       </div>
     </div>
   );
