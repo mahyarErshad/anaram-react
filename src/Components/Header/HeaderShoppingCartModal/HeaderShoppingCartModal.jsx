@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-to-left.svg";
 import image from "../../../assets/images/data/product-card/battery.png";
+import HeaderShoppingCartModalCard from "./HeaderShoppingCartModalCard";
 
 function HeaderShoppingCartModal() {
   return (
@@ -12,12 +13,7 @@ function HeaderShoppingCartModal() {
           <ArrowIcon />
         </div>
       </div>
-      <figure className="flex gap-3 py-5 pr-3 pl-6 border-y border-NeutralN20 w-full">
-        <img src={image} alt="" />
-        <div>
-            
-        </div>
-      </figure>
+      <HeaderShoppingCartModalCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
     </div>
   );
 }
