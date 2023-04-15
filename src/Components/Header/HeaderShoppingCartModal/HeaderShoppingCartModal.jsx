@@ -3,6 +3,7 @@ import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-
 import image from "../../../assets/images/data/product-card/battery-yellow.png";
 import SideBySideProductCard from "../../ProductCards/SideBySideProductCard/SideBySideProductCard";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
+import ProductCardPriceSection from "../../ProductCards/ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 
 function HeaderShoppingCartModal() {
   return (
@@ -17,10 +18,11 @@ function HeaderShoppingCartModal() {
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={150000} amount={2} />
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} discountedPrice={80000} amount={3} discountCard />
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={250000} amount={4} />
-      <div className="py-5 px-6 flex-center justify-between">
-        <PrimaryButton className="py-4 px-12" text="ثبت سفارش" />
-        <div>
-            
+      <div className="py-5 pr-6 flex gap-12">
+        <PrimaryButton className="py-4 px-[3.125rem]" text="ثبت سفارش" />
+        <div className="flex flex-col gap-4">
+          <span className="text-[0.5625rem] font-semibold text-NeutralN100">مبلغ قابل پرداخت</span>
+          <ProductCardPriceSection price={502000} />
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { separateNumberByThousand } from "../../../lib/function/convertToPersianDigits";
-import toman from "../../../assets/images/icons/toman-icon-black.svg";
 import { ReactComponent as PlusIcon } from "../../../assets/images/icons/plus-icon.svg";
 import { ReactComponent as MinusIcon } from "../../../assets/images/icons/minus-icon.svg";
 import styles from "./styles.module.css";
