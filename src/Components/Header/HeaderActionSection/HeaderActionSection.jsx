@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
@@ -9,7 +9,7 @@ import HeaderShoppingCartModal from "../HeaderShoppingCartModal/HeaderShoppingCa
 import styles from "../HeaderShoppingCartModal/styles.module.css";
 
 function HeaderActionSection() {
-  const [openCart, setOpenCart] = useState(false);
+
   return (
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
       <div className="flex-center gap-6 w-2/4">
@@ -19,8 +19,8 @@ function HeaderActionSection() {
       <div className="flex-center gap-4 relative">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
         <div className={styles.cartIconWrapper}>
-          <SmallButton onClick={() => setOpenCart((prev) => !prev)} className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
-          <HeaderShoppingCartModal open={openCart} />
+          <SmallButton className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
+          <HeaderShoppingCartModal />
         </div>
       </div>
     </div>
