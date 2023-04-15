@@ -16,7 +16,7 @@ function HeaderShoppingCartModal() {
           <ArrowIcon />
         </div>
       </div>
-      <div className="flex flex-col overflow-y-scroll">
+      <div className="flex flex-col overflow-y-auto">
         <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={150000} amount={2} />
         <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} discountedPrice={80000} amount={3} discountCard />
         <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={250000} amount={4} />
