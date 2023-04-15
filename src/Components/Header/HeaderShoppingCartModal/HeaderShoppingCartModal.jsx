@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-to-left.svg";
 import image from "../../../assets/images/data/product-card/battery-yellow.png";
 import SideBySideProductCard from "../../ProductCards/SideBySideProductCard/SideBySideProductCard";
+import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 
 function HeaderShoppingCartModal() {
   return (
@@ -16,6 +17,12 @@ function HeaderShoppingCartModal() {
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={150000} amount={2} />
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} discountedPrice={80000} amount={3} discountCard />
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={250000} amount={4} />
+      <div className="py-5 px-6 flex-center justify-between">
+        <PrimaryButton className="py-4 px-12" text="ثبت سفارش" />
+        <div>
+            
+        </div>
+      </div>
     </div>
   );
 }
