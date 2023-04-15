@@ -6,7 +6,7 @@ function HeaderNavBars() {
   return (
     <section className="flex items-center justify-between max-w-[101.5625rem] self-center w-full">
       <nav>
-        <ul className="flex justify-start">
+        <ul className="max-lg:hidden lg:visible flex justify-start">
           <NavLinks hasIcon text="باتری بر اساس سایز " />
           <NavLinks hasIcon text="باتری بر اساس کاربرد " />
           <NavLinks hasIcon text="باتری بر اساس تکنولوژی " />
