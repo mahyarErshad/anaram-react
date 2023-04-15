@@ -4,6 +4,7 @@ import image from "../../../assets/images/data/product-card/battery-yellow.png";
 import SideBySideProductCard from "../../ProductCards/SideBySideProductCard/SideBySideProductCard";
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import ProductCardPriceSection from "../../ProductCards/ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
+import styles from "./styles.module.css"
 
 function HeaderShoppingCartModal() {
   return (
