@@ -14,7 +14,7 @@ function HeaderActionSection() {
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
       <div className="flex-center gap-6 w-2/4">
         <Logo />
-        <SearchBox className="flex-grow" />
+        <SearchBox className="flex-grow max-lg:hidden" />
       </div>
       <div className="flex-center gap-4 relative">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
