@@ -7,6 +7,7 @@ import { ReactComponent as PercentageIcon } from "../../../assets/images/icons/p
 import AnaramAssistant from "../AnaramAssistant/AnaramAssistantContainer/AnaramAssistant";
 import MainPageSmallBanners from "../MainPageSmallBanners/MainPageSmallBanners";
 import deliveryBanner from "../../../assets/images/delivery-banner.png";
+import deliveryBannerSM from "../../../assets/images/delivery-banner-sm.png";
 import NestedCarousel from "../NestedCarousel/NestedCarousel";
 import MainPageBlog from "../MainPageBlog/MainPageBlog";
 import MainPageFeatures from "../MainPageFeatures/MainPageFeatures";
