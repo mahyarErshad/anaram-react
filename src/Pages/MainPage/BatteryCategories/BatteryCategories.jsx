@@ -8,7 +8,7 @@ function BatteryCategories() {
       <h2 className="text-xl font-bold text-NeutralN500">
         انواع باتری <strong className="text-xl font-bold text-primary6">وارتا</strong>
       </h2>
-      <div className="pt-8 pb-6 max-w-[82.5rem] bg-NeutralN10 border border-NeutralN30 rounded-2xl px-1">
+      <div className="grid max-lg:grid-cols-3 lg:grid-cols-6 pt-8 pb-6 max-w-[82.5rem] bg-NeutralN10 border border-NeutralN30 rounded-2xl px-1">
       {
         BatteryCategoriesData.map((data,index)=>{
             return <BatteryCategoriesCard key={index} data={data} />
