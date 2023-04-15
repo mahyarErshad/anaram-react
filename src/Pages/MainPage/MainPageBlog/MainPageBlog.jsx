@@ -1,18 +1,24 @@
 import React from "react";
 import BlogCards from "./BlogCards";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
 
 function MainPageBlog() {
+  const arr = [1, 2, 3, 4];
   return (
     <section className="container flex-center mt-[5.625rem] gap-6">
       <h2 className="font-bold text-xl text-NeutralN500">
         مجله <strong className="text-primary6">آنارام</strong>
       </h2>
-      <div className="flex-center gap-6 w-full max-lg:flex-wrap">
-        <BlogCards />
-        <BlogCards />
-        <BlogCards />
-        <BlogCards />
-      </div>
+      <Swiper slidesPerView={"auto"} spaceBetween={24} modules={[FreeMode]} freeMode={true} className="mySwiper">
+        {arr.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <BlogCards />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </section>
   );
 }
