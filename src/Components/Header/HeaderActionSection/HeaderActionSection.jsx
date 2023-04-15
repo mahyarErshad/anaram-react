@@ -15,7 +15,7 @@ function HeaderActionSection() {
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
       <SmallButton className="p-3 bg-NeutralN10 lg:hidden" icon={<BurgerIcon />} />
       <div className="flex-center gap-6 w-2/4">
-        <Logo className="max-md:w-16" />
+        <Logo className="max-md:w-24" />
         <SearchBox className="flex-grow max-lg:hidden" />
       </div>
       <div className="flex-center gap-4 relative">
