@@ -4,6 +4,7 @@ import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
 import { ReactComponent as UserIcon } from "../../../assets/images/icons/user-icon.svg";
 import { ReactComponent as UserIconBlack } from "../../../assets/images/icons/user-icon-black.svg";
+import { ReactComponent as BurgerIcon } from "../../../assets/images/icons/burger-icon.svg";
 import { ReactComponent as BagIcon } from "../../../assets/images/icons/bag-icon.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import HeaderShoppingCartModal from "../HeaderShoppingCartModal/HeaderShoppingCartModal";
@@ -12,7 +13,7 @@ import styles from "../HeaderShoppingCartModal/styles.module.css";
 function HeaderActionSection() {
   return (
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
-      <SmallButton />
+      <SmallButton className="p-3 bg-NeutralN10 lg:hidden" icon={<BurgerIcon />} />
       <div className="flex-center gap-6 w-2/4">
         <Logo className="max-md:w-16" />
         <SearchBox className="flex-grow max-lg:hidden" />
