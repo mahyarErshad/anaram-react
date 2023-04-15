@@ -1,5 +1,4 @@
 import React from "react";
-import OtherProductsCards from "./OtherProductsCards";
 import OtherProductsData from "../../../lib/OtherProducts/OtherProductsData";
 
 function OtherProducts() {
