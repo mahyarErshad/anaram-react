@@ -1,3 +1,7 @@
-.price-section span:last-child{
- font-size: 1.125rem;
+.price-section span:last-child {
+  font-size: 1.125rem;
+}
+.cartIconWrapper:hover div {
+  opacity: 1;
+  transform: scaleY(1);
 }
