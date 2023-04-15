@@ -6,6 +6,7 @@ function HeaderShoppingCartModalCard(props) {
       <img className="w-[6.6875rem]" src={props.image} alt={props.title} />
       <div className="flex flex-col gap-5">
         <figcaption className="text-xs leading-5 font-semibold">{props.title}</figcaption>
+        <span className="text-xs leading-5 font-semibold">{props.price}</span>
       </div>
     </figure>
   );
