@@ -4,6 +4,7 @@ import toman from "../../../assets/images/icons/toman-icon-black.svg";
 import {ReactComponent as PlusIcon} from "../../../assets/images/icons/plus-icon.svg";
 import {ReactComponent as MinusIcon} from "../../../assets/images/icons/minus-icon.svg";
 import styles from "./styles.module.css";
+import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 
 function SideBySideProductCard(props) {
   return (
@@ -16,7 +17,7 @@ function SideBySideProductCard(props) {
           <img className="w-4" src={toman} alt="تومان" />
         </div>
         <div className="flex justify-start items-center">
-          <button></button>
+          <SmallButton />
         </div>
       </div>
     </figure>
