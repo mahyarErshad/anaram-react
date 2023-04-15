@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-to-left.svg";
-import image from "../../../assets/images/data/product-card/battery.png";
+import image from "../../../assets/images/data/product-card/battery-yellow.png";
 import SideBySideProductCard from "../../ProductCards/SideBySideProductCard/SideBySideProductCard";
 
 function HeaderShoppingCartModal() {

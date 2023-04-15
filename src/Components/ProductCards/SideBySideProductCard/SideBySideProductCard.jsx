@@ -13,6 +13,9 @@ function SideBySideProductCard(props) {
           <span className="text-base font-semibold">{separateNumberByThousand(props.price)}</span>
           <img className="w-4" src={toman} alt="تومان" />
         </div>
+        <div className="flex justify-start items-center">
+        <button></button>
+        </div>
       </div>
     </figure>
   );
