@@ -14,8 +14,8 @@ function SideBySideProductCard(props) {
       <div className="flex flex-col gap-[0.65rem]">
         <figcaption className="text-xs leading-5 font-semibold">{props.title}</figcaption>
         <div className="flex justify-end gap-8">
-          {props.discountCard && <ProductCardPriceSection price={80000} discountText />}
-          <ProductCardPriceSection price={120000} />
+          {props.discountCard && <ProductCardPriceSection price={props.discountedPrice} discountText />}
+          <ProductCardPriceSection price={props.price} />
         </div>
         <div className="flex justify-start items-center">
           <SmallButton className="bg-NeutralN20 py-2 px-2" icon={<PlusIcon />} />
