@@ -13,9 +13,14 @@ function HeaderActionSection() {
         <Logo />
         <SearchBox className="flex-grow" />
       </div>
-      <div className="flex-center gap-4">
+      <div className="flex-center gap-4 relative">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
         <SmallButton className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
+        <div className="flex flex-col absolute left-0 bottom-0 bg-white border border-NeutralN10 rounded-2xl">
+        <div className="p-4 flex justify-between items-center w-full">
+        
+        </div>
+        </div>
       </div>
     </div>
   );
