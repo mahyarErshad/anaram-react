@@ -8,7 +8,7 @@ import { ReactComponent as CustomerSupportIcon } from "../../../assets/images/ma
 function MainPageFeatures() {
   return (
     <section className="w-full max-w-[80.5rem] mx-auto bg-white rounded-[0.625rem] px-3 py-2 flex-center mt-[5.625rem]">
-      <div className="flex-center gap-0 w-full">
+      <div className="flex-center max-md:gap-2 gap-0 w-full">
         <MainPageFeatureCards icon={<MedalIcon />} text="ضمانت اصلات کالا" />
         <MainPageFeatureCards icon={<TruckIcon />} text="ارسال به سراسر کشور" />
         <MainPageFeatureCards icon={<CreditCardIcon />} text="پرداخت امن" />
