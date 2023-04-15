@@ -14,7 +14,9 @@ function HeaderShoppingCartModal() {
       </div>
       <figure className="flex gap-3 py-5 pr-3 pl-6 border-y border-NeutralN20 w-full">
         <img src={image} alt="" />
-        <div></div>
+        <div>
+            
+        </div>
       </figure>
     </div>
   );
