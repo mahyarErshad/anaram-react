@@ -14,7 +14,7 @@ function HeaderShoppingCartModal() {
         </div>
       </div>
       <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} amount={2} />
-      <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} amount={2} />
+      <SideBySideProductCard image={image} title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" price={102000} amount={2} discountCard />
     </div>
   );
 }
