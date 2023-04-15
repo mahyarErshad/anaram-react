@@ -6,6 +6,7 @@ import { ReactComponent as UserIcon } from "../../../assets/images/icons/user-ic
 import { ReactComponent as BagIcon } from "../../../assets/images/icons/bag-icon.svg";
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import HeaderShoppingCartModal from "../HeaderShoppingCartModal/HeaderShoppingCartModal";
+import styles from "../HeaderShoppingCartModal/styles.module.css";
 
 function HeaderActionSection() {
   const [openCart, setOpenCart] = useState(false);
@@ -17,8 +18,10 @@ function HeaderActionSection() {
       </div>
       <div className="flex-center gap-4 relative">
         <PrimaryButton text="ورود / ثبت نام" icon={<UserIcon />} />
-        <SmallButton onClick={() => setOpenCart((prev) => !prev)} className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
-        <HeaderShoppingCartModal open={openCart} />
+        <div className={styles.cartIconWrapper}>
+          <SmallButton onClick={() => setOpenCart((prev) => !prev)} className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
+          <HeaderShoppingCartModal open={openCart} />
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 
 function HeaderShoppingCartModal(props) {
   return (
-    <div className={`${props.open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} duration-300 flex flex-col absolute left-0 top-12 bg-white border border-NeutralN10 rounded-2xl z-10`}>
+    <div className={`${props.open ? "opacity-100 pointer-events-auto scale-y-100" : "opacity-0 pointer-events-none scale-y-0"} origin-top duration-300 flex flex-col absolute left-0 top-12 bg-white border border-NeutralN10 rounded-2xl z-10`}>
       <div className="p-4 flex justify-between items-center w-full">
         <span className="text-[0.5625rem] text-NeutralN60">۳ محصول</span>
         <div className="flex-center gap-3 text-primary6">
