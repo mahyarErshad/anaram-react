@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "../../../Components/Carousel/carousel.css";
-import styles from "./styles.module.css"
+import "./styles.css"
 
 // import required modules
 import { Navigation, FreeMode } from "swiper";
@@ -44,7 +44,7 @@ function NestedCarousel() {
           </button>
         </div>
       </div>
-      <TabPanel onClick={() => swiperRef.slideTo(0)} className="">
+      <TabPanel onClick={() => swiperRef.slideTo(0)} className="nested-carousel-tabPanel">
         <Swiper
           onSwiper={(swiper) => setSwiperRef(swiper)}
           navigation={{
@@ -66,7 +66,7 @@ function NestedCarousel() {
           })}
         </Swiper>
       </TabPanel>
-      <TabPanel onClick={() => swiperRef.slideTo(0)} className="">
+      <TabPanel onClick={() => swiperRef.slideTo(0)} className="nested-carousel-tabPanel">
         <Swiper
           onSwiper={(swiper) => setSwiperRef(swiper)}
           navigation={{

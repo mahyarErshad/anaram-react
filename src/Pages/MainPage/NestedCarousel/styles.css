@@ -1,0 +1,6 @@
+.nested-carousel-tabPanel {
+  width: 100%;
+}
+.nested-carousel-tabPanel.react-tabs__tab-panel--selected {
+  min-height: 22.8125rem;
+}
