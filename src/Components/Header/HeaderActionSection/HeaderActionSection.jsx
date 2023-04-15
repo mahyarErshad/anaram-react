@@ -12,6 +12,7 @@ import styles from "../HeaderShoppingCartModal/styles.module.css";
 function HeaderActionSection() {
   return (
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
+      <SmallButton />
       <div className="flex-center gap-6 w-2/4">
         <Logo className="max-md:w-16" />
         <SearchBox className="flex-grow max-lg:hidden" />
