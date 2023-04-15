@@ -23,7 +23,8 @@ function MainPageWrapper() {
       <AnaramAssistant />
       <MainPageSmallBanners />
       <Carousel title="پر فروش ترین محصولات" icon={<PercentageIcon />} />
-      <img className="w-full rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
+      <img className="w-full max-md:hidden rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
+      <img className="w-full md:hidden rounded-2xl container mt-8" src={deliveryBannerSM} alt="Free delivery for customers" />
       <NestedCarousel />
       <MainPageBlog />
       <MainPageFeatures />
