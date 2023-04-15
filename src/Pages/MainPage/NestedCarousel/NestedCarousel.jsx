@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ReactComponent as ButtonIcon } from "../../../assets/images/icons/carousel-button-arrow.svg";
 import randomizeClassName from "../../../lib/function/randomizeClasses";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "../../../Components/Carousel/carousel.css";
-import "./styles.css"
+import "./styles.css";
 
 // import required modules
 import { Navigation, FreeMode } from "swiper";
@@ -30,9 +29,9 @@ function NestedCarousel() {
           <h3 className="text-xl text-NeutralN500 font-bold ml-12">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
-          <TabList>
-            <Tab>Title 1</Tab>
-            <Tab>Title 2</Tab>
+          <TabList className="flex-center gap-8">
+            <Tab className="nested-carousel-tab text-base font-semibold text-NeutralN200 duration-300">پرفروش ترین ها</Tab>
+            <Tab className="nested-carousel-tab text-base font-semibold text-NeutralN200 duration-300">پربازدید ترین ها</Tab>
           </TabList>
         </div>
         <div className="flex-center gap-2">

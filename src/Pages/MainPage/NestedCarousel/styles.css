@@ -4,3 +4,13 @@
 .nested-carousel-tabPanel.react-tabs__tab-panel--selected {
   min-height: 22.8125rem;
 }
+.nested-carousel-tab {
+  cursor: pointer;
+}
+.nested-carousel-tab.react-tabs__tab--selected {
+  color: #1a4499;
+  cursor: default;
+}
+.react-tabs__tab--selected:focus-visible {
+  outline: none;
+}
