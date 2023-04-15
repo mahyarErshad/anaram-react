@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "../../../Components/Carousel/carousel.css";
+import styles from "./styles.module.css"
 
 // import required modules
 import { Navigation, FreeMode } from "swiper";
