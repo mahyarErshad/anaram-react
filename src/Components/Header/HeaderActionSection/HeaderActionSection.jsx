@@ -18,7 +18,7 @@ function HeaderActionSection() {
       </div>
       <div className="flex-center gap-4 relative">
         <PrimaryButton className="max-md:hidden" text="ورود / ثبت نام" icon={<UserIcon />} />
-        <SmallButton className="p-3 bg-NeutralN10 md:hidden" icon={< />} />
+        <SmallButton className="p-3 bg-NeutralN10 md:hidden" icon={<UserIconBlack />} />
         <div className={styles.cartIconWrapper}>
           <SmallButton className="p-3 bg-NeutralN10" icon={<BagIcon stroke="#575757" />} />
           <HeaderShoppingCartModal />
