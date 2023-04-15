@@ -23,10 +23,10 @@ function NestedCarousel() {
   const nextButton = randomizeClassName();
   const prevButton = randomizeClassName();
   return (
-    <Tabs className="container mt-[5.625rem] gap-7">
-      <div className="flex w-full justify-between items-center">
-        <div onClick={() => swiperRef.slideTo(0)} className="flex-center">
-          <h3 className="text-xl text-NeutralN500 font-bold">
+    <Tabs className="container mt-[5.625rem]">
+      <div className="flex w-full justify-between items-center mb-7">
+        <div className="flex-center">
+          <h3 className="text-xl text-NeutralN500 font-bold ml-12">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
           <TabList>
@@ -43,7 +43,7 @@ function NestedCarousel() {
           </button>
         </div>
       </div>
-      <TabPanel className="w-full">
+      <TabPanel onClick={() => swiperRef.slideTo(0)} className="">
         <Swiper
           onSwiper={(swiper) => setSwiperRef(swiper)}
           navigation={{
@@ -65,7 +65,7 @@ function NestedCarousel() {
           })}
         </Swiper>
       </TabPanel>
-      <TabPanel>
+      <TabPanel onClick={() => swiperRef.slideTo(0)} className="">
         <Swiper
           onSwiper={(swiper) => setSwiperRef(swiper)}
           navigation={{
