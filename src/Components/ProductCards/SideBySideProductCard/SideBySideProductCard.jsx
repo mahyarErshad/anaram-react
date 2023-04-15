@@ -1,6 +1,7 @@
 import React from "react";
 import { separateNumberByThousand } from "../../../lib/function/convertToPersianDigits";
 import toman from "../../../assets/images/icons/toman-icon-black.svg";
+import styles from "./styles.module.css"
 
 function SideBySideProductCard(props) {
   return (
