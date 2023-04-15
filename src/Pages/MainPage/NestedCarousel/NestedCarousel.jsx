@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ReactComponent as ButtonIcon } from "../../../assets/images/icons/carousel-button-arrow.svg";
 import randomizeClassName from "../../../lib/function/randomizeClasses";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,12 +23,16 @@ function NestedCarousel() {
   const nextButton = randomizeClassName();
   const prevButton = randomizeClassName();
   return (
-    <section className="container mt-[5.625rem] gap-7">
+    <Tabs className="container mt-[5.625rem] gap-7">
       <div className="flex w-full justify-between items-center">
         <div onClick={() => swiperRef.slideTo(0)} className="flex-center">
           <h3 className="text-xl text-NeutralN500 font-bold">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
+          <TabList>
+            <Tab>Title 1</Tab>
+            <Tab>Title 2</Tab>
+          </TabList>
         </div>
         <div className="flex-center gap-2">
           <button className={`carousel-button ${prevButton}`}>
@@ -37,27 +43,51 @@ function NestedCarousel() {
           </button>
         </div>
       </div>
-      <Swiper
-        onSwiper={(swiper) => setSwiperRef(swiper)}
-        navigation={{
-          nextEl: `.${nextButton}`,
-          prevEl: `.${prevButton}`,
-        }}
-        slidesPerView={"auto"}
-        spaceBetween={16}
-        modules={[Navigation, FreeMode]}
-        freeMode={true}
-        className="mySwiper"
-      >
-        {arr.map((item, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <ProductCard />
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </section>
+      <TabPanel className="w-full">
+        <Swiper
+          onSwiper={(swiper) => setSwiperRef(swiper)}
+          navigation={{
+            nextEl: `.${nextButton}`,
+            prevEl: `.${prevButton}`,
+          }}
+          slidesPerView={"auto"}
+          spaceBetween={16}
+          modules={[Navigation, FreeMode]}
+          freeMode={true}
+          className="mySwiper"
+        >
+          {arr.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ProductCard />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </TabPanel>
+      <TabPanel>
+        <Swiper
+          onSwiper={(swiper) => setSwiperRef(swiper)}
+          navigation={{
+            nextEl: `.${nextButton}`,
+            prevEl: `.${prevButton}`,
+          }}
+          slidesPerView={"auto"}
+          spaceBetween={16}
+          modules={[Navigation, FreeMode]}
+          freeMode={true}
+          className="mySwiper"
+        >
+          {arr.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ProductCard discountCard />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </TabPanel>
+    </Tabs>
   );
 }
 

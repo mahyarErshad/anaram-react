@@ -24,6 +24,6 @@
   justify-content: center;
   align-items: center;
 }
-.carousel-button.swiper-button-disabled {
+.carousel-button:disabled {
   stroke: #9dafd3;
 }
