@@ -2,6 +2,7 @@ import React from "react";
 import NavLinks from "./NavLinks";
 import { ReactComponent as PhoneIcon } from "../../../assets/images/icons/phone-icon.svg";
 import SearchBox from "../../Utils/SearchBox/SearchBox";
+import headerNavLinksData from "../../../lib/HeaderNavLinksData/HeaderNavLinksData";
 
 function HeaderNavBars() {
   return (
@@ -9,7 +10,9 @@ function HeaderNavBars() {
       <SearchBox className="flex-grow lg:hidden max-lg:mb-4" />
       <nav className="max-lg:hidden lg:visible">
         <ul className="flex justify-start">
-          <NavLinks hasIcon text="باتری بر اساس سایز " />
+          {headerNavLinksData.map((item, index) => {
+            return <NavLinks key={index} hasIcon={item.hasIcon} text={item.text} />;
+          })}
         </ul>
       </nav>
       <a href="tel:02177989898" className="flex-center max-md:hidden md:mt-3 lg:mt-0 pb-7 gap-3 hover:text-primary6">
