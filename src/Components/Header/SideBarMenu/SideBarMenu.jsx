@@ -1,6 +1,8 @@
 import React from "react";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import { ReactComponent as HomeIcon } from "../../../assets/images/data/sidebar-navlinks/home.svg";
+import headerNavLinksData from "../../../lib/HeaderNavLinksData/HeaderNavLinksData";
+import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
 import styles from "./styles.module.css";
 
 function SideBarMenu(props) {
@@ -15,6 +17,17 @@ function SideBarMenu(props) {
               <h3 className="text-sm text-inherit font-medium">صفحه اصلی</h3>
             </AccordionHeader>
           </AccordionItem>
+          {headerNavLinksData.map((item, index) => {
+            return (
+              <AccordionItem key={index}>
+                <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex-center w-[13.5rem] border border-transparent hover:border-neutral-300 duration-300`}>
+                  {item.icon}
+                  <h3 className="text-sm text-inherit font-medium">{item.text}</h3>
+                  {item.hasSubMenu && <ArrowIcon />}
+                </AccordionHeader>
+              </AccordionItem>
+            );
+          })}
           <AccordionItem>
             <AccordionHeader className="bg-NeutralN10 rounded-2xl p-5 flex-center gap-3">
               <h3 className={`accordion-title`}>Title 1</h3>
