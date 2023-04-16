@@ -10,9 +10,9 @@ function SideBarMenu(props) {
       <aside onClick={(e) => e.stopPropagation()} className={`absolute top-0 ${sideBarOpen ? "right-0" : "-right-[100%]"} bg-white pt-16 px-8 flex justify-center h-screen min-w-2/4 duration-300`}>
         <Accordion className="flex flex-col items-center gap-2">
           <AccordionItem>
-            <AccordionHeader className={`${styles["accordion-header"]} bg-NeutralN10 rounded-2xl p-5 flex-center w-[13.5rem] border border-transparent hover:border-neutral-300 duration-300`}>
-              <HomeIcon className="ml-[0.625rem] stroke-NeutralN90" />
-              <h3 className="text-sm text-NeutralN700">صفحه اصلی</h3>
+            <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex-center w-[13.5rem] border border-transparent hover:border-neutral-300 duration-300`}>
+              <HomeIcon className="ml-[0.625rem] stroke-inherit" />
+              <h3 className="text-sm text-inherit">صفحه اصلی</h3>
             </AccordionHeader>
           </AccordionItem>
           <AccordionItem>

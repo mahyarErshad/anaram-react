@@ -1,3 +1,6 @@
-.accordion-header{
-    
+.accordion-header[aria-expanded="true"] {
+  background-color: #e8ecf5;
+  transition: all 0.3;
+  color: #1a4499;
+  stroke: #1A4499;
 }
