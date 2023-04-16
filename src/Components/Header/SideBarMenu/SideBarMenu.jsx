@@ -12,7 +12,7 @@ function SideBarMenu(props) {
           <AccordionItem>
             <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex-center w-[13.5rem] border border-transparent hover:border-neutral-300 duration-300`}>
               <HomeIcon className="ml-[0.625rem] stroke-inherit" />
-              <h3 className="text-sm text-inherit">صفحه اصلی</h3>
+              <h3 className="text-sm text-inherit font-medium">صفحه اصلی</h3>
             </AccordionHeader>
           </AccordionItem>
           <AccordionItem>
