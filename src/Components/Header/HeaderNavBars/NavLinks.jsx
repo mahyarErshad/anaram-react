@@ -8,7 +8,7 @@ function NavLinks(props) {
   return (
     <li className={`flex-center gap-2 text-sm ${props.textColor || "text-NeutralN300"} cursor-pointer px-4 pb-7 font-semibold ${styles.navlink}`}>
       {props.text}
-      {props.hasSubMenu && <Icon />}
+      {props.hasSubMenu && <Icon className="stroke-NeutralN70" />}
       {props.hasSubMenu && <HeaderMenuOpenOnHover data={headerDropDownMockData} />}
       <span className="w-[1px] h-[2.0625rem] bg-NeutralN30 translate-x-[-1rem] overflow-visible"></span>
     </li>
