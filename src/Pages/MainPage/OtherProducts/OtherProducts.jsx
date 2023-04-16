@@ -11,7 +11,7 @@ function OtherProducts() {
       <h2 className="text-xl font-bold text-NeutralN500">
         محصولات دیگر <strong className="text-xl font-bold text-primary6">آنارام</strong>
       </h2>
-      <div className="w-full max-w-[82.5rem] grid lg:grid-cols-4 max-lg:grid-cols-2 lg:gap-6 max-lg:gap-3 justify-items-center">
+      <div className="w-full lg:max-w-[82.5rem] max-lg:max-w-[42.5rem] grid lg:grid-cols-4 max-lg:grid-cols-2 justify-items-center max-lg:gap-y-4">
         {data.map((data, index) => {
           return <img src={data} alt="products category" key={index} />;
         })}
