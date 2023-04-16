@@ -1,27 +1,27 @@
 const headerNavLinksData = [
   {
     text: "باتری بر اساس سایز ",
-    hasIcon: true,
+    hasSubMenu: true,
   },
   {
     text: "باتری بر اساس کاربرد ",
-    hasIcon: true,
+    hasSubMenu: true,
   },
   {
     text: "باتری بر اساس تکنولوژی ",
-    hasIcon: true,
+    hasSubMenu: true,
   },
   {
     text: "درباره آنارام",
-    hasIcon: false,
+    hasSubMenu: false,
   },
   {
     text: "تماس با آنارام",
-    hasIcon: false,
+    hasSubMenu: false,
   },
   {
     text: "وارتا",
-    hasIcon: false,
+    hasSubMenu: false,
   },
 ];
 export default headerNavLinksData;

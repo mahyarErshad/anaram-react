@@ -11,7 +11,7 @@ function HeaderNavBars() {
       <nav className="max-lg:hidden lg:visible">
         <ul className="flex justify-start">
           {headerNavLinksData.map((item, index) => {
-            return <NavLinks key={index} hasIcon={item.hasIcon} text={item.text} />;
+            return <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} />;
           })}
         </ul>
       </nav>
