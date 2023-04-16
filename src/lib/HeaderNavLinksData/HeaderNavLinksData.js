@@ -1,3 +1,6 @@
+import batteryIcon from "../../assets/images/data/sidebar-navlinks/battery.svg";
+import userIcon from "../../assets/images/data/sidebar-navlinks/user.svg";
+
 const headerNavLinksData = [
   {
     text: "باتری بر اساس سایز ",
