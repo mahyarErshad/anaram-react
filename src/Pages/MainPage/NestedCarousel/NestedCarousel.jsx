@@ -23,7 +23,7 @@ function NestedCarousel() {
   const nextButton = randomizeClassName();
   const prevButton = randomizeClassName();
   return (
-    <Tabs className="container mt-[5.625rem] max-md:hidden">
+    <Tabs className="container mt-[5.625rem]">
       <div className="flex w-full justify-between items-center mb-7">
         <div className="flex-center">
           <h3 className="text-xl text-NeutralN500 font-bold ml-12">
