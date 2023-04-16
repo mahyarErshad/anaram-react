@@ -10,11 +10,6 @@ function HeaderNavBars() {
       <nav className="max-lg:hidden lg:visible">
         <ul className="flex justify-start">
           <NavLinks hasIcon text="باتری بر اساس سایز " />
-          <NavLinks hasIcon text="باتری بر اساس کاربرد " />
-          <NavLinks hasIcon text="باتری بر اساس تکنولوژی " />
-          <NavLinks text="درباره آنارام" />
-          <NavLinks text="تماس با آنارام" />
-          <NavLinks textColor="text-primary6" text="وارتا" />
         </ul>
       </nav>
       <a href="tel:02177989898" className="flex-center max-md:hidden md:mt-3 lg:mt-0 pb-7 gap-3 hover:text-primary6">
