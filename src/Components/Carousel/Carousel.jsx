@@ -21,14 +21,14 @@ function Carousel(props) {
   const prevButton = randomizeClassName();
   return (
     <section className="container mt-[5.625rem] gap-7">
-      <div className="flex w-full justify-between items-center">
+      <div className="flex w-full max-lg:justify-center lg:justify-between items-center">
         <div className="flex-center gap-2">
           {props.icon}
           <h3 className="text-xl text-NeutralN500 font-bold">
             {props.title} <strong className="text-primary6">آنارام</strong>
           </h3>
         </div>
-        <div className="flex-center gap-2">
+        <div className="flex-center gap-2 max-lg:hidden">
           <button className={`carousel-button ${prevButton}`}>
             <ButtonIcon className="mirror" />
           </button>
