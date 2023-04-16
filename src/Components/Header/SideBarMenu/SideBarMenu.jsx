@@ -16,9 +16,16 @@ function SideBarMenu(props) {
               <HomeIcon className="ml-[0.625rem] stroke-inherit" />
               <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
             </AccordionHeader>
-            <AccordionBody>asfsdfgsdfgsdfgsdfgvsdzfgv</AccordionBody>
+            <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2">safsfaS</AccordionBody>
           </AccordionItem>
-          {headerNavLinksData.map((item, index) => {
+          <AccordionItem>
+            <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
+              <HomeIcon className="ml-[0.625rem] stroke-inherit" />
+              <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
+            </AccordionHeader>
+            <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2">safsfaS</AccordionBody>
+          </AccordionItem>
+          {/* {headerNavLinksData.map((item, index) => {
             return (
               <AccordionItem key={index}>
                 <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
@@ -29,7 +36,7 @@ function SideBarMenu(props) {
                 <AccordionBody>asfsdfgsdfgsdfgsdfgvsdzfgv</AccordionBody>
               </AccordionItem>
             );
-          })}
+          })} */}
         </Accordion>
       </aside>
     </section>

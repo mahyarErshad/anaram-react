@@ -2,5 +2,7 @@
   background-color: #e8ecf5;
   transition: all 0.3;
   color: #1a4499;
-  stroke: #1A4499;
+  stroke: #1a4499;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
