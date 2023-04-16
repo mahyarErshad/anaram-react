@@ -25,6 +25,9 @@ function SideBarMenu(props) {
                   <h3 className="text-xs text-inherit font-semibold mr-[0.625rem]">{item.text}</h3>
                   {item.hasSubMenu && <ArrowIcon className="mr-[0.375rem] stroke-inherit" />}
                 </AccordionHeader>
+                {
+                    
+                }
               </AccordionItem>
             );
           })}

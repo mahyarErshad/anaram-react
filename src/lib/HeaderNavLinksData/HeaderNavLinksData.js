@@ -6,16 +6,19 @@ const headerNavLinksData = [
   {
     text: "باتری بر اساس سایز ",
     hasSubMenu: true,
+    subMenu: ["باتری قلمی", "باتری نیم قلمی", "باتری کتابی", "باتری سکه ای", "باتری سالادی"],
     icon: <BatteryIcon />,
   },
   {
     text: "باتری بر اساس کاربرد ",
     hasSubMenu: true,
+    subMenu: ["باتری قلمی", "باتری نیم قلمی", "باتری کتابی", "باتری سکه ای", "باتری سالادی"],
     icon: <BatteryIcon />,
   },
   {
     text: "باتری بر اساس تکنولوژی ",
     hasSubMenu: true,
+    subMenu: ["باتری قلمی", "باتری نیم قلمی", "باتری کتابی", "باتری سکه ای", "باتری سالادی"],
     icon: <BatteryIcon />,
   },
   {
