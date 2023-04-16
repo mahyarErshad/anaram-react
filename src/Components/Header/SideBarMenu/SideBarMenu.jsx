@@ -2,7 +2,9 @@ import React from 'react'
 
 function SideBarMenu() {
   return (
-    <div>SideBarMenu</div>
+    <aside className='fixed top-0 right-0 '>
+sidebar
+    </aside>
   )
 }
 
