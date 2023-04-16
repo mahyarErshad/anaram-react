@@ -24,9 +24,9 @@ function NestedCarousel() {
   const prevButton = randomizeClassName();
   return (
     <Tabs className="container mt-[5.625rem]">
-      <div className="flex w-full justify-between items-center mb-7">
-        <div className="flex-center">
-          <h3 className="text-xl text-NeutralN500 font-bold ml-12">
+      <div className="flex w-full max-lg:justify-center justify-between items-center mb-7">
+        <div className="flex-center max-lg:flex-col max-lg:gap-4">
+          <h3 className="text-xl text-NeutralN500 font-bold lg:ml-12">
             ویترین <strong className="text-primary6">آنارام</strong>
           </h3>
           <TabList className="flex-center gap-8">
@@ -34,7 +34,7 @@ function NestedCarousel() {
             <Tab className="nested-carousel-tab text-base font-semibold text-NeutralN200 duration-300">پربازدید ترین ها</Tab>
           </TabList>
         </div>
-        <div className="flex-center gap-2">
+        <div className="flex-center gap-2 max-lg:hidden">
           <button className={`carousel-button ${prevButton}`}>
             <ButtonIcon className="mirror" />
           </button>
