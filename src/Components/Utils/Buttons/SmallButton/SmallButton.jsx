@@ -1,11 +1,9 @@
 import React from "react";
 
-function SmallButton({ icon, className, onClick }) {
-  return (
-    <button onClick={onClick} className={`${className} flex-center rounded-5px`}>
-      {icon}
-    </button>
-  );
-}
+const SmallButton = ({ icon, className, onClick }) => (
+  <button onClick={onClick} className={`flex-center rounded-5px ${className}`}>
+    {icon}
+  </button>
+);
 
 export default SmallButton;
