@@ -5,14 +5,14 @@ import SearchBox from "../../Utils/SearchBox/SearchBox";
 import headerNavLinksData from "../../../lib/HeaderNavLinksData/HeaderNavLinksData";
 
 function HeaderNavBars() {
+  const navLinks = headerNavLinksData.map((item, index) => <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} />);
+
   return (
     <section className="flex items-center justify-between max-w-[101.5625rem] self-center w-full gap-2">
       <SearchBox className="flex-grow lg:hidden max-lg:mb-4" />
       <nav className="max-lg:hidden lg:visible">
         <ul className="flex justify-start">
-          {headerNavLinksData.map((item, index) => {
-            return <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} />;
-          })}
+          {navLinks}
           <NavLinks text="وارتا" />
         </ul>
       </nav>
