@@ -1,9 +1,12 @@
 .accordion-header[aria-expanded="true"] {
   background-color: #e8ecf5;
-  transition: all 0.3;
+  transition: all 0.3s;
   color: #1a4499;
   stroke: #1a4499;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-color: transparent;
+}
+.navCards:last-child{
+margin-bottom: 1rem;
 }

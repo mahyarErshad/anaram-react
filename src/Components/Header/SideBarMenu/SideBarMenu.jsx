@@ -18,7 +18,7 @@ function SideBarMenu(props) {
             </AccordionHeader>
             <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
               <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
-              <span className="">sxfdsg</span>
+              <span className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>باتری نیم قلمی</span>
             </AccordionBody>
           </AccordionItem>
           <AccordionItem>
