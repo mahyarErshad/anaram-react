@@ -1,16 +1,18 @@
 .accordion-header[aria-expanded="true"] {
   background-color: #e8ecf5;
-  transition: all 0.3s;
   color: #1a4499;
   stroke: #1a4499;
   border-color: transparent;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  transition: all 0.3s ease-in-out;
 }
+
 .AccordionBodyHasMenu[aria-expanded="true"] {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .accordion-header[aria-expanded="true"] + div {
   overflow: visible !important;
   padding-bottom: 0.5rem !important;
