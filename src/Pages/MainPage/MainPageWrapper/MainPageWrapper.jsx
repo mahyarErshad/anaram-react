@@ -12,6 +12,7 @@ import NestedCarousel from "../NestedCarousel/NestedCarousel";
 import MainPageBlog from "../MainPageBlog/MainPageBlog";
 import MainPageFeatures from "../MainPageFeatures/MainPageFeatures";
 import CallToAction from "../CallToAction/CallToAction";
+import BatteryChargingComponent from "../BatteryChargingComponent/BatteryChargingComponent";
 
 function MainPageWrapper() {
   return (
@@ -29,6 +30,7 @@ function MainPageWrapper() {
       <MainPageBlog />
       <MainPageFeatures />
       <CallToAction />
+      <BatteryChargingComponent />
     </main>
   );
 }
