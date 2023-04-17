@@ -13,4 +13,5 @@
 }
 .accordion-header[aria-expanded="true"] + div {
   overflow: visible !important;
+  padding-bottom: 0.5rem !important;
 }
