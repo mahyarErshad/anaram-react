@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Battery } from "../../../assets/images/battery-component/battery-full.svg";
+import "./styles.css"
 
 function BatteryChargingComponent() {
   return (
