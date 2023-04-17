@@ -4,7 +4,7 @@ import { ReactComponent as Battery } from "../../../assets/images/battery-compon
 function BatteryChargingComponent() {
   return (
     <>
-      <Battery className="fixed bottom-10 left-10" />
+      <Battery className="fixed bottom-10 left-16" />
     </>
   );
 }
