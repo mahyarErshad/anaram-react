@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import { ReactComponent as HomeIcon } from "../../../assets/images/data/sidebar-navlinks/home.svg";
+import { ReactComponent as BatteryIcon } from "../../../assets/images/data/sidebar-navlinks/batteryIcon.svg";
 import headerNavLinksData from "../../../lib/HeaderNavLinksData/HeaderNavLinksData";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
 import styles from "./styles.module.css";
@@ -25,20 +26,27 @@ function SideBarMenu(props) {
                   <h3 className="text-xs text-inherit font-semibold mr-[0.625rem]">{item.text}</h3>
                   {item.hasSubMenu && <ArrowIcon className="stroke-inherit mr-[0.375rem]" />}
                 </AccordionHeader>
-                <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
-                  {item.hasSubMenu && <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>}
-                  {item.hasSubMenu &&
-                    item.subMenu.map((item, index) => {
+                {item.hasSubMenu && (
+                  <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
+                    <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
+                    {item.subMenu.map((item, index) => {
                       return (
                         <span key={index} className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>
                           {item}
                         </span>
                       );
                     })}
-                </AccordionBody>
+                  </AccordionBody>
+                )}
               </AccordionItem>
             );
           })}
+          <AccordionItem>
+            <AccordionHeader className={`stroke-white text-white bg-primary6 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
+              <BatteryIcon className="ml-[0.625rem] stroke-inherit" />
+              <h3 className="text-xs text-inherit font-semibold">وارتا</h3>
+            </AccordionHeader>
+          </AccordionItem>
         </Accordion>
       </aside>
     </section>
