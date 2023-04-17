@@ -12,13 +12,13 @@ function SideBarMenu(props) {
       <aside onClick={(e) => e.stopPropagation()} className={`absolute top-0 ${sideBarOpen ? "right-0" : "-right-[100%]"} bg-white pt-16 px-8 flex justify-center h-screen min-w-2/4 duration-300`}>
         <Accordion className="flex flex-col items-center gap-2">
           <AccordionItem>
-            <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
+            <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
               <HomeIcon className="ml-[0.625rem] stroke-inherit" />
               <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
             </AccordionHeader>
             <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
-                <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
-                <span className="">sxfdsg</span>
+              <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
+              <span className="">sxfdsg</span>
             </AccordionBody>
           </AccordionItem>
           <AccordionItem>
