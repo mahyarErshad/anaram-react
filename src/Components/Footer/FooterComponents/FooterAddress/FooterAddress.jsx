@@ -1,12 +1,10 @@
 import React from "react";
 
-function FooterAddress(props) {
-  return (
-    <div className="flex justify-start items-center gap-2 not-italic">
-      {props.icon}
-      <p className="text-sm text-NeutralN90">{props.text}</p>
-    </div>
-  );
-}
+const FooterAddress = ({ icon, text }) => (
+  <div className="flex items-center gap-2 not-italic">
+    {icon}
+    <p className="text-sm text-NeutralN90">{text}</p>
+  </div>
+);
 
 export default FooterAddress;
