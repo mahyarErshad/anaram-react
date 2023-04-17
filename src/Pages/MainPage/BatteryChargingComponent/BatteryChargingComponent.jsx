@@ -2,7 +2,11 @@ import React from "react";
 import { ReactComponent as Battery } from "../../../assets/images/battery-component/battery-full.svg";
 
 function BatteryChargingComponent() {
-  return <div>BatteryChargingComponent</div>;
+  return (
+    <>
+      <Battery className="fixed bottom-10 left-10" />
+    </>
+  );
 }
 
 export default BatteryChargingComponent;
