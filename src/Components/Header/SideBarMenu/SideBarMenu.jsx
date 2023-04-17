@@ -16,30 +16,29 @@ function SideBarMenu(props) {
               <HomeIcon className="ml-[0.625rem] stroke-inherit" />
               <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
             </AccordionHeader>
-            <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
-              <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
-              <span className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>باتری نیم قلمی</span>
-            </AccordionBody>
           </AccordionItem>
-          <AccordionItem>
-            <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
-              <HomeIcon className="ml-[0.625rem] stroke-inherit" />
-              <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
-            </AccordionHeader>
-            <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2">safsfaS</AccordionBody>
-          </AccordionItem>
-          {/* {headerNavLinksData.map((item, index) => {
+          {headerNavLinksData.map((item, index) => {
             return (
               <AccordionItem key={index}>
-                <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
+                <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
                   {item.icon}
                   <h3 className="text-xs text-inherit font-semibold mr-[0.625rem]">{item.text}</h3>
                   {item.hasSubMenu && <ArrowIcon className="stroke-inherit mr-[0.375rem]" />}
                 </AccordionHeader>
-                <AccordionBody>asfsdfgsdfgsdfgsdfgvsdzfgv</AccordionBody>
+                <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
+                  {item.hasSubMenu && <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>}
+                  {item.hasSubMenu &&
+                    item.subMenu.map((item, index) => {
+                      return (
+                        <span key={index} className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>
+                          {item}
+                        </span>
+                      );
+                    })}
+                </AccordionBody>
               </AccordionItem>
             );
-          })} */}
+          })}
         </Accordion>
       </aside>
     </section>
