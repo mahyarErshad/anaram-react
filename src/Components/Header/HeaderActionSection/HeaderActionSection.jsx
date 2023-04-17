@@ -11,9 +11,13 @@ import HeaderShoppingCartModal from "../HeaderShoppingCartModal/HeaderShoppingCa
 import styles from "../HeaderShoppingCartModal/styles.module.css";
 
 function HeaderActionSection({ setSideBarOpen }) {
+  const handleSidebarOpen = React.useCallback(() => {
+    setSideBarOpen(true);
+  }, [setSideBarOpen]);
+
   return (
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
-      <SmallButton onClick={()=> setSideBarOpen(true)} className="p-3 bg-NeutralN10 lg:hidden" icon={<BurgerIcon />} />
+      <SmallButton onClick={handleSidebarOpen} className="p-3 bg-NeutralN10 lg:hidden" icon={<BurgerIcon />} />
       <div className="flex-center gap-6 w-2/4">
         <Logo className="max-md:w-24" />
         <SearchBox className="flex-grow max-lg:hidden" />
