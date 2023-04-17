@@ -31,10 +31,5 @@ const headerNavLinksData = [
     hasSubMenu: false,
     icon: <UserIcon />,
   },
-  {
-    text: "وارتا",
-    hasSubMenu: false,
-    icon: <BatteryIcon />,
-  },
 ];
 export default headerNavLinksData;

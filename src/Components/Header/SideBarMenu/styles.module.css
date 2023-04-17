@@ -11,6 +11,9 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.accordion-header[aria-expanded="true"] + div {
+  overflow: visible !important;
+}
 .navCards:last-child {
   margin-bottom: 1rem;
 }

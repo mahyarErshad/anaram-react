@@ -13,6 +13,7 @@ function HeaderNavBars() {
           {headerNavLinksData.map((item, index) => {
             return <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} />;
           })}
+          <NavLinks text="وارتا" />
         </ul>
       </nav>
       <a href="tel:02177989898" className="flex-center max-md:hidden md:mt-3 lg:mt-0 pb-7 gap-3 hover:text-primary6">
