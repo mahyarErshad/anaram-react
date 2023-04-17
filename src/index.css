@@ -35,6 +35,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: yekanBakh, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   /* background color */
