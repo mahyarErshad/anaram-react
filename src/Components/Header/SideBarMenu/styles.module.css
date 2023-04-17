@@ -3,10 +3,14 @@
   transition: all 0.3s;
   color: #1a4499;
   stroke: #1a4499;
+  border-color: transparent;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.AccordionBodyHasMenu[aria-expanded="true"] {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-color: transparent;
 }
-.navCards:last-child{
-margin-bottom: 1rem;
+.navCards:last-child {
+  margin-bottom: 1rem;
 }

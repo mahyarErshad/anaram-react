@@ -20,7 +20,7 @@ function SideBarMenu(props) {
           {headerNavLinksData.map((item, index) => {
             return (
               <AccordionItem key={index}>
-                <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
+                <AccordionHeader className={`${styles["accordion-header"]} ${item.hasSubMenu && styles.AccordionBodyHasMenu} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
                   {item.icon}
                   <h3 className="text-xs text-inherit font-semibold mr-[0.625rem]">{item.text}</h3>
                   {item.hasSubMenu && <ArrowIcon className="stroke-inherit mr-[0.375rem]" />}
