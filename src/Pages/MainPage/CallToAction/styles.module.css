@@ -2,12 +2,14 @@
   background: url(../../../assets/images/call-to-action-background.png), #1a4499;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
+
 .form,
 .form input {
   transition: all 0.3s;
 }
+
 .form:focus-within,
 .form input:focus {
   background-color: #e8ecf5;
