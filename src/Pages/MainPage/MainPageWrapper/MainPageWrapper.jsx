@@ -14,25 +14,23 @@ import MainPageFeatures from "../MainPageFeatures/MainPageFeatures";
 import CallToAction from "../CallToAction/CallToAction";
 import BatteryChargingComponent from "../BatteryChargingComponent/BatteryChargingComponent";
 
-function MainPageWrapper() {
-  return (
-    <main>
-      <MainPageSlider />
-      <BatteryCategories />
-      <OtherProducts />
-      <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} discountCard />
-      <AnaramAssistant />
-      <MainPageSmallBanners />
-      <Carousel title="پر فروش ترین محصولات" icon={<PercentageIcon />} />
-      <img className="w-full max-md:hidden rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
-      <img className="w-full md:hidden rounded-2xl container mt-8" src={deliveryBannerSM} alt="Free delivery for customers" />
-      <NestedCarousel />
-      <MainPageBlog />
-      <MainPageFeatures />
-      <CallToAction />
-      <BatteryChargingComponent />
-    </main>
-  );
-}
+const MainPageWrapper = () => (
+  <main>
+    <MainPageSlider />
+    <BatteryCategories />
+    <OtherProducts />
+    <Carousel title="تخفیفات این هفته" icon={<PercentageIcon />} discountCard />
+    <AnaramAssistant />
+    <MainPageSmallBanners />
+    <Carousel title="پر فروش ترین محصولات" icon={<PercentageIcon />} />
+    <img className="w-full max-md:hidden rounded-2xl container mt-20" src={deliveryBanner} alt="Free delivery for customers" />
+    <img className="w-full md:hidden rounded-2xl container mt-8" src={deliveryBannerSM} alt="Free delivery for customers" />
+    <NestedCarousel />
+    <MainPageBlog />
+    <MainPageFeatures />
+    <CallToAction />
+    <BatteryChargingComponent />
+  </main>
+);
 
 export default MainPageWrapper;
