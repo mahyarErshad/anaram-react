@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./styles.module.css";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 
-function CallToAction() {
-  function handleSubmit(e) {
+const CallToAction = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-  }
+  };
+
   return (
     <section className={`${styles.container} w-full h-[12.25rem] mt-16 flex-center flex-col gap-8 px-4`}>
       <h4 className="text-white font-semibold text-lg">از تخفیف ها و جدیدترین های آنارام با خبر شوید.</h4>
@@ -15,6 +16,6 @@ function CallToAction() {
       </form>
     </section>
   );
-}
+};
 
 export default CallToAction;
