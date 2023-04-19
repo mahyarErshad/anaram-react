@@ -11,7 +11,7 @@ function AnaramAssistant() {
           دستیار <strong className="text-primary6">آنارام</strong>
         </h2>
         <p className="max-w-[71.75rem] text-base text-NeutralN300 mt-14">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 max-md:grid-cols-1 justify-items-center gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 justify-items-center gap-6 mt-8">
           <AssistantHelperBox number="1" title="انتخاب دستگاه" description="دستگاهی که میخواهی برایش باتری بخری را انتخاب کن" gradientFrom="from-[#5F34CC]" gradientTo="to-[#22134A]" className="lg:col-span-1 lg:row-start-1 md:col-span-full max-md:row-start-1" />
           <AssistantHelperBox number="2" title="انتخاب باتری" description="سایز باتری را انتخاب کن (قلمی ُ نیم قلمی ُ‌کتابی و ...)" gradientFrom="from-[#47A8BD]" gradientTo="to-[#00829E]" className="lg:col-span-1 lg:row-start-1 md:row-start-2 max-md:row-start-2" />
           <AssistantHelperBox number="3" title="بقیش باما" description="دستیار آنارام به صورت هوشمند لیستی از باتری هایی که مناسب شما هست را نمایش میده" gradientFrom="from-[#C53950]" gradientTo="to-[#790013]" className="lg:col-span-1 lg:row-start-1 md:row-start-2 max-md:row-start-3" />
