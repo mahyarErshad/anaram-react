@@ -7,6 +7,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<PageLayout />}>
       <Route index element={<MainPageWrapper />} />
+      <Route path="/about" element={<h1>test</h1>} />
     </Route>
   )
 );
