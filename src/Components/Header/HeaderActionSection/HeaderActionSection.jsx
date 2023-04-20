@@ -9,6 +9,7 @@ import { ReactComponent as BagIcon } from "../../../assets/images/icons/bag-icon
 import SmallButton from "../../Utils/Buttons/SmallButton/SmallButton";
 import HeaderShoppingCartModal from "../HeaderShoppingCartModal/HeaderShoppingCartModal";
 import styles from "../HeaderShoppingCartModal/styles.module.css";
+import { Link } from "react-router-dom";
 
 function HeaderActionSection({ setSideBarOpen }) {
   const handleSidebarOpen = React.useCallback(() => {
@@ -19,7 +20,9 @@ function HeaderActionSection({ setSideBarOpen }) {
     <div className="flex justify-between items-center w-full max-w-[101.5625rem] self-center">
       <SmallButton onClick={handleSidebarOpen} className="p-3 bg-NeutralN10 lg:hidden" icon={<BurgerIcon />} />
       <div className="flex-center gap-6 w-2/4">
-        <Logo className="max-md:w-24" />
+        <Link to="/">
+          <Logo className="max-md:w-24" />
+        </Link>
         <SearchBox className="flex-grow max-lg:hidden" />
       </div>
       <div className="flex-center gap-4 relative">
