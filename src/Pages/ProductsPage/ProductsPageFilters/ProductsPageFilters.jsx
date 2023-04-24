@@ -39,7 +39,9 @@ function ProductsPageFilters() {
                 قیمت
                 <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
               </AccordionHeader>
-              <AccordionBody>تست</AccordionBody>
+              <AccordionBody>
+                <input type="range" />
+              </AccordionBody>
             </AccordionItem>
           </div>
         </Accordion>
