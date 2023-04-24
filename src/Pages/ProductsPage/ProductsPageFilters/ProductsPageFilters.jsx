@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
+import CheckBox from "../../../Components/Utils/CheckBox/CheckBox";
 
 function ProductsPageFilters() {
   return (
@@ -14,7 +15,9 @@ function ProductsPageFilters() {
                 تکنولوژی ساخت
                 <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
               </AccordionHeader>
-              <AccordionBody>تست</AccordionBody>
+              <AccordionBody>
+                <CheckBox label="آلکاین" counter={24} />
+              </AccordionBody>
             </AccordionItem>
           </div>
           <div>
