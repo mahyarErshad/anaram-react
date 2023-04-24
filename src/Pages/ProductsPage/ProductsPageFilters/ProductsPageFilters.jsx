@@ -36,6 +36,10 @@ function ProductsPageFilters() {
             </AccordionItem>
           </div>
         </Accordion>
+        <div>
+          <label htmlFor="exist-only">فقط کالا های موجود را نمایش بده</label>
+          <input id="exist-only" type="checkbox" />
+        </div>
       </div>
     </div>
   );
