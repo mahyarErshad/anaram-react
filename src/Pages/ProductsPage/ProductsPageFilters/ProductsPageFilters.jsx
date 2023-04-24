@@ -17,6 +17,7 @@ function ProductsPageFilters() {
               </AccordionHeader>
               <AccordionBody>
                 <CheckBox label="آلکاین" counter={24} />
+                <CheckBox label="روی کربن" counter={14} />
               </AccordionBody>
             </AccordionItem>
           </div>
