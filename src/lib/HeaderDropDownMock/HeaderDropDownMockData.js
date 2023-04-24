@@ -9,26 +9,32 @@ const headerDropDownMockData = [
   {
     image: black,
     text: "باتری قلمی",
+    href: "/products"
   },
   {
     image: red,
     text: "باتری نیم قلمی",
+    href: "/products"
   },
   {
     image: yellow,
     text: "باتری متوسط",
+    href: "/products"
   },
   {
     image: blue,
     text: "باتری بزرگ",
+    href: "/products"
   },
   {
     image: recharge,
     text: "باتری کتابی",
+    href: "/products"
   },
   {
     image: coin,
     text: "باتری سکه ای",
+    href: "/products"
   },
 ];
 export default headerDropDownMockData;
