@@ -36,9 +36,9 @@ function ProductsPageFilters() {
             </AccordionItem>
           </div>
         </Accordion>
-        <div className="flex w-full justify-start items-center gap-2 cursor-pointer">
-          <input id="exist-only" type="checkbox" />
-          <label className="text-xs text-primary8 font-semibold" htmlFor="exist-only">
+        <div className="flex w-full justify-start items-start gap-2">
+          <input id="exist-only" className="cursor-pointer" type="checkbox" />
+          <label className="text-xs text-primary8 font-semibold cursor-pointer" htmlFor="exist-only">
             فقط کالا های موجود را نمایش بده
           </label>
         </div>
