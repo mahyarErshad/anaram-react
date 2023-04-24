@@ -2,7 +2,7 @@ import React from "react";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import PageLayout from "./Pages/PageLayout/PageLayout";
 import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
-import ProductsPage from "./Pages/ProductsPage/ProductsPage";
+import ProductsPage from "./Pages/ProductsPage/ProductsPageContainer/ProductsPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
