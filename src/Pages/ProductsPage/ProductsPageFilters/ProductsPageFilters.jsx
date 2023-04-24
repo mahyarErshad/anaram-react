@@ -27,7 +27,10 @@ function ProductsPageFilters() {
                 ولتاژ
                 <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
               </AccordionHeader>
-              <AccordionBody>تست</AccordionBody>
+              <AccordionBody>
+                <CheckBox label="۲.۱ ولت" counter={18} />
+                <CheckBox label="۳.۱ ولت" counter={5} />
+              </AccordionBody>
             </AccordionItem>
           </div>
           <div>
