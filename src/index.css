@@ -45,6 +45,7 @@
   --primary2: #c8d2e7;
   --primary5: #4366ab;
   --primary6: #1a4499;
+  --primary8: #12306d;
 
   /* Neutral Colors */
   --NeutralN10: #fafafa;
@@ -106,6 +107,6 @@ nav ul li:last-child {
   align-items: center;
   flex-direction: column;
 }
-.swiper-slide{
+.swiper-slide {
   border-radius: 1rem;
 }
