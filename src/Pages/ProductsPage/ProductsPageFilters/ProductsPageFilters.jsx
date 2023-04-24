@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
 import CheckBox from "../../../Components/Utils/CheckBox/CheckBox";
+import DoubleRangerInput from "../../../Components/Utils/DoubleRangerInput/DoubleRangerInput";
 
 function ProductsPageFilters() {
   return (
@@ -40,7 +41,7 @@ function ProductsPageFilters() {
                 <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
               </AccordionHeader>
               <AccordionBody>
-                <input type="range" />
+                <DoubleRangerInput />
               </AccordionBody>
             </AccordionItem>
           </div>
