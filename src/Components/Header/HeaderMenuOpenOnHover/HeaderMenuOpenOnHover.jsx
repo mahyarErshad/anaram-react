@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
 function HeaderMenuOpenOnHover({ data }) {
   const menuItems = data.map((item, index) => (
-    <li key={index} className={`${styles.card} px-[3.1875rem] flex-center flex-col gap-4 border-l min-h-[9.8125rem] border-NeutralN30 cursor-pointer`}>
-      <img className="transition-all" src={item.image} alt={item.text} />
-      <h2 className="text-xs text-[#616161]">{item.text}</h2>
-    </li>
+    <Link to={item.href}>
+      <li key={index} className={`${styles.card} px-[3.1875rem] flex-center flex-col gap-4 border-l min-h-[9.8125rem] border-NeutralN30 cursor-pointer`}>
+        <img className="transition-all" src={item.image} alt={item.text} />
+        <h2 className="text-xs text-[#616161]">{item.text}</h2>
+      </li>
+    </Link>
   ));
 
   return (
