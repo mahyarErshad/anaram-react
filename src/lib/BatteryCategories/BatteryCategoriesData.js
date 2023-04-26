@@ -9,6 +9,7 @@ const BatteryCategoriesData = [
   {
     image: black,
     text: "باتری قلمی",
+    active: true,
   },
   {
     image: gold,

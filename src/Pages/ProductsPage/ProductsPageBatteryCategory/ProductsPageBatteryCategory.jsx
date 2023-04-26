@@ -10,7 +10,7 @@ function ProductsPageBatteryCategory() {
       <Swiper slidesPerView="auto" spaceBetween={34} modules={[FreeMode]} freeMode className="mySwiper">
         {BatteryCategoriesData.map((item, index) => (
           <SwiperSlide style={{backgroundColor: "transparent"}} key={index}>
-            <ProductsPageBatteryCategoryCard image={item.image} text={item.text} />
+            <ProductsPageBatteryCategoryCard active={item.active} image={item.image} text={item.text} />
           </SwiperSlide>
         ))}
       </Swiper>
