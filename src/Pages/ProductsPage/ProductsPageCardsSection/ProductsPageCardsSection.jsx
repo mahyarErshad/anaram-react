@@ -1,6 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { ReactComponent as SettingsIcon } from "../../../assets/images/icons/settings-icon.svg";
+import styles from "./styles.module.css"
 
 function ProductsPageCardsSection() {
   return (
