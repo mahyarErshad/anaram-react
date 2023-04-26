@@ -6,10 +6,12 @@ function ProductsPageCardsSection() {
   return (
     <div className="w-full max-md:mt-6 md:mt-12">
       <Tab>
-        <Tabs>
+        <Tabs className="flex justify-start items-center gap-4">
           <SettingsIcon />
-          <span></span>
-          <TabList></TabList>
+          <span className="text-NeutralN500 text-sm">مرتب سازی:</span>
+          <div>
+            <TabList className={`${styles.tablist}`}>پرفروش‌ ترین</TabList>
+          </div>
         </Tabs>
         <TabPanel></TabPanel>
       </Tab>
