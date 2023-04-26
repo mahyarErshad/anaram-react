@@ -1,6 +1,7 @@
 .track {
   height: 0.25rem;
   background-color: #ebebeb;
+  cursor: pointer;
 }
 .track:nth-child(2) {
   background-color: #1a4499;
