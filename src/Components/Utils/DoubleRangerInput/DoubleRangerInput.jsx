@@ -4,7 +4,7 @@ import ReactSlider from "react-slider";
 import styles from "./styles.module.css";
 
 function DoubleRangerInput() {
-  const [values , setValues] = useState([])
+  const [values, setValues] = useState([]);
   return (
     <div className="flex flex-col w-full gap-6 mb-6">
       <div className="flex justify-between items-center">
@@ -21,7 +21,7 @@ function DoubleRangerInput() {
           <TomanIcon className="w-4 h-3" />
         </div>
       </div>
-      <ReactSlider className={styles.slider} thumbClassName={styles.thumb} trackClassName={styles.track} defaultValue={[0, 100000]} ariaLabel={["Lower thumb", "Upper thumb"]} ariaValuetext={(state) => `Thumb value ${state.valueNow}`} renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>} pearling minDistance={10} />
+      <ReactSlider className={styles.slider} thumbClassName={styles.thumb} trackClassName={styles.track} defaultValue={[0, 100000]} ariaLabel={["Lower thumb", "Upper thumb"]} pearling minDistance={10} />
     </div>
   );
 }
