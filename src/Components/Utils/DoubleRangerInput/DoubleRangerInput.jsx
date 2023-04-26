@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as TomanIcon } from "../../../assets/images/icons/toman-icon-black.svg";
 import ReactSlider from "react-slider";
+import styles from "./styles.module.css";
 
 function DoubleRangerInput() {
   const [minimum, setMinimum] = useState(0);
