@@ -7,7 +7,7 @@ function ProductsPageCardsSection() {
   return (
     <div className="w-full max-md:mt-6 md:mt-12">
       <Tabs>
-        <TabList className="flex justify-start items-center gap-4">
+        <TabList className="flex justify-start items-center gap-4 mb-4">
           <SettingsIcon />
           <span className="text-NeutralN500 text-sm font-semibold">مرتب سازی:</span>
           <div className="flex-center gap-6">
