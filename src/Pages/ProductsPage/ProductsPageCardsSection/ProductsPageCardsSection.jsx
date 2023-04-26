@@ -5,6 +5,7 @@ import "./styles.css";
 import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
 
 function ProductsPageCardsSection() {
+  const array = Array.from({ length: 15 }, (_, i) => i + 1);
   return (
     <div className="w-full max-md:mt-6 md:mt-12">
       <Tabs>
@@ -17,8 +18,10 @@ function ProductsPageCardsSection() {
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">گران‌ترین</Tab>
           </div>
         </TabList>
-        <TabPanel>
-          <ProductsPageCards discountCard />
+        <TabPanel className="w-full grid max-md:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {array.map((_, index) => {
+            return <ProductsPageCards key={index} />;
+          })}
         </TabPanel>
         <TabPanel>
           <h1>2</h1>
