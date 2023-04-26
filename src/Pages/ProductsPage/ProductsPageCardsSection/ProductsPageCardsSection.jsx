@@ -2,6 +2,7 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { ReactComponent as SettingsIcon } from "../../../assets/images/icons/settings-icon.svg";
 import "./styles.css";
+import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
 
 function ProductsPageCardsSection() {
   return (
@@ -18,9 +19,7 @@ function ProductsPageCardsSection() {
           </div>
         </TabList>
         <TabPanel>
-          <figure>
-            
-          </figure>
+          <ProductsPageCards />
         </TabPanel>
         <TabPanel>
           <h1>2</h1>
