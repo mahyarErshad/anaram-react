@@ -11,7 +11,7 @@ function ProductsPageCardsSection() {
           <SettingsIcon />
           <span className="text-NeutralN500 text-sm">مرتب سازی:</span>
           <div>
-            <TabList className={`${styles.tablist}`}>پرفروش‌ ترین</TabList>
+            <TabList className={`${styles.tabList} text-sm `}>پرفروش‌ ترین</TabList>
           </div>
         </Tabs>
         <TabPanel></TabPanel>
