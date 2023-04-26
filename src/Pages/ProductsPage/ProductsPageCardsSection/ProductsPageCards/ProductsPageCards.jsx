@@ -5,12 +5,13 @@ import ProductCardRatingSection from "../../../../Components/ProductCards/Produc
 import ProductCardTitleSection from "../../../../Components/ProductCards/ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
 import PrimaryButton from "../../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import SmallButton from "../../../../Components/Utils/Buttons/SmallButton/SmallButton";
+import batteryImage from "../../../../assets/images/data/product-card/battery.png";
 import { ReactComponent as CartIcon } from "../../../../assets/images/icons/bag-icon.svg";
 import { ReactComponent as HeartIcon } from "../../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareArrowsIcon } from "../../../../assets/images/icons/compare-arrows.svg";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
-function ProductsPageCards() {
+function ProductsPageCards({ discountCard }) {
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
   const priceSection = (
     <div className={`flex ${discountCard ? "justify-between" : "justify-end"} items-center w-full mb-3`}>
