@@ -1,8 +1,8 @@
 import React from "react";
 import ProductsPageFilters from "../ProductsPageFilters/ProductsPageFilters";
 import { Swiper, SwiperSlide } from "swiper/react";
-import BlogCards from "../../MainPage/MainPageBlog/BlogCards";
 import { FreeMode } from "swiper";
+import BatteryCategoriesCard from "../ProductsPageBatteryCategory/ProductsPageBatteryCategory";
 
 function ProductsPage() {
   const arr = [1, 2, 3, 4, 5, 6];
@@ -13,7 +13,7 @@ function ProductsPage() {
         <Swiper slidesPerView="auto" spaceBetween={34} modules={[FreeMode]} freeMode className="mySwiper">
           {arr.map((_, index) => (
             <SwiperSlide key={index}>
-              <BlogCards />
+              <BatteryCategoriesCard />
             </SwiperSlide>
           ))}
         </Swiper>
