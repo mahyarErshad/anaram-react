@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as TomanIcon } from "../../../assets/images/icons/toman-icon-black.svg";
+import ReactSlider from "react-slider";
 
 function DoubleRangerInput() {
   const [minimum, setMinimum] = useState(0);
@@ -20,6 +21,7 @@ function DoubleRangerInput() {
           <TomanIcon className="w-4 h-3" />
         </div>
       </div>
+      <ReactSlider className="horizontal-slider" thumbClassName="example-thumb" trackClassName="example-track" defaultValue={[0, 100]} ariaLabel={["Lower thumb", "Upper thumb"]} ariaValuetext={(state) => `Thumb value ${state.valueNow}`} renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>} pearling minDistance={10} />
     </div>
   );
 }
