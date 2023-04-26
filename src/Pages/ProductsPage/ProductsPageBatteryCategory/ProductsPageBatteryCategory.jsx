@@ -1,16 +1,21 @@
 import React from "react";
-import stage from "../../../assets/images/data/battery-categories/stage.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
+import BatteryCategoriesData from "../../../lib/BatteryCategories/BatteryCategoriesData";
+import ProductsPageBatteryCategoryCard from "./ProductsPageBatteryCategoryCard";
 
-const ProductsPageBatteryCategory = (props) => {
-  const { image, text, active } = props;
-  const activeStyles = active ? "bg-primary1 border-primary2" : "bg-NeutralN20 border-white";
+function ProductsPageBatteryCategory() {
   return (
-    <figure className={`group flex-center flex-col border cursor-pointer max-lg:mt-6 w-[12rem] py-4 rounded-2xl ${activeStyles}`}>
-      <img className="mb-2 group-hover:-translate-y-1 max-h-[5.75rem] object-contain transition-all duration-300" src={image} alt={text} />
-      <img className="mb-3" src={stage} alt="stage for batteries" />
-      <figcaption className="text-NeutralN300 text-base">{text}</figcaption>
-    </figure>
+    <div className="w-full px-2">
+      <Swiper slidesPerView="auto" spaceBetween={34} modules={[FreeMode]} freeMode className="mySwiper">
+        {BatteryCategoriesData.map((item, index) => (
+          <SwiperSlide style={{backgroundColor: "transparent"}} key={index}>
+            <ProductsPageBatteryCategoryCard image={item.image} text={item.text} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
-};
+}
 
 export default ProductsPageBatteryCategory;
