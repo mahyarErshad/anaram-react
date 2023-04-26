@@ -5,6 +5,9 @@ import ProductCardRatingSection from "../../../../Components/ProductCards/Produc
 import ProductCardTitleSection from "../../../../Components/ProductCards/ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
 import PrimaryButton from "../../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import SmallButton from "../../../../Components/Utils/Buttons/SmallButton/SmallButton";
+import { ReactComponent as CartIcon } from "../../../../assets/images/icons/bag-icon.svg";
+import { ReactComponent as HeartIcon } from "../../../../assets/images/icons/heart-icon.svg";
+import { ReactComponent as CompareArrowsIcon } from "../../../../assets/images/icons/compare-arrows.svg";
 
 function ProductsPageCards() {
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
