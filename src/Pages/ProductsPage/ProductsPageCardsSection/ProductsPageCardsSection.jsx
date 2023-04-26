@@ -23,11 +23,15 @@ function ProductsPageCardsSection() {
             return <ProductsPageCards key={index} />;
           })}
         </TabPanel>
-        <TabPanel>
-          <h1>2</h1>
+        <TabPanel className="w-full grid max-md:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {array.map((_, index) => {
+            return <ProductsPageCards key={index} discountCard />;
+          })}
         </TabPanel>
-        <TabPanel>
-          <h1>3</h1>
+        <TabPanel className="w-full grid max-md:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {array.map((_, index) => {
+            return <ProductsPageCards key={index} outOfStock />;
+          })}
         </TabPanel>
       </Tabs>
     </div>
