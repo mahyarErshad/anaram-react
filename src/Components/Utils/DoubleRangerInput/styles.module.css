@@ -1,0 +1,16 @@
+.track {
+  height: 0.25rem;
+  background-color: #ebebeb;
+}
+.track:nth-child(2) {
+  background-color: #1a4499;
+}
+.thumb {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #1a4499;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  top: -0.1875rem;
+}
