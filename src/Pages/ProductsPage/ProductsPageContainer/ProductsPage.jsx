@@ -1,6 +1,7 @@
 import React from "react";
 import ProductsPageFilters from "../ProductsPageFilters/ProductsPageFilters";
 import ProductsPageBatteryCategory from "../ProductsPageBatteryCategory/ProductsPageBatteryCategory";
+import ProductsPageCardsSection from "../ProductsPageCardsSection/ProductsPageCardsSection";
 
 function ProductsPage() {
   return (
@@ -8,6 +9,7 @@ function ProductsPage() {
       <ProductsPageFilters />
       <div className="h-screen w-full flex-grow pt-6">
         <ProductsPageBatteryCategory />
+        <ProductsPageCardsSection />
       </div>
     </section>
   );
