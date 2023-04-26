@@ -18,7 +18,9 @@ function ProductsPageCardsSection() {
           </div>
         </TabList>
         <TabPanel>
-          <h1>1</h1>
+          <figure>
+            
+          </figure>
         </TabPanel>
         <TabPanel>
           <h1>2</h1>
