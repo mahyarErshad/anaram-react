@@ -2,6 +2,7 @@ import React from "react";
 import ProductsPageFilters from "../ProductsPageFilters/ProductsPageFilters";
 import ProductsPageBatteryCategory from "../ProductsPageBatteryCategory/ProductsPageBatteryCategory";
 import ProductsPageCardsSection from "../ProductsPageCardsSection/ProductsPageCardsSection";
+import styles from "./layout.module.css"
 
 function ProductsPage() {
   return (
