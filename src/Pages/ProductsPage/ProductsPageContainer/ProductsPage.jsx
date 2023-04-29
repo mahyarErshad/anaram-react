@@ -5,7 +5,7 @@ import ProductsPageCardsSection from "../ProductsPageCardsSection/ProductsPageCa
 
 function ProductsPage() {
   return (
-    <section className="w-full max-lg:px-4 mx-auto max-w-[101.5625rem] flex justify-center gap-6 pt-12 pb-24">
+    <section className="w-full max-w-[82.5rem] px-4 pt-12 pb-24 mx-auto">
       <ProductsPageFilters />
       <div className="w-full flex-grow pt-6">
         <ProductsPageBatteryCategory />
