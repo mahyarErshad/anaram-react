@@ -5,6 +5,7 @@ import "./styles.css";
 import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
 import ReactPaginate from "react-paginate";
 import { ReactComponent as PaginateButton } from "../../../assets/images/icons/carousel-button-arrow.svg";
+import styles from "./pagination.module.css"
 
 function ProductsPageCardsSection() {
   const [activePage, setActivePage] = useState(0);
