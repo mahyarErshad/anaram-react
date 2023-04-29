@@ -44,7 +44,7 @@ function ProductsPageCardsSection() {
           })}
         </TabPanel>
       </Tabs>
-      <ReactPaginate nextLabel={<PaginateButton className="pagination_prevNext_button duration-300" />} previousLabel={<PaginateButton className="pagination_prevNext_button mirror duration-300" />} pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center gap-2 max-md:mt-9 md:mt-16 lg:mt-20"} pageClassName={"pagination__bullets duration-300 bg-white flex-center h-8 w-8 rounded-[0.25rem] border border-NeutralN30 text-NeutralN500 cursor-pointer"} activeClassName={"border-primary6 text-primary6 cursor-not-allowed"} previousClassName={"bg-transparent flex-center"} nextClassName={"bg-transparent flex-center"} disabledClassName={"opacity-50"} />
+      <ReactPaginate nextLabel={<PaginateButton className="pagination_prevNext_button duration-300" />} previousLabel={<PaginateButton className="pagination_prevNext_button mirror duration-300" />} pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center gap-2 max-md:mt-9 md:mt-16 lg:mt-20"} pageClassName={"pagination__bullets duration-300 bg-white flex-center h-8 w-8 rounded-[0.25rem] border border-NeutralN30 text-NeutralN500 cursor-pointer"} activeClassName={"border-primary6 text-primary6 cursor-not-allowed"} previousClassName={"bg-transparent flex-center duration-300"} nextClassName={"bg-transparent flex-center duration-300"} disabledClassName={"opacity-50"} />
     </div>
   );
 }
