@@ -35,13 +35,13 @@ function ProductsPageCardsSection() {
         </TabPanel>
         <TabPanel className="w-full flex justify-start items-center flex-wrap gap-4 max-w-[82.75rem]">
           {array.slice(activePage * cardsPerPage, (activePage + 1) * cardsPerPage).map((_, index) => {
-            return <ProductsPageCards key={index} />;
+            return <ProductsPageCards discountCard key={index} />;
           })}
           <ReactPaginate pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center mt-4"} pageClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} activeClassName={"bg-blue-500 text-white"} previousClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} nextClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} disabledClassName={"opacity-50 cursor-not-allowed"} />
         </TabPanel>
         <TabPanel className="w-full flex justify-start items-center flex-wrap gap-4 max-w-[82.75rem]">
           {array.slice(activePage * cardsPerPage, (activePage + 1) * cardsPerPage).map((_, index) => {
-            return <ProductsPageCards key={index} />;
+            return <ProductsPageCards outOfStock key={index} />;
           })}
           <ReactPaginate pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center mt-4"} pageClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} activeClassName={"bg-blue-500 text-white"} previousClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} nextClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} disabledClassName={"opacity-50 cursor-not-allowed"} />
         </TabPanel>
