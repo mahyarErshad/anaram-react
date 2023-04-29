@@ -1,4 +1,4 @@
-.test-grid {
+.container {
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 24px;
