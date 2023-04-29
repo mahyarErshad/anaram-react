@@ -4,6 +4,7 @@ import { ReactComponent as SettingsIcon } from "../../../assets/images/icons/set
 import "./styles.css";
 import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
 import ReactPaginate from "react-paginate";
+import {ReactComponent as PaginateButton} from "../../../assets/images/icons/carousel-button-arrow.svg"
 
 function ProductsPageCardsSection() {
   const [activePage, setActivePage] = useState(0);
@@ -14,7 +15,6 @@ function ProductsPageCardsSection() {
   const handlePageChange = ({ selected }) => {
     setActivePage(selected);
   };
-  
 
   return (
     <div className="w-full max-md:mt-6 md:mt-12">
