@@ -4,7 +4,7 @@ import { ReactComponent as SettingsIcon } from "../../../assets/images/icons/set
 import "./styles.css";
 import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
 import ReactPaginate from "react-paginate";
-import {ReactComponent as PaginateButton} from "../../../assets/images/icons/carousel-button-arrow.svg"
+import { ReactComponent as PaginateButton } from "../../../assets/images/icons/carousel-button-arrow.svg";
 
 function ProductsPageCardsSection() {
   const [activePage, setActivePage] = useState(0);
@@ -44,7 +44,7 @@ function ProductsPageCardsSection() {
           })}
         </TabPanel>
       </Tabs>
-      <ReactPaginate pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center mt-4"} pageClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} activeClassName={"bg-blue-500 text-white"} previousClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} nextClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} disabledClassName={"opacity-50 cursor-not-allowed"} />
+      <ReactPaginate nextLabel={<PaginateButton />} previousLabel={<PaginateButton />} pageCount={pageCount} onPageChange={handlePageChange} containerClassName={"flex justify-center mt-4"} pageClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} activeClassName={"bg-blue-500 text-white"} previousClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} nextClassName={"inline-block mx-2 px-3 py-2 bg-gray-300 text-gray-600 rounded-lg"} disabledClassName={"opacity-50 cursor-not-allowed"} />
     </div>
   );
 }
