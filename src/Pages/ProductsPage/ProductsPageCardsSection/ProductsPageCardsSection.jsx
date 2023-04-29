@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { ReactComponent as SettingsIcon } from "../../../assets/images/icons/settings-icon.svg";
 import "./styles.css";
 import ProductsPageCards from "./ProductsPageCards/ProductsPageCards";
+import Pagination from "../../../Components/Pagination/Pagination";
 
 function ProductsPageCardsSection() {
   const array = Array.from({ length: 12 }, (_, i) => i + 1);
@@ -34,6 +35,7 @@ function ProductsPageCardsSection() {
           })}
         </TabPanel>
       </Tabs>
+      <Pagination />
     </div>
   );
 }
