@@ -20,7 +20,7 @@ function ProductsPageCardsSection() {
     <div className="w-full max-md:mt-6 md:mt-12">
       <Tabs>
         <TabList className="flex justify-start items-center gap-4 mb-4">
-          <SettingsIcon />
+          <SettingsIcon className="max-lg:hidden" />
           <span className="text-NeutralN500 text-sm font-semibold">مرتب سازی:</span>
           <div className="flex-center gap-6">
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">پرفروش‌ترین</Tab>
@@ -28,17 +28,17 @@ function ProductsPageCardsSection() {
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">گران‌ترین</Tab>
           </div>
         </TabList>
-        <TabPanel className="w-full flex justify-start items-center flex-wrap gap-4 max-w-[82.75rem]">
+        <TabPanel className="w-full flex-center flex-wrap gap-4 max-w-[82.75rem]">
           {array.slice(activePage * cardsPerPage, (activePage + 1) * cardsPerPage).map((_, index) => {
             return <ProductsPageCards key={index} />;
           })}
         </TabPanel>
-        <TabPanel className="w-full flex justify-start items-center flex-wrap gap-4 max-w-[82.75rem]">
+        <TabPanel className="w-full flex-center flex-wrap gap-4 max-w-[82.75rem]">
           {array.slice(activePage * cardsPerPage, (activePage + 1) * cardsPerPage).map((_, index) => {
             return <ProductsPageCards discountCard key={index} />;
           })}
         </TabPanel>
-        <TabPanel className="w-full flex justify-start items-center flex-wrap gap-4 max-w-[82.75rem]">
+        <TabPanel className="w-full flex-center flex-wrap gap-4 max-w-[82.75rem]">
           {array.slice(activePage * cardsPerPage, (activePage + 1) * cardsPerPage).map((_, index) => {
             return <ProductsPageCards outOfStock key={index} />;
           })}
