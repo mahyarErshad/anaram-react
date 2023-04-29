@@ -21,8 +21,8 @@ function ProductsPageCardsSection() {
       <Tabs>
         <TabList className="flex justify-start items-center gap-4 mb-4">
           <SettingsIcon className="max-lg:hidden" />
-          <span className="text-NeutralN500 text-sm font-semibold">مرتب سازی:</span>
           <div className="flex-center gap-6">
+            <span className="text-NeutralN500 text-sm font-semibold -ml-2">مرتب سازی:</span>
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">پرفروش‌ترین</Tab>
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">ارزان‌ترین</Tab>
             <Tab className="ProductsPageCardsSection__tabs duration-300 font-semibold text-sm text-NeutralN400 cursor-pointer">گران‌ترین</Tab>
