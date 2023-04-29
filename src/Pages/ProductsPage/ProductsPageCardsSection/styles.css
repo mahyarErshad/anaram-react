@@ -4,3 +4,8 @@
 .pagination_prevNext_button {
   stroke: #4366ab;
 }
+.pagination__bullets a {
+  width: 100%;
+  text-align: center;
+  cursor: inherit;
+}
