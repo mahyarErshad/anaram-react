@@ -111,3 +111,8 @@ nav ul li:last-child {
 .swiper-slide {
   border-radius: 1rem;
 }
+.test-grid {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 24px;
+}

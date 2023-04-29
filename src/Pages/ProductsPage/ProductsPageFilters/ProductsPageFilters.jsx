@@ -6,7 +6,7 @@ import DoubleRangerInput from "../../../Components/Utils/DoubleRangerInput/Doubl
 
 function ProductsPageFilters() {
   return (
-      <div className="rounded-2xl border border-NeutralN30 h-fit py-6 px-4 min-w-[18rem] bg-white flex items-center flex-col gap-6">
+      <div className="rounded-2xl border border-NeutralN30 h-fit py-6 px-4 w-[18rem] bg-white flex items-center flex-col gap-6 max-lg:hidden">
         <span className="text-sm text-NeutralN500">فیلترها</span>
         <Accordion className="w-full border-b border-NeutralN30">
           <div>
