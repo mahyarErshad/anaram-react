@@ -27,3 +27,9 @@
 .carousel-button:disabled {
   stroke: #9dafd3;
 }
+
+@media (max-width: 640px) {
+  .carousel-slides {
+    width: 40%;
+  }
+}

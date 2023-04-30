@@ -34,7 +34,7 @@ function Carousel(props) {
       </div>
       <Swiper navigation={{ nextEl: `.${nextButton}`, prevEl: `.${prevButton}` }} slidesPerView="auto" spaceBetween={16} modules={[Navigation, FreeMode]} freeMode={true} className="mySwiper">
         {arr.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide className="carousel-slides" key={index}>
             <ProductCard discountCard={props.discountCard} />
           </SwiperSlide>
         ))}
