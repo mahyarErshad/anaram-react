@@ -58,7 +58,7 @@ function NestedCarousel() {
         >
           {arr.map((item, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide className="carousel-slides" key={index}>
                 <ProductCard />
               </SwiperSlide>
             );
@@ -80,7 +80,7 @@ function NestedCarousel() {
         >
           {arr.map((item, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide className="carousel-slides" key={index}>
                 <ProductCard discountCard />
               </SwiperSlide>
             );
