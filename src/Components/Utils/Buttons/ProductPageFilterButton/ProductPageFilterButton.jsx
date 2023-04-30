@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import ProductPageModal from "../../../ProductPageModal/ProductPageModal";
-import ModalFilters from "../../../ProductPageModal/ModalFilters";
-import { ReactComponent as SettingsIcon } from "../../../../assets/images/icons/settings-icon.svg";
 
-function ProductPageFilterButton({ className, icon, text }) {
+function ProductPageFilterButton({ className, icon, text, modalIcon, modalTitle, modalElement }) {
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const handleOpen = () => {
     setMobileFilterOpen(true);
@@ -14,7 +12,7 @@ function ProductPageFilterButton({ className, icon, text }) {
         {icon}
         <span className="text-xs font-semibold text-NeutralN500 sm:ml-24 whitespace-nowrap">{text}</span>
       </button>
-      <ProductPageModal icon={<SettingsIcon className="rotate-90 w-10 h-10 md " />} title="فیلتر ها" element={<ModalFilters />} open={mobileFilterOpen} setOpen={setMobileFilterOpen} />
+      <ProductPageModal icon={modalIcon} title={modalTitle} element={modalElement} open={mobileFilterOpen} setOpen={setMobileFilterOpen} />
     </>
   );
 }
