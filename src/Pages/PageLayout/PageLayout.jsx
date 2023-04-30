@@ -4,26 +4,23 @@ import FooterContainer from "../../Components/Footer/FooterContainer/FooterConta
 import { Outlet } from "react-router-dom";
 
 function PageLayout() {
-  const [sticky, setSticky] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 600) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    }; // eslint-disable-next-line
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleScroll = () => {
-    if (window.pageYOffset > 600) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  console.log(sticky);
   return (
     <>
-      <HeaderWrapper />
+      <HeaderWrapper isFixed={isFixed} />
       <main>
         <Outlet />
       </main>
