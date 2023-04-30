@@ -30,6 +30,6 @@
 
 @media (max-width: 640px) {
   .carousel-slides {
-    width: 40%;
+    max-width: 14.375rem;
   }
 }
