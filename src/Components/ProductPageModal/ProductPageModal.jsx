@@ -8,7 +8,7 @@ function ProductPageModal({ icon, title, element }) {
         <div className="flex justify-between items-center mb-10">
           <div className="flex-center gap-3">
             {icon}
-            <span className="text-xs font-semibold text-NeutralN500">{title}</span>
+            <span className="max-md:text-xs md:text-base font-semibold text-NeutralN500">{title}</span>
           </div>
           <button className="p-2">
             <CloseIcon className="md:w-10 md:h-10" />
