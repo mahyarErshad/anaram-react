@@ -18,7 +18,7 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
   return (
     <section onClick={handleOutsideClick} className={`fixed top-0 right-0 w-screen h-full min-h-screen bg-black ${sideBarOpen ? "bg-opacity-[0.25]" : "bg-opacity-0 pointer-events-none"} lg:hidden duration-300 z-50`}>
       <aside onClick={handleInsideClick} className={`absolute h-full overflow-y-auto top-0 ${sideBarOpen ? "right-0" : "-right-[100%]"} bg-white py-16 px-8 flex justify-center h-screen min-w-2/4 duration-300`}>
-        <Accordion className="flex flex-col items-center gap-2 h-full">
+        <Accordion className="flex-col items-center gap-2 h-full">
           <AccordionItem>
             <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
               <HomeIcon className="ml-[0.625rem] stroke-inherit" />
@@ -33,7 +33,7 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
                 {item.hasSubMenu && <ArrowIcon className="stroke-inherit mr-[0.375rem]" />}
               </AccordionHeader>
               {item.hasSubMenu && (
-                <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex flex-col items-center gap-2">
+                <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex-col items-center gap-2">
                   <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
                   {item.subMenu.map((subMenuItem, subMenuIndex) => (
                     <span key={subMenuIndex} className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>

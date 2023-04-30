@@ -85,6 +85,9 @@ body,
 .container {
   @apply px-4 w-full max-w-[82.5rem] mx-auto flex-center flex-col;
 }
+.flex-col {
+  @apply flex;
+}
 .rounded-5px {
   border-radius: 5px;
 }

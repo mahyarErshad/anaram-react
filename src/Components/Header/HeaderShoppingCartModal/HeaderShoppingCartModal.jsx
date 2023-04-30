@@ -33,7 +33,7 @@ function HeaderShoppingCartModal() {
   const totalPrice = products.reduce((acc, product) => acc + (product.discountedPrice || product.price) * product.amount, 0);
 
   return (
-    <div className="max-lg:hidden max-h-[90vh] scale-y-0 origin-top opacity-0 duration-300 flex flex-col absolute left-0 top-12 bg-white border border-NeutralN10 rounded-2xl z-10">
+    <div className="max-lg:hidden max-h-[90vh] scale-y-0 origin-top opacity-0 duration-300 flex-col absolute left-0 top-12 bg-white border border-NeutralN10 rounded-2xl z-10">
       <div className="p-4 flex justify-between items-center w-full">
         <span className="text-xs text-NeutralN60">{`${products.length} محصول`}</span>
         <div className="flex-center gap-3 text-primary6">
@@ -41,14 +41,14 @@ function HeaderShoppingCartModal() {
           <ArrowIcon />
         </div>
       </div>
-      <div className="flex flex-col overflow-y-auto">
+      <div className="flex-col overflow-y-auto">
         {products.map((product, index) => (
           <SideBySideProductCard key={index} {...product} />
         ))}
       </div>
       <div className="py-5 pr-6 pl-4 flex justify-between flex-wrap">
         <PrimaryButton className="py-4 px-[3.125rem]" text="ثبت سفارش" />
-        <div className={`${styles["price-section"]} flex flex-col gap-4`}>
+        <div className={`${styles["price-section"]} flex-col gap-4`}>
           <span className="text-xs font-semibold text-NeutralN100">مبلغ قابل پرداخت</span>
           <ProductCardPriceSection price={totalPrice} />
         </div>

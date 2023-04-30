@@ -2,7 +2,11 @@ import React from 'react'
 
 function ModalOrders() {
   return (
-    <section>ModalOrders</section>
+    <section className='w-full'>
+        <ul className='w-full flex-col'>
+
+        </ul>
+    </section>
   )
 }
 

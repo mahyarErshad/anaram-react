@@ -23,7 +23,7 @@ function DoubleRangerInput() {
   };
 
   return (
-    <div className="flex flex-col w-full gap-6 mb-6">
+    <div className="flex-col w-full gap-6 mb-6">
       <div className="flex justify-between gap-2 items-center">
         <span className="text-xs font-semibold text-NeutralN500">از</span>
         <div className="text-xs font-semibold text-NeutralN500 flex-center flex-grow gap-2">

@@ -8,7 +8,7 @@ function ProductPageModal({ icon, title, element, open, setOpen }) {
   }
   return (
     <section className={`fixed ${openState} w-screen h-screen right-0 left-0 p-7 bg-white lg:hidden z-50 duration-300`}>
-      <div className="w-full h-full p-4 border border-NeutralN20 rounded-5px flex flex-col">
+      <div className="w-full h-full p-4 border border-NeutralN20 rounded-5px flex-col">
         <div className="flex justify-between items-center mb-10">
           <div className="flex-center gap-3">
             {icon}

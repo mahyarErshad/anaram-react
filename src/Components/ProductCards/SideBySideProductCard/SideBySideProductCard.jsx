@@ -10,7 +10,7 @@ const SideBySideProductCard = ({ image, title, discountedPrice, price, amount, d
   return (
     <figure className={`${styles.card} flex gap-2 py-5 pr-3 pl-6 border-y border-NeutralN20 w-[21.875rem]`}>
       <img className="w-[5.1875rem] h-[7.6875rem]" src={image} alt={title} />
-      <div className="flex flex-col gap-[0.65rem]">
+      <div className="flex-col gap-[0.65rem]">
         <figcaption className="text-xs leading-5 font-semibold">{title}</figcaption>
         <div className="flex justify-end gap-8">
           {discountCard && <ProductCardPriceSection price={discountedPrice} discountText />}
