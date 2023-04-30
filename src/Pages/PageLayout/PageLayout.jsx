@@ -6,9 +6,6 @@ import { Outlet } from "react-router-dom";
 function PageLayout() {
   return (
     <>
-      <div>
-        <HeaderWrapper />
-      </div>
       <HeaderWrapper />
       <main>
         <Outlet />
