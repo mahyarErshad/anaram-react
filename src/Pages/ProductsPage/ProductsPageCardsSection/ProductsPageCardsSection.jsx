@@ -7,6 +7,7 @@ import ReactPaginate from "react-paginate";
 import { ReactComponent as PaginateButton } from "../../../assets/images/icons/carousel-button-arrow.svg";
 import { ReactComponent as FiltersIcon } from "../../../assets/images/icons/filters-button-icon.svg";
 import ProductPageFilterButton from "../../../Components/Utils/Buttons/ProductPageFilterButton/ProductPageFilterButton";
+import ProductPageModal from "../../../Components/ProductPageModal/ProductPageModal";
 
 function ProductsPageCardsSection() {
   const [activePage, setActivePage] = useState(0);
@@ -24,6 +25,7 @@ function ProductsPageCardsSection() {
         <TabList className="flex max-sm:px-0 max-lg:px-8 max-lg:justify-between lg:justify-start md:gap-12 lg:gap-4 items-center mb-4">
           <SettingsIcon className="max-lg:hidden" />
           <ProductPageFilterButton icon={<SettingsIcon className="rotate-90 w-10 h-10 md " />} text="فیلتر ها" />
+          <ProductPageModal />
           <ProductPageFilterButton icon={<FiltersIcon />} text="مرتب سازی" className="sm:hidden mr-3" />
           <div className="flex-center gap-6 max-sm:hidden">
             <span className="text-NeutralN500 text-sm font-semibold -ml-2">مرتب سازی:</span>
