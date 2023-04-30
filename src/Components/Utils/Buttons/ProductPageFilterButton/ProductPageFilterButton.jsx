@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProductPageModal from "../../../ProductPageModal/ProductPageModal";
 
-function ProductPageFilterButton({ className, icon, text, modalIcon, modalTitle, modalElement }) {
+function ProductPageFilterButton({ className, icon, text, modalElement }) {
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const handleOpen = () => {
     setMobileFilterOpen(true);
@@ -12,7 +12,7 @@ function ProductPageFilterButton({ className, icon, text, modalIcon, modalTitle,
         {icon}
         <span className="text-xs font-semibold text-NeutralN500 sm:ml-24 whitespace-nowrap">{text}</span>
       </button>
-      <ProductPageModal icon={modalIcon} title={modalTitle} element={modalElement} open={mobileFilterOpen} setOpen={setMobileFilterOpen} />
+      <ProductPageModal icon={icon} title={text} element={modalElement} open={mobileFilterOpen} setOpen={setMobileFilterOpen} />
     </>
   );
 }
