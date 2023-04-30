@@ -3,9 +3,9 @@ import { ReactComponent as CloseIcon } from "../../assets/images/icons/close-ico
 
 function ProductPageModal({ icon, title, element, open, setOpen }) {
   const openState = open ? "top-0" : "top-[100%]";
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () =>{
+    setOpen(false)
+  }
   return (
     <section className={`fixed ${openState} w-screen h-screen right-0 left-0 p-7 bg-white lg:hidden z-50 duration-300`}>
       <div className="w-full h-full p-4 border border-NeutralN20 rounded-5px flex flex-col">
