@@ -3,6 +3,7 @@ import flashLight from "../../../assets/images/data/other-products/light.png";
 import charger from "../../../assets/images/data/other-products/charger.png";
 import powerBank from "../../../assets/images/data/other-products/power-bank.png";
 import otherProductsImage from "../../../assets/images/data/other-products/other-products.png";
+import { Link } from "react-router-dom";
 
 const data = [flashLight, charger, powerBank, otherProductsImage];
 
@@ -14,7 +15,9 @@ function OtherProducts() {
       </h2>
       <div className="grid grid-cols-2 gap-y-4 justify-items-center max-w-[82.5rem] mx-auto lg:grid-cols-4 max-lg:max-w-[42.5rem] max-lg:grid-cols-2">
         {data.map((image, index) => (
-          <img key={index} src={image} alt="products category" />
+          <Link key={index} to="/products">
+            <img src={image} alt="products category" />
+          </Link>
         ))}
       </div>
     </section>
