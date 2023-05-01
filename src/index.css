@@ -85,8 +85,8 @@ body,
 .container {
   @apply px-4 w-full max-w-[82.5rem] mx-auto flex-center flex-col;
 }
-.large-container{
-  @apply w-full max-w-[102rem] mx-auto rounded-2xl bg-white
+.large-container {
+  @apply w-full max-w-[102rem] mx-auto rounded-2xl bg-white;
 }
 .flex-col {
   @apply flex;
