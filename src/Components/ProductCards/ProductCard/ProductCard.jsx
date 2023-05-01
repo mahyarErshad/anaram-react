@@ -12,6 +12,7 @@ import ProductCardDiscountSection from "../ProductCardComponents/ProductCardDisc
 import ProductCardTitleSection from "../ProductCardComponents/ProductCardTitleSection/ProductCardTitleSection";
 import ProductCardTimeCounter from "../ProductCardComponents/ProductCardTimeCounter/ProductCardTimeCounter";
 import { Link } from "react-router-dom";
+import goToTop from "../../../lib/function/goToTop"
 
 const ProductCard = ({ discountCard }) => {
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
@@ -23,7 +24,7 @@ const ProductCard = ({ discountCard }) => {
   );
 
   return (
-    <Link to="/product/id-1234">
+    <Link onClick={goToTop} to="/product/id-1234">
       <figure className={`${styles.card} ${discountCard && styles.after} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex-col cursor-pointer transition-all duration-300`}>
         <div className="flex-center h-2/4 mb-4 relative">
           <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
