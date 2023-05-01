@@ -2,8 +2,8 @@ import React from 'react'
 
 function SingleProductDetailSection() {
   return (
-    <section>
-        
+    <section className='large-container px-6 pt-6 pb-8 grid'>
+
     </section>
   )
 }
