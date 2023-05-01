@@ -2,7 +2,9 @@ import React from 'react'
 
 function SingleProductDetailSection() {
   return (
-    <div>SingleProductDetailSection</div>
+    <section>
+        
+    </section>
   )
 }
 
