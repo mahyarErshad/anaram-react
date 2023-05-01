@@ -7,12 +7,16 @@ import FooterAddress from "../FooterComponents/FooterAddress/FooterAddress";
 import FooterNavLinks from "../FooterComponents/FooterNavLinks/FooterNavLinks";
 import { anaramNavLinksData, customerServicesData, helpShopingData } from "../../../lib/footerNavLinksData/footerNavLinksData";
 import eNamadImage from "../../../assets/images/icons/e-namad.jpg";
+import { Link } from "react-router-dom";
+import goToTop from "../../../lib/function/goToTop"
 
 function FooterContainer() {
   return (
     <footer className="bg-NeutralN20 max-md:pt-4 md:pt-10 pb-4 px-4">
       <section className={`max-w-[101.875rem] mx-auto w-full ${styles.footer}`}>
-        <Logo className={`max-md:w-16 ${styles.logo}`} />
+        <Link onClick={goToTop} to="/">
+          <Logo className={`max-md:w-16 ${styles.logo}`} />
+        </Link>
         <p className={`text-sm text-NeutralN90 max-w-[29.0625rem] ${styles.description}`}>فروشگاه آنارام نماینده فروش محصولات برند وارتا (Varta) آلمان (دارای ۱۳۰ سال سابقه در تولید انواع باتری) است که فعالیت خود را در سال 1400 آغاز نمود. آنارام دارای نمایندگی باتری وارتا و دیگر محصولات این شرکت است و در این فروشگاه انواع باتری قلمی و نیم قلمی ، باتری شارژی ، باتری سکه ای ، باتری مخصوص مانند باتری دوربین و تلفن و دیگر محصولات برند وارتا از جمله شارژر باتری و چراغ قوه عرضه می گردد.</p>
         <address className={`flex-col gap-3 ${styles.address}`}>
           <FooterAddress icon={<LocationIcon />} text="خیابان شریعتی، خیابان سهروردی شمالی، کوچه پنجم، پلاک ۱۲، واحد ۳" />
