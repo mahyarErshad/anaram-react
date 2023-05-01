@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import goToTop from "../../lib/function/goToTop";
 
 function BatteryChargingComponent() {
   const [battery, setBattery] = useState({
@@ -28,7 +29,7 @@ function BatteryChargingComponent() {
   }, [battery]);
 
   return (
-    <button onClick={} className="fixed bottom-10 left-16 max-md:hidden">
+    <button onClick={goToTop} className="fixed bottom-10 left-16 max-md:hidden">
       <svg width="38" height="88" viewBox="0 0 38 88" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className={`duration-500 ${battery.bars >= 1 ? "opacity-100" : "opacity-0"}`} fill={battery.fill} d="M30.8096 66.5556H7.11133C6.14909 66.5556 5.36914 65.7757 5.36914 64.8134V58.7773C5.36914 57.8151 6.14909 57.0352 7.11133 57.0352H30.8096C31.7718 57.0352 32.5518 57.8151 32.5518 58.7773V64.8134C32.5518 65.7757 31.7718 66.5556 30.8096 66.5556Z" />
         <path className={`duration-500 ${battery.bars >= 2 ? "opacity-100" : "opacity-0"}`} fill={battery.fill} d="M30.8096 52.4941H7.11133C6.14909 52.4941 5.36914 51.7141 5.36914 50.7519V44.7158C5.36914 43.7536 6.14909 42.9736 7.11133 42.9736H30.8096C31.7718 42.9736 32.5518 43.7536 32.5518 44.7158V50.7519C32.5518 51.7139 31.7718 52.4941 30.8096 52.4941Z" />
