@@ -22,8 +22,17 @@ function BatteryChargingComponent() {
       } else if (scrollPercentage >= 80 && battery.percentage < 100) {
         setBattery({ ...battery, percentage: 100, fill: "#8DD442", bars: 4 });
         document.removeEventListener("scroll", calculateScroll);
+      } else if (scrollPercentage < 80 && battery.percentage === 100) {
+        setBattery({ ...battery, percentage: 75, fill: "#F7E11E", bars: 3 });
+      } else if (scrollPercentage < 60 && battery.percentage === 75) {
+        setBattery({ ...battery, percentage: 50, fill: "#FB9117", bars: 2 });
+      } else if (scrollPercentage < 40 && battery.percentage === 50) {
+        setBattery({ ...battery, percentage: 25, fill: "#F14B4B", bars: 1 });
+      } else if (scrollPercentage < 20 && battery.percentage === 25) {
+        setBattery({ fill: "transparent", bars: 0, percentage: 0 });
       }
     };
+
     document.addEventListener("scroll", calculateScroll);
     return () => document.removeEventListener("scroll", calculateScroll);
   }, [battery]);
