@@ -1,8 +1,4 @@
 import React from "react";
-import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
-import { ReactComponent as ArrowIcon } from "../../../assets/images/icons/arrow-icon-toBottom.svg";
-import CheckBox from "../../../Components/Utils/CheckBox/CheckBox";
-import DoubleRangerInput from "../../../Components/Utils/DoubleRangerInput/DoubleRangerInput";
 import ModalFilter from "../../../Components/ProductPageModal/ModalFilters";
 
 function ProductsPageFilters() {
