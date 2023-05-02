@@ -9,8 +9,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<PageLayout />}>
       <Route index element={<MainPageWrapper />} />
-      <Route path="products" element={<ProductsPage />} />
-      <Route path="product/:id" element={<SingleProductContainer />} />
+      <Route path="products">
+        <Route index element={<ProductsPage />} />
+        <Route path="product/:id" element={<SingleProductContainer />} />
+      </Route>
     </Route>
   )
 );
