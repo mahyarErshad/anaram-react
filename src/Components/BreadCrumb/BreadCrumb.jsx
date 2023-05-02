@@ -1,19 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function BreadCrumbs({ data }) {
-  let currentLink = "";
-  const crumbs = data
-    .split("/")
-    .filter((crumb) => crumb !== "")
-    .map((crumb) => {
-      currentLink += `/${crumb}`;
-      return (
-        <div className="crumb" key={crumb}>
-          <Link to={currentLink}>{crumb}</Link>
-        </div>
-      );
-    });
+function BreadCrumbs() {
+  const data = [
+    {
+      title: "صفحه اصلی",
+      to: "/",
+    },
+    {
+      title: "باتری قلمی",
+      to: "/products",
+    },
+    {
+      title: "باتری نیم قلمی آلکالاین وارتا",
+      to: "/products/product/id-1234",
+    },
+  ];
+  const crumbs = data.map((crumb) => {
+    return (
+      <div className="crumb" key={crumb.title}>
+        <Link to={crumb.to}>{crumb.title}</Link>
+      </div>
+    );
+  });
 
   return <div className="bread-crumbs">{crumbs}</div>;
 }
