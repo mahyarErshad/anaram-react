@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function BreadCrumbs() {
   const data = [
     {
-      title: "صفحه اصلی",
+      title: "آنارام",
       to: "/",
     },
     {
@@ -18,13 +18,14 @@ function BreadCrumbs() {
   ];
   const crumbs = data.map((crumb) => {
     return (
-      <div className="crumb" key={crumb.title}>
-        <Link to={crumb.to}>{crumb.title}</Link>
+      <div className="text-xs text-NeutralN100 last-of-type:text-primary6 font-semibold hover:text-primary8 duration-300" key={crumb.title}>
+        <Link to={crumb.to}>{crumb.title} /</Link>
       </div>
     );
   });
+  console.log(data.length);
 
-  return <div className="bread-crumbs">{crumbs}</div>;
+  return <div className="flex justify-start items-center gap-2">{crumbs}</div>;
 }
 
 export default BreadCrumbs;
