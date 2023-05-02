@@ -44,10 +44,8 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
                 <AccordionBody className="bg-primary1 w-full rounded-b-2xl -mt-2 px-5 flex-col items-center gap-2">
                   <span className="w-full h-[1px] bg-NeutralN20 mb-2"></span>
                   {item.subMenu.map((subMenuItem, subMenuIndex) => (
-                    <Link className="w-full" onClick={handleMenuClick} to="/products">
-                      <span key={subMenuIndex} className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>
-                        {subMenuItem}
-                      </span>
+                    <Link key={subMenuIndex} className="w-full" onClick={handleMenuClick} to="/products">
+                      <span className={`${styles.navCards} bg-NeutralN10 rounded-2xl cursor-pointer w-full py-3 flex-center text-xs text-[#616161]`}>{subMenuItem}</span>
                     </Link>
                   ))}
                 </AccordionBody>
