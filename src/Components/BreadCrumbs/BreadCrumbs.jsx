@@ -16,7 +16,7 @@ function BreadCrumbs() {
       );
     });
 
-  return <div className="bread-crumbs">{crumbs}</div>;
+  return <div className="flex items-center gap-2">{crumbs}</div>;
 }
 
 export default BreadCrumbs;
