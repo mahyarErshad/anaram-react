@@ -3,7 +3,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import PageLayout from "./Pages/PageLayout/PageLayout";
 import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
 import ProductsPage from "./Pages/ProductsPage/ProductsPageContainer/ProductsPage";
-import SingleProductContainer from "./Pages/SingleProduct/SingleProductContainer/SingleProductContainer";
+import SingleProductPage from "./Pages/SingleProduct/SingleProductPage/SingleProductPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,7 +11,7 @@ const router = createBrowserRouter(
       <Route index element={<MainPageWrapper />} />
       <Route path="products">
         <Route index element={<ProductsPage />} />
-        <Route path="product/:id" element={<SingleProductContainer />} />
+        <Route path="product/:id" element={<SingleProductPage />} />
       </Route>
     </Route>
   )
