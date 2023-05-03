@@ -21,7 +21,15 @@
   height: 100%;
   opacity: 0.4;
 }
+.swiper-single-product .swiper-wrapper .swiper-slide {
+  background-color: var(--NeutralN20) !important;
+  margin-left: 1.5rem;
+  border: 0.0625rem solid var(--NeutralN10);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+}
 
 .swiper-single-product .swiper-slide-thumb-active {
   opacity: 1;
+  background-color: var(--NeutralN40);
 }
