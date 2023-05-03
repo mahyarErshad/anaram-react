@@ -2,6 +2,7 @@ import React from "react";
 import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButton";
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareIcon } from "../../../assets/images/icons/compare-arrows.svg";
+import { ReactComponent as CompareIcon } from "../../../assets/images/icons/presentation-chart.svg";
 
 function SingleProductImageSection() {
   return (
