@@ -21,8 +21,8 @@ function SingleProductImageSection() {
   const arr = [1, 2, 3, 4, 5];
   const slides = arr.map((_, index) => {
     return (
-      <SwiperSlide>
-        <img key={index} src={batteryImage} alt="battery" />
+      <SwiperSlide key={index}>
+        <img src={batteryImage} alt="battery" />
       </SwiperSlide>
     );
   });
