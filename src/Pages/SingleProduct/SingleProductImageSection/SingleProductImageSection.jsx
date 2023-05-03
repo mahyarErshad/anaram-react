@@ -9,6 +9,7 @@ function SingleProductImageSection() {
       <div className="flex-center flex-col gap-4">
         <SmallButton className="p-3 bg-NeutralN10" icon={<HeartIcon />} />
         <SmallButton className="p-3 bg-NeutralN10" icon={<CompareIcon />} />
+        <SmallButton className="p-3 bg-NeutralN10" icon={<CompareIcon />} />
       </div>
     </section>
   );
