@@ -14,6 +14,7 @@ import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButt
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareIcon } from "../../../assets/images/icons/compare-arrows.svg";
 import { ReactComponent as PresentationChart } from "../../../assets/images/icons/presentation-chart.svg";
+import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png"
 
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
