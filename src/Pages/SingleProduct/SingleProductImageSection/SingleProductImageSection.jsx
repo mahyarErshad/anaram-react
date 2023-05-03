@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "./styles.css";
-import { FreeMode, Thumbs } from "swiper";
+import { Keyboard, FreeMode, Thumbs } from "swiper";
 import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButton";
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareIcon } from "../../../assets/images/icons/compare-arrows.svg";
@@ -27,7 +27,7 @@ function SingleProductImageSection() {
         <SmallButton className="p-3 bg-NeutralN10 group" icon={<PresentationChart className="group-hover:scale-110 duration-300" />} />
       </div>
       <div className="w-full">
-        <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[FreeMode, Thumbs]} className="swiper-single-product-large-image">
+        <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {slides}
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
