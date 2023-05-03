@@ -14,10 +14,18 @@ import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButt
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
 import { ReactComponent as CompareIcon } from "../../../assets/images/icons/compare-arrows.svg";
 import { ReactComponent as PresentationChart } from "../../../assets/images/icons/presentation-chart.svg";
-import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png"
+import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png";
 
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const arr = [1, 2, 3, 4, 5];
+  const slides = arr.map((_, index) => {
+    return (
+      <SwiperSlide>
+        <img key={index} src={batteryImage} alt="battery" />
+      </SwiperSlide>
+    );
+  });
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
@@ -35,14 +43,10 @@ function SingleProductImageSection() {
           modules={[FreeMode, Thumbs]}
           className="swiper-single-product2"
         >
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
+          {slides}
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesProgress={true} modules={[FreeMode, Thumbs]} className="swiper-single-product">
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
+          {slides}
         </Swiper>
       </div>
     </section>
