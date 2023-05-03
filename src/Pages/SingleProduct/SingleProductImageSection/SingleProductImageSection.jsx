@@ -45,7 +45,7 @@ function SingleProductImageSection() {
         >
           {slides}
         </Swiper>
-        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} watchSlidesProgress={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
+        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
           {slides}
         </Swiper>
       </div>
