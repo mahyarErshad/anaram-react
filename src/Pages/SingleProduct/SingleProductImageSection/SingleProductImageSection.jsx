@@ -1,5 +1,6 @@
 import React from "react";
 import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButton"
+import {ReactComponent as HeartIcon} from "../../../assets/images/icons/heart-icon.svg"
 
 function SingleProductImageSection() {
   return (
