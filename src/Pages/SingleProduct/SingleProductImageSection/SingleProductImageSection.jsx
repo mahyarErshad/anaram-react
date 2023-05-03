@@ -29,8 +29,8 @@ function SingleProductImageSection() {
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
-        <SmallButton className="p-3 bg-NeutralN10 group" icon={<HeartIcon className="group-hover:scale-110 duration-300" />} />
-        <SmallButton className="p-3 bg-NeutralN10 group" icon={<CompareIcon className="group-hover:scale-110 duration-300" />} />
+        <SmallButton className="p-3 bg-NeutralN10 group" icon={<HeartIcon className="group-hover:scale-110 duration-300 w-6 h-6" />} />
+        <SmallButton className="p-3 bg-NeutralN10 group" icon={<CompareIcon className="group-hover:scale-110 duration-300 w-6 h-6" />} />
         <SmallButton className="p-3 bg-NeutralN10 group" icon={<PresentationChart className="group-hover:scale-110 duration-300" />} />
       </div>
       <div className="w-full">
