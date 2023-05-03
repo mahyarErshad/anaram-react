@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "./styles.css";
-
-// import required modules
 import { FreeMode, Thumbs } from "swiper";
 import SmallButton from "../../../Components/Utils/Buttons/SmallButton/SmallButton";
 import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-icon.svg";
@@ -18,14 +13,12 @@ import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/b
 
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const slides = arr.map((_, index) => {
-    return (
-      <SwiperSlide key={index}>
-        <img src={batteryImage} alt="battery" />
-      </SwiperSlide>
-    );
-  });
+  const arr = Array.from(Array(10).keys());
+  const slides = arr.map((index) => (
+    <SwiperSlide key={index}>
+      <img src={batteryImage} alt="battery" />
+    </SwiperSlide>
+  ));
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
@@ -34,15 +27,7 @@ function SingleProductImageSection() {
         <SmallButton className="p-3 bg-NeutralN10 group" icon={<PresentationChart className="group-hover:scale-110 duration-300" />} />
       </div>
       <div className="w-full">
-        <Swiper
-          style={{
-            "--swiper-pagination-color": "transparent",
-          }}
-          spaceBetween={10}
-          thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-          modules={[FreeMode, Thumbs]}
-          className="swiper-single-product-large-image"
-        >
+        <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {slides}
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
