@@ -18,7 +18,7 @@ import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/b
 
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const arr = [1, 2, 3, 4, 5];
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const slides = arr.map((_, index) => {
     return (
       <SwiperSlide key={index}>
@@ -36,16 +36,16 @@ function SingleProductImageSection() {
       <div className="w-full">
         <Swiper
           style={{
-            "--swiper-pagination-color": "#fff",
+            "--swiper-pagination-color": "transparent",
           }}
           spaceBetween={10}
           thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
           modules={[FreeMode, Thumbs]}
-          className="swiper-single-product2"
+          className="swiper-single-product-large-image"
         >
           {slides}
         </Swiper>
-        <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={4} freeMode={true} watchSlidesProgress={true} modules={[FreeMode, Thumbs]} className="swiper-single-product">
+        <Swiper onSwiper={setThumbsSwiper} spaceBetween={10} slidesPerView={5} freeMode={true} watchSlidesProgress={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
           {slides}
         </Swiper>
       </div>
