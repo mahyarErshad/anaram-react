@@ -23,7 +23,6 @@ function BreadCrumbs() {
       </div>
     );
   });
-  console.log(data.length);
 
   return <div className="flex justify-start items-center gap-2">{crumbs}</div>;
 }
