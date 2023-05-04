@@ -24,17 +24,10 @@ function SingleProductImageSection() {
       </div>
       <div className="w-full relative">
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
-          {arr.map((index) => (
-            <SwiperSlide key={index}>
-            </SwiperSlide>
-          ))}
+
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
-          {arr.map((index) => (
-            <SwiperSlide key={index}>
-              <img src={batteryImage} alt="battery" />
-            </SwiperSlide>
-          ))}
+
         </Swiper>
         <div id="portal" className="portal h-full w-full absolute top-0 right-[100%] bg-cyan-300" />
       </div>
