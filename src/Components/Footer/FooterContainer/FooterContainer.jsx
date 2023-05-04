@@ -19,7 +19,7 @@ function FooterContainer() {
         </Link>
         <p className={`text-sm text-NeutralN90 max-w-[29.0625rem] ${styles.description}`}>فروشگاه آنارام نماینده فروش محصولات برند وارتا (Varta) آلمان (دارای ۱۳۰ سال سابقه در تولید انواع باتری) است که فعالیت خود را در سال 1400 آغاز نمود. آنارام دارای نمایندگی باتری وارتا و دیگر محصولات این شرکت است و در این فروشگاه انواع باتری قلمی و نیم قلمی ، باتری شارژی ، باتری سکه ای ، باتری مخصوص مانند باتری دوربین و تلفن و دیگر محصولات برند وارتا از جمله شارژر باتری و چراغ قوه عرضه می گردد.</p>
         <address className={`flex-col gap-3 ${styles.address}`}>
-          <FooterAddress icon={<LocationIcon />} text="خیابان شریعتی، خیابان سهروردی شمالی، کوچه پنجم، پلاک ۱۲، واحد ۳" />
+          <FooterAddress icon={<LocationIcon />} text="تهران - بالاتر از میدان ولیعصر - کوی دانش کیان - پلاک ۱۷" target="_blank" href="https://goo.gl/maps/BDsT8s9Cop86dAmV7" />
           <FooterAddress icon={<PhoneIcon className="h-4 w-4" />} text="74645308 - 023" href="tel:02374645308" />
         </address>
         <nav className={`flex justify-between items-start max-lg:gap-8 ${styles.nav}`}>
