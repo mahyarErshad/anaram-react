@@ -26,28 +26,6 @@ function SingleProductImageSection() {
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {arr.map((index) => (
             <SwiperSlide key={index}>
-              <ReactImageMagnify
-                {...{
-                  smallImage: {
-                    alt: "Battery",
-                    isFluidWidth: true,
-                    src: batteryImage,
-                  },
-                  largeImage: {
-                    src: batteryImage,
-                    width: 500,
-                    height: 1500,
-                  },
-                  lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                }}
-                {...{
-                  enlargedImagePortalId: "portal",
-                  enlargedImageContainerDimensions: {
-                    width: "100%",
-                    height: "100%",
-                  },
-                }}
-              />
             </SwiperSlide>
           ))}
         </Swiper>
