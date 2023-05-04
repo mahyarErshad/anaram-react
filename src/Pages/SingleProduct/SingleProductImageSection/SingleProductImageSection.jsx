@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ReactImageMagnify from "react-image-magnify";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
@@ -14,11 +15,6 @@ import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/b
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const arr = Array.from(Array(10).keys());
-  const slides = arr.map((index) => (
-    <SwiperSlide key={index}>
-      <img src={batteryImage} alt="battery" />
-    </SwiperSlide>
-  ));
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
@@ -26,13 +22,43 @@ function SingleProductImageSection() {
         <SmallButton className="p-3 bg-NeutralN10 group" icon={<CompareIcon className="group-hover:scale-110 duration-300 w-6 h-6" />} />
         <SmallButton className="p-3 bg-NeutralN10 group" icon={<PresentationChart className="group-hover:scale-110 duration-300" />} />
       </div>
-      <div className="w-full">
+      <div className="w-full relative">
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
-          {slides}
+          {arr.map((index) => (
+            <SwiperSlide key={index}>
+              <ReactImageMagnify
+                {...{
+                  smallImage: {
+                    alt: "Battery",
+                    isFluidWidth: true,
+                    src: batteryImage,
+                  },
+                  largeImage: {
+                    src: batteryImage,
+                    width: 500,
+                    height: 1500,
+                  },
+                  lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
+                }}
+                {...{
+                  enlargedImagePortalId: "portal",
+                  enlargedImageContainerDimensions: {
+                    width: "100%",
+                    height: "100%",
+                  },
+                }}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
-          {slides}
+          {arr.map((index) => (
+            <SwiperSlide key={index}>
+              <img src={batteryImage} alt="battery" />
+            </SwiperSlide>
+          ))}
         </Swiper>
+        <div id="portal" className="portal h-full w-full absolute top-0 right-[100%] bg-cyan-300" />
       </div>
     </section>
   );
