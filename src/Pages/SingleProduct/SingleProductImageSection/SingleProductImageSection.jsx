@@ -33,7 +33,6 @@ function SingleProductImageSection() {
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
           {slides}
         </Swiper>
-        <div id="portal" className="portal h-full w-full absolute top-0 right-[100%] bg-cyan-300" />
       </div>
     </section>
   );
