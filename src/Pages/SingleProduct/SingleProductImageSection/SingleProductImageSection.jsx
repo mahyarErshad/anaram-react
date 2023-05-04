@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ReactImageMagnify from "react-image-magnify";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
@@ -15,6 +14,11 @@ import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/b
 function SingleProductImageSection() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const arr = Array.from(Array(10).keys());
+  const slides = arr.map((index) => (
+    <SwiperSlide key={index}>
+      <img src={batteryImage} alt="battery" />
+    </SwiperSlide>
+  ));
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
@@ -24,10 +28,10 @@ function SingleProductImageSection() {
       </div>
       <div className="w-full relative">
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
-
+          {slides}
         </Swiper>
         <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
-
+          {slides}
         </Swiper>
         <div id="portal" className="portal h-full w-full absolute top-0 right-[100%] bg-cyan-300" />
       </div>
