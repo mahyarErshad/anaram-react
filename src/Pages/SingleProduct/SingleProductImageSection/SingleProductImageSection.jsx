@@ -11,14 +11,15 @@ import { ReactComponent as CompareIcon } from "../../../assets/images/icons/comp
 import { ReactComponent as PresentationChart } from "../../../assets/images/icons/presentation-chart.svg";
 import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png";
 
-function SingleProductImageSection() {
+const SingleProductImageSection = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const arr = Array.from(Array(10).keys());
+  const arr = [...Array(10).keys()];
   const slides = arr.map((index) => (
     <SwiperSlide key={index}>
       <img src={batteryImage} alt="battery" />
     </SwiperSlide>
   ));
+
   return (
     <section className="flex justify-start items-center gap-3">
       <div className="flex-col gap-4 h-full">
@@ -30,12 +31,12 @@ function SingleProductImageSection() {
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {slides}
         </Swiper>
-        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode={true} modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
+        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" freeMode modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
           {slides}
         </Swiper>
       </div>
     </section>
   );
-}
+};
 
 export default SingleProductImageSection;
