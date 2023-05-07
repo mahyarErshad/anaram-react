@@ -12,9 +12,9 @@ const features = [
   { icon: <CustomerSupportIcon />, text: "مشاوره رایگان خرید" },
 ];
 
-function MainPageFeatures({className}) {
+function MainPageFeatures({ className }) {
   return (
-    <section className="w-full max-w-[80.5rem] mx-auto bg-white rounded-[0.625rem] px-3 py-2 flex-center mt-[5.625rem]">
+    <section className={`w-full max-w-[80.5rem] mx-auto bg-white rounded-[0.625rem] px-3 py-2 flex-center mt-[5.625rem] ${className}`}>
       <div className="flex-center max-md:gap-2 gap-0 w-full">
         {features.map((feature, index) => (
           <MainPageFeatureCards key={index} icon={feature.icon} text={feature.text} />
