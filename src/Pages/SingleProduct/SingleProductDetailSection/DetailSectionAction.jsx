@@ -8,6 +8,10 @@ function DetailSectionAction() {
         <ShieldTick />
         <span className="text-sm text-NeutralN100">گارانتی و تضمین اصالت کالا</span>
       </div>
+      <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
+        <ShieldTick />
+        <span className="text-sm text-NeutralN100">گارانتی و تضمین اصالت کالا</span>
+      </div>
     </section>
   );
 }
