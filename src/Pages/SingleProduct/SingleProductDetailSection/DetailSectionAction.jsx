@@ -22,6 +22,7 @@ function DetailSectionAction() {
         </div>
       </div>
       <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
+      <ActionSectionQuantity title="تعداد سفارش :" quantity={2} counter />
     </section>
   );
 }
