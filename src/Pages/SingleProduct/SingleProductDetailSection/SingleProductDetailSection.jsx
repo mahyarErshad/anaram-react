@@ -13,7 +13,7 @@ function SingleProductDetailSection() {
       <div className="grid grid-cols-3">
         <DetailSectionImage />
         <DetailSectionTextSection state={state} setState={setState} />
-        <DetailSectionAction />
+        <DetailSectionAction state={state} />
       </div>
     </section>
   );
