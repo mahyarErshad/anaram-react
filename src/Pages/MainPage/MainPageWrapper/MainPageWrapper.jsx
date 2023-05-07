@@ -27,7 +27,7 @@ const MainPageWrapper = () => (
     <img className="w-full md:hidden rounded-2xl container mt-8" src={deliveryBannerSM} alt="Free delivery for customers" />
     <NestedCarousel />
     <MainPageBlog />
-    <MainPageFeatures />
+    <MainPageFeatures className="mt-[5.625rem] max-w-[80.5rem]" />
     <CallToAction />
     <BatteryChargingComponent />
   </main>
