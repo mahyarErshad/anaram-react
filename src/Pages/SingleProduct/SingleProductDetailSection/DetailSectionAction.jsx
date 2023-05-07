@@ -20,6 +20,9 @@ function DetailSectionAction() {
           <DeliveryOptionCard text="ارسال رایگان" />
         </div>
       </div>
+      <div className="flex justify-between items-center pb-6 border-b border-NeutralN30">
+      
+      </div>
     </section>
   );
 }
