@@ -25,7 +25,7 @@ function DetailSectionAction({ state }) {
       </div>
       <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
       <ActionSectionQuantity title="تعداد سفارش :" quantity={state} counter />
-      <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} counter />
+      <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
       <PrimaryButton icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />
     </section>
   );
