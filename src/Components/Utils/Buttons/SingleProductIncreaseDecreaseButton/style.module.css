@@ -1,0 +1,3 @@
+.button:disabled svg{
+    background-color: red;
+}
