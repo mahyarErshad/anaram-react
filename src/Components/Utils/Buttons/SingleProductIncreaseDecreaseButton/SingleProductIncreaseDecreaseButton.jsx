@@ -3,7 +3,7 @@ import { ReactComponent as PlusIcon } from "../../../../assets/images/icons/incr
 import { ReactComponent as MinusIcon } from "../../../../assets/images/icons/decrease-singleProduct-icon.svg";
 import styles from "./style.module.css";
 
-function SingleProductIncreaseDecreaseButton({ state }) {
+function SingleProductIncreaseDecreaseButton({ state, setState }) {
   return (
     <div className="py-3 px-6 bg-NeutralN10 flex-center gap-9 w-fit rounded-lg max-w-[15rem]">
       <span className="text-sm text-NeutralN100 font-semibold">تعداد</span>
