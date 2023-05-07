@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as PlusIcon } from "../../../../assets/images/icons/increase-singleProduct-icon.svg";
 
 function SingleProductIncreaseDecreaseButton() {
   return (
