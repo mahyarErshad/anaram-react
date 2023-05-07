@@ -1,6 +1,7 @@
 import React from "react";
 import BreadCrumbs from "../../../Components/BreadCrumb/BreadCrumb";
 import DetailSectionImage from "./DetailSectionImage";
+import DetailSectionTextSection from "./DetailSectionTextSection";
 
 function SingleProductDetailSection() {
   return (
@@ -8,6 +9,7 @@ function SingleProductDetailSection() {
       <BreadCrumbs />
       <div className="grid grid-cols-3">
         <DetailSectionImage />
+        <DetailSectionTextSection />
       </div>
     </section>
   );
