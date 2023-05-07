@@ -31,6 +31,8 @@ module.exports = {
         NeutralN700: "#1C1C1C",
         // magenta
         Magenta: "#E0144C",
+        // green
+        Green7: "#328C34",
       },
     },
   },
