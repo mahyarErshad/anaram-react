@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as PlusIcon } from "../../../../assets/images/icons/increase-singleProduct-icon.svg";
 import { ReactComponent as MinusIcon } from "../../../../assets/images/icons/decrease-singleProduct-icon.svg";
+import styles from "./style.module.css"
 
 function SingleProductIncreaseDecreaseButton() {
   const [state, setState] = useState(1);
