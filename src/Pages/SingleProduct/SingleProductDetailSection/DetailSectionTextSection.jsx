@@ -1,4 +1,5 @@
 import React from "react";
+import SingleProductIncreaseDecreaseButton from "../../../Components/Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
 
 function DetailSectionTextSection() {
   const data = [
@@ -40,6 +41,7 @@ function DetailSectionTextSection() {
           })}
         </ul>
       </div>
+      <SingleProductIncreaseDecreaseButton />
     </section>
   );
 }
