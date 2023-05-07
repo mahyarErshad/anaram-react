@@ -1,3 +1,5 @@
-.container::after{
-
+.container::after {
+  content: "/";
+  position: absolute;
+  left: 0;
 }
