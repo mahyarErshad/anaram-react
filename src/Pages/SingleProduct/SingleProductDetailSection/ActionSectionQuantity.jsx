@@ -9,7 +9,7 @@ function ActionSectionQuantity({ title, quantity, toman, counter }) {
       <div className="flex-center gap-2">
         <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(quantity)}</span>
         {toman && <Toman className="w-5 h-4" />}
-        {counter && <span className="text-base text-NeutralN500 font-semibold">عدد</span>}
+        {counter && <span className="text-sm text-NeutralN500 font-semibold">عدد</span>}
       </div>
     </div>
   );
