@@ -22,7 +22,7 @@ function DetailSectionAction({state}) {
         </div>
       </div>
       <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
-      <ActionSectionQuantity title="تعداد سفارش :" quantity={2} counter />
+      <ActionSectionQuantity title="تعداد سفارش :" quantity={state} counter />
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={248000} counter />
     </section>
   );
