@@ -11,7 +11,7 @@ import { ReactComponent as CompareIcon } from "../../../assets/images/icons/comp
 import { ReactComponent as PresentationChart } from "../../../assets/images/icons/presentation-chart.svg";
 import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png";
 
-const SingleProductImageSection = () => {
+const DetailSectionImage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const arr = [...Array(10).keys()];
   const slides = arr.map((index) => (
@@ -39,4 +39,4 @@ const SingleProductImageSection = () => {
   );
 };
 
-export default SingleProductImageSection;
+export default DetailSectionImage;
