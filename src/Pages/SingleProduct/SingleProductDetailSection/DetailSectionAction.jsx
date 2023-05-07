@@ -11,7 +11,7 @@ function DetailSectionAction() {
       </div>
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
         <ShopAdd />
-        <span className="text-sm text-NeutralN100">موجود در انبار داناپوست</span>
+        <span className="text-sm text-Green7 font-semibold">موجود در انبار داناپیوست</span>
       </div>
     </section>
   );
