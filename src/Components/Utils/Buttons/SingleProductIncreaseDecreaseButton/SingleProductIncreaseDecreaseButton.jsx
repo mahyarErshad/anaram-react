@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as PlusIcon } from "../../../../assets/images/icons/increase-singleProduct-icon.svg";
 import { ReactComponent as MinusIcon } from "../../../../assets/images/icons/decrease-singleProduct-icon.svg";
 import styles from "./style.module.css";
 
-function SingleProductIncreaseDecreaseButton() {
-  const [state, setState] = useState(1);
+function SingleProductIncreaseDecreaseButton({ state }) {
   return (
     <div className="py-3 px-6 bg-NeutralN10 flex-center gap-9 w-fit rounded-lg max-w-[15rem]">
       <span className="text-sm text-NeutralN100 font-semibold">تعداد</span>
