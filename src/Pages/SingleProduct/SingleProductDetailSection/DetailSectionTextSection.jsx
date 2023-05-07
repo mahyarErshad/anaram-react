@@ -40,7 +40,7 @@ function DetailSectionTextSection({state}) {
           ))}
         </ul>
       </div>
-      <SingleProductIncreaseDecreaseButton />
+      <SingleProductIncreaseDecreaseButton state={state} />
     </section>
   );
 }
