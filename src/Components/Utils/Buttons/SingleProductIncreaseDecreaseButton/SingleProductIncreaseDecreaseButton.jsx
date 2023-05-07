@@ -14,7 +14,7 @@ function SingleProductIncreaseDecreaseButton() {
         </button>
         <span className="text-base font-bold text-NeutralN500 px-4 min-w-[3rem] flex-center">{state}</span>
         <button disabled={state === 1} onClick={() => setState((prev) => prev - 1)} className={`h-full flex-center p-2 bg-NeutralN20 rounded-[0.25rem] ${styles.button}`}>
-          <MinusIcon />
+          <MinusIcon className="stroke-NeutralN300" />
         </button>
       </div>
     </div>
