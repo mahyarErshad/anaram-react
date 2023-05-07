@@ -4,7 +4,7 @@ import { separateNumberByThousand } from "../../../lib/function/convertToPersian
 
 const ActionSectionQuantity = ({ title, quantity, toman, counter }) => {
   return (
-    <div className="flex justify-between items-center pb-6 border-b border-NeutralN30">
+    <div className="flex justify-between items-center pb-6 border-b border-NeutralN30 last-of-type:border-none">
       <span className="text-NeutralN500 font-semibold text-base">{title}</span>
       <div className="flex items-center gap-2">
         <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(quantity)}</span>
