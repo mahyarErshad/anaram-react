@@ -21,7 +21,7 @@ function DetailSectionAction() {
           <DeliveryOptionCard text="ارسال رایگان" />
         </div>
       </div>
-      <ActionSectionQuantity />
+      <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
     </section>
   );
 }
