@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as ShieldTick } from "../../../assets/images/icons/shield-tick.svg";
 import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add.svg";
+import DeliveryOptionCard from "./DeliveryOptionCard";
 
 function DetailSectionAction() {
   return (
@@ -13,6 +14,10 @@ function DetailSectionAction() {
         <div className="flex justify-start items-center gap-2">
           <ShopAdd />
           <span className="text-sm text-Green7 font-semibold">موجود در انبار داناپیوست</span>
+        </div>
+        <div className="flex justify-start items-center gap-6">
+          <DeliveryOptionCard text="تحویل حضوری" />
+          <DeliveryOptionCard text="ارسال رایگان" />
         </div>
       </div>
     </section>
