@@ -12,7 +12,7 @@ function SingleProductDetailSection() {
       <BreadCrumbs />
       <div className="grid grid-cols-3">
         <DetailSectionImage />
-        <DetailSectionTextSection state={state} />
+        <DetailSectionTextSection state={state} setState={setState} />
         <DetailSectionAction />
       </div>
     </section>
