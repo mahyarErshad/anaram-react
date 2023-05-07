@@ -4,6 +4,7 @@ import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add
 import DeliveryOptionCard from "./DeliveryOptionCard";
 import ActionSectionQuantity from "./ActionSectionQuantity";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
+import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 
 function DetailSectionAction({ state }) {
   return (
