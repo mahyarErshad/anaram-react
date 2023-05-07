@@ -1,8 +1,5 @@
-.container::after {
-  content: "/";
-  position: absolute;
-  left: -0.5rem;
-}
-.container:last-child::after {
-  content: "";
-}
+.container:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    left: -0.5rem;
+  }
