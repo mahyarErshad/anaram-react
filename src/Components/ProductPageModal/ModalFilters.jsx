@@ -10,7 +10,7 @@ function ModalFilters() {
       <AccordionItem>
         <AccordionHeader className="w-full flex justify-between items-center py-6 border-t border-NeutralN30">
           تکنولوژی ساخت
-          <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
+          <ArrowIcon className="stroke-NeutralN100 w-3 h-3 duration-300" />
         </AccordionHeader>
         <AccordionBody>
           <CheckBox label="آلکاین" counter={24} />
@@ -20,7 +20,7 @@ function ModalFilters() {
       <AccordionItem>
         <AccordionHeader className="w-full flex justify-between items-center py-6 border-t border-NeutralN30">
           ولتاژ
-          <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
+          <ArrowIcon className="stroke-NeutralN100 w-3 h-3 duration-300" />
         </AccordionHeader>
         <AccordionBody>
           <CheckBox label="۲.۱ ولت" counter={18} />
@@ -30,7 +30,7 @@ function ModalFilters() {
       <AccordionItem>
         <AccordionHeader className="w-full flex justify-between items-center py-6 border-t border-NeutralN30">
           قیمت
-          <ArrowIcon className="stroke-NeutralN100 w-3 h-3" />
+          <ArrowIcon className="stroke-NeutralN100 w-3 h-3 duration-300" />
         </AccordionHeader>
         <AccordionBody>
           <DoubleRangerInput />
