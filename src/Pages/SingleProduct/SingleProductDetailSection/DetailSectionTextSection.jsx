@@ -34,7 +34,7 @@ function DetailSectionTextSection({state, setState}) {
           {data.map(({ Q, A }, index) => (
             <li key={index} className="text-sm text-NeutralN100 flex justify-start items-center gap-2">
               <span className="w-1 h-1 bg-primary6 rounded-full"></span>
-              <span className="font-semibold">{Q}</span>
+              <span className="font-medium">{Q}</span>
               <strong className="text-NeutralN500 text-sm font-semibold">{A}</strong>
             </li>
           ))}
