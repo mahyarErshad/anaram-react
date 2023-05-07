@@ -109,3 +109,7 @@ nav ul li:last-child {
 .swiper-slide {
   border-radius: 1rem;
 }
+/* rotating icon of Accordion */
+button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
