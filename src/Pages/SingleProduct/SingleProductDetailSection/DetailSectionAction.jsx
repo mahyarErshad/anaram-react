@@ -2,8 +2,8 @@ import React from 'react'
 
 function DetailSectionAction() {
   return (
-    <section>
-        
+    <section className='justify-self-center bg-NeutralN10 border border-NeutralN20 rounded-2xl pt-10 pb-6 px-6'>
+        dhdgdgh
     </section>
   )
 }
