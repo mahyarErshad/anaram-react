@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as ShieldTick } from "../../../assets/images/icons/shield-tick.svg";
+import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add.svg";
 
 function DetailSectionAction() {
   return (
