@@ -1,4 +1,5 @@
 import React from 'react'
+import {ShieldTick as ReactComponent } from "../../../assets/images/icons/shield-tick.svg"
 
 function DetailSectionAction() {
   return (
