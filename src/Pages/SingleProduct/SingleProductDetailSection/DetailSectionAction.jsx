@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as ShieldTick } from "../../../assets/images/icons/shield-tick.svg";
 import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add.svg";
 import DeliveryOptionCard from "./DeliveryOptionCard";
+import ActionSectionQuantity from "./ActionSectionQuantity";
 
 function DetailSectionAction() {
   return (
@@ -20,7 +21,7 @@ function DetailSectionAction() {
           <DeliveryOptionCard text="ارسال رایگان" />
         </div>
       </div>
-
+      <ActionSectionQuantity />
     </section>
   );
 }
