@@ -2,7 +2,9 @@ import React from 'react'
 
 function DetailSectionTextSection() {
   return (
-    <div>DetailSectionTextSection</div>
+    <section>
+        
+    </section>
   )
 }
 
