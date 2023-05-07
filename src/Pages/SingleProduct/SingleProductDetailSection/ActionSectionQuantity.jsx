@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function ActionSectionQuantity() {
+function ActionSectionQuantity({ title, quantity }) {
   return (
-    <div>ActionSectionQuantity</div>
-  )
+    <div className="flex justify-between items-center pb-6 border-b border-NeutralN30">
+      <span></span>
+    </div>
+  );
 }
 
-export default ActionSectionQuantity
+export default ActionSectionQuantity;
