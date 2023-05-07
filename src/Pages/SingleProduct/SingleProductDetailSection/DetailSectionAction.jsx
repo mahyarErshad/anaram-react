@@ -4,7 +4,7 @@ import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add
 import DeliveryOptionCard from "./DeliveryOptionCard";
 import ActionSectionQuantity from "./ActionSectionQuantity";
 
-function DetailSectionAction() {
+function DetailSectionAction({state}) {
   return (
     <section className="justify-self-end bg-NeutralN10 border border-NeutralN10 rounded-2xl pt-10 pb-6 px-6 flex-col gap-7 min-w-[24.375rem]">
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
