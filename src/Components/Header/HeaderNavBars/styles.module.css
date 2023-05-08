@@ -7,6 +7,9 @@
   opacity: 1;
   transform: scaleY(1) translateX(50%);
 }
+.navlink:hover .arrow-icon {
+  transform: rotate(180deg);
+}
 .navlink:last-child {
   color: #1a4499;
 }
