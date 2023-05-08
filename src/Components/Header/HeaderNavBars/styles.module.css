@@ -7,7 +7,7 @@
   opacity: 1;
   transform: scaleY(1) translateX(50%);
 }
-.navlink:hover .arrow-icon {
+.navlink:hover svg {
   transform: rotate(180deg);
 }
 .navlink:last-child {
