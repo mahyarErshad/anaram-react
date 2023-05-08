@@ -110,6 +110,6 @@ nav ul li:last-child {
   border-radius: 1rem;
 }
 /* rotating icon of Accordion */
-button[aria-expanded="true"] svg {
+button[aria-expanded="true"] .arrow-icon {
   transform: rotate(180deg);
 }
