@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../style/productCard.module.css";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import goToTop from "../../../lib/function/goToTop";
 
 const ProductCard = ({ discountCard }) => {
+  const [redHeart, setRedHeart] = useState(false);
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
   const priceSection = (
     <div className={`flex ${discountCard ? "justify-between" : "justify-end"} items-center w-full mb-3`}>
