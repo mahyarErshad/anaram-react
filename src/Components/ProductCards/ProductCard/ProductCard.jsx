@@ -23,20 +23,22 @@ const ProductCard = ({ discountCard }) => {
       <ProductCardPriceSection price={100000} />
     </div>
   );
+  function handleButtonClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
 
   return (
-    <>
+    <Link onClick={goToTop} to="products/product/id-1234">
       <figure className={`${styles.card} ${discountCard && styles.after} pt-3 pb-[0.875rem] relative px-3 rounded-lg bg-white border border-NeutralN30 flex-col cursor-pointer transition-all duration-300`}>
-        <Link onClick={goToTop} to="products/product/id-1234">
-          <div className="flex-center h-2/4 mb-4 relative">
-            <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
-            {discountSection}
-            <ProductCardRatingSection rating={4.5} />
-          </div>
-          <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
-          {priceSection}
-        </Link>
-        <div className="flex-center gap-1 w-full">
+        <div className="flex-center h-2/4 mb-4 relative">
+          <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
+          {discountSection}
+          <ProductCardRatingSection rating={4.5} />
+        </div>
+        <ProductCardTitleSection title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
+        {priceSection}
+        <div onClick={handleButtonClick} className="flex-center gap-1 w-full">
           <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
           <SmallButton onClick={() => setRedHeart(!redHeart)} className="p-3 bg-NeutralN10" icon={<HeartIcon className={`stroke-NeutralN300 ${redHeart && "animate-pulse-heart fill-red-500 stroke-red-500"}`} />} />
           <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
@@ -50,7 +52,7 @@ const ProductCard = ({ discountCard }) => {
           </div>
         )}
       </figure>
-    </>
+    </Link>
   );
 };
 
