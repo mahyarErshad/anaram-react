@@ -35,7 +35,7 @@ const ProductCard = ({ discountCard }) => {
         {priceSection}
         <div className="flex-center gap-1 w-full">
           <PrimaryButton addToCartButton text="افزودن به سبد" icon={<CartIcon className="w-4 h-4" stroke="white" />} />
-          <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
+          <SmallButton className="p-2 bg-NeutralN20 stroke-NeutralN300" icon={<HeartIcon />} />
           <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
         </div>
         {discountCard && (
