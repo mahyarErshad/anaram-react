@@ -12,8 +12,10 @@ import { ReactComponent as CompareArrowsIcon } from "../../../../assets/images/i
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import goToTop from "../../../../lib/function/goToTop";
+import { useState } from "react";
 
 function ProductsPageCards({ discountCard, outOfStock }) {
+  const [redHeart, setRedHeart] = useState(false);
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
   const priceSection = (
     <div className={`flex ${discountCard ? "justify-between" : "justify-end"} items-center w-full mb-3 row-start-3 max-sm:col-span-2`}>
