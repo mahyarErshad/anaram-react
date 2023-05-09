@@ -103,9 +103,6 @@ nav ul li:first-child {
 nav ul li:last-child {
   border-left: none;
 }
-.mirror {
-  transform: scaleX(-1);
-}
 .swiper-slide {
   border-radius: 1rem;
 }
@@ -128,4 +125,8 @@ button[aria-expanded="true"] .arrow-icon {
 
 .animate-pulse-heart {
   animation: pulse-heart 0.5s ease-in-out 2;
+}
+/* For flipping items */
+.mirror {
+  transform: scaleX(-1);
 }
