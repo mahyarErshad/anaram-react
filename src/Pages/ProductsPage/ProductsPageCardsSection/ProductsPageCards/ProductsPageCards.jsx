@@ -35,7 +35,7 @@ function ProductsPageCards({ discountCard, outOfStock }) {
         {priceSection}
         <div className="flex-center gap-1 w-full max-sm:col-span-2 max-sm:row-start-4">
           <PrimaryButton className="flex-grow" addToCartButton text={outOfStock ? "تمام شد" : "افزودن به سبد"} icon={<CartIcon className="w-4 h-4" stroke="white" />} />
-          <SmallButton className="p-2 bg-NeutralN20" icon={<HeartIcon />} />
+          <SmallButton onClick={() => setRedHeart(!redHeart)} className="p-2 bg-NeutralN10" icon={<HeartIcon className={`stroke-NeutralN300 ${redHeart && "animate-pulse-heart fill-red-500 stroke-red-500"}`} />} />
           <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
         </div>
       </figure>
