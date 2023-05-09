@@ -127,5 +127,5 @@ button[aria-expanded="true"] .arrow-icon {
 }
 
 .animate-pulse-heart {
-  animation: pulse-heart 1s ease-in-out 2;
+  animation: pulse-heart 0.5s ease-in-out 2;
 }
