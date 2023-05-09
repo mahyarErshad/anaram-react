@@ -23,23 +23,29 @@ function ProductsPageCards({ discountCard, outOfStock }) {
       <ProductCardPriceSection price={100000} />
     </div>
   );
+  function handleButtonClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
   return (
-    <Link onClick={goToTop} to="/products/product/id-1234">
-      <figure className={`${styles.card} ${discountCard && styles.after} ${outOfStock && "grayscale"} pt-3 pb-[0.875rem] max-sm:w-full sm:max-w-[15.75rem] relative px-3 rounded-lg bg-white border border-NeutralN30 grid sm:grid-cols-1 cursor-pointer transition-all duration-300`}>
-        <ProductCardRatingSection position="top-3 left-2" rating={4.5} />
-        <div className="flex-center h-full mb-4 max-sm:col-span-1 max-sm:row-start-1 max-sm:row-end-5">
-          <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
-          {discountSection}
-        </div>
-        <ProductCardTitleSection className="row-start-2" title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
-        {priceSection}
-        <div className="flex-center gap-1 w-full max-sm:col-span-2 max-sm:row-start-4">
-          <PrimaryButton className="flex-grow" addToCartButton text={outOfStock ? "تمام شد" : "افزودن به سبد"} icon={<CartIcon className="w-4 h-4" stroke="white" />} />
-          <SmallButton onClick={() => setRedHeart(!redHeart)} className="p-2 bg-NeutralN10" icon={<HeartIcon className={`stroke-NeutralN300 ${redHeart && "animate-pulse-heart fill-red-500 stroke-red-500"}`} />} />
-          <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
-        </div>
-      </figure>
-    </Link>
+    <>
+      <Link onClick={goToTop} to="/products/product/id-1234">
+        <figure className={`${styles.card} ${discountCard && styles.after} ${outOfStock && "grayscale"} pt-3 pb-[0.875rem] max-sm:w-full sm:max-w-[15.75rem] relative px-3 rounded-lg bg-white border border-NeutralN30 grid sm:grid-cols-1 cursor-pointer transition-all duration-300`}>
+          <ProductCardRatingSection position="top-3 left-2" rating={4.5} />
+          <div className="flex-center h-full mb-4 max-sm:col-span-1 max-sm:row-start-1 max-sm:row-end-5">
+            <img className="mt-5 transition-all duration-300" src={batteryImage} alt="battery" />
+            {discountSection}
+          </div>
+          <ProductCardTitleSection className="row-start-2" title="باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی" />
+          {priceSection}
+          <div onClick={handleButtonClick} className="flex-center gap-1 w-full max-sm:col-span-2 max-sm:row-start-4">
+            <PrimaryButton className="flex-grow" addToCartButton text={outOfStock ? "تمام شد" : "افزودن به سبد"} icon={<CartIcon className="w-4 h-4" stroke="white" />} />
+            <SmallButton onClick={() => setRedHeart(!redHeart)} className="p-2 bg-NeutralN10" icon={<HeartIcon className={`stroke-NeutralN300 ${redHeart && "animate-pulse-heart fill-red-500 stroke-red-500"}`} />} />
+            <SmallButton className="p-2 bg-NeutralN20" icon={<CompareArrowsIcon />} />
+          </div>
+        </figure>
+      </Link>
+    </>
   );
 }
 
