@@ -58,7 +58,7 @@ function SingleProductTabSection() {
               <div className="mt-2 mb-8 w-full border border-NeutralN30 rounded-lg py-[0.875rem] flex-center">
                 <Rating onClick={(rating) => setRating(rating)} initialValue={0} ratingValue={rating} size={40} transition fillColorArray={["#e85d04", "#f48c06", "#faa307", "#ffba08", "#ffd60a"]} />
               </div>
-              <PrimaryButton />
+              <PrimaryButton text="ثبت دیدگاه" className="w-full" />
             </form>
           </div>
         </TabPanel>
