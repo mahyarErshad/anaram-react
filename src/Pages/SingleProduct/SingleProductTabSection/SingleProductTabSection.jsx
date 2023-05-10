@@ -50,7 +50,11 @@ function SingleProductTabSection() {
               <label htmlFor="text-area" className="text-NeutralN500 font-semibold text-xs">
                 نظر خود را برای ما بنویسید
               </label>
-              <textarea id="text-area" className="mt-2 p-3 border border-NeutralN30 rounded-lg w-full resize-none text-xs focus:border-primary2 duration-300 outline-none h-[9.0625rem]" placeholder="متن نظر ..."></textarea>
+              <textarea id="text-area" className="mt-2 p-3 border border-NeutralN30 rounded-lg w-full resize-none text-xs focus:border-primary2 duration-300 outline-none h-[9.0625rem] mb-8" placeholder="متن نظر ..."></textarea>
+              <span className="text-NeutralN500 font-semibold text-xs">امتیاز شما به این محصول</span>
+              <div className="mt-2 w-full border border-NeutralN30 rounded-lg py-[0.875rem] flex-center">
+                setare
+              </div>
             </form>
           </div>
         </TabPanel>
