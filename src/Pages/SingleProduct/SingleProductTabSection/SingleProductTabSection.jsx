@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import styles from "./styles.module.css";
-import { Rating } from "react-simple-star-rating";
 
 function SingleProductTabSection() {
-  const [, setRating5] = useState(0);
   const data = [
     {
       Q: "نوع باتری",
@@ -54,9 +52,7 @@ function SingleProductTabSection() {
               </label>
               <textarea id="text-area" className="mt-2 p-3 border border-NeutralN30 rounded-lg w-full resize-none text-xs focus:border-primary2 duration-300 outline-none h-[9.0625rem] mb-8" placeholder="متن نظر ..."></textarea>
               <span className="text-NeutralN500 font-semibold text-xs">امتیاز شما به این محصول</span>
-              <div className="mt-2 w-full border border-NeutralN30 rounded-lg py-[0.875rem] flex-center">
-                <Rating onClick={handleRating5} transition size={50} fillColorArray={["#f17a45", "#f19745", "#f1a545", "#f1b345", "#f1d045"]} />
-              </div>
+              <div className="mt-2 w-full border border-NeutralN30 rounded-lg py-[0.875rem] flex-center"> setare </div>
             </form>
           </div>
         </TabPanel>
