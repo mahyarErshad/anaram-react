@@ -3,6 +3,28 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import styles from "./styles.module.css";
 
 function SingleProductTabSection() {
+  const data = [
+    {
+      Q: "نوع باتری",
+      A: "کتابی",
+    },
+    {
+      Q: "ولتاژ باتری باتری",
+      A: "۹ ولت",
+    },
+    {
+      Q: "نوع تکنولوژی باتری",
+      A: "آلکالاین",
+    },
+    {
+      Q: "قابلیت های باتری",
+      A: "ماندگاری طولانی",
+    },
+    {
+      Q: "تعداد باتری‌های موجود در پک",
+      A: "۱ عدد",
+    },
+  ];
   return (
     <section className="large-container p-10 flex-col">
       <Tabs>
