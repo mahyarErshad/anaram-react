@@ -130,3 +130,7 @@ button[aria-expanded="true"] .arrow-icon {
 .mirror {
   transform: scaleX(-1);
 }
+/* position rating stars vertically */
+.star-svg {
+  display: inline-block;
+}
