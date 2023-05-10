@@ -34,10 +34,14 @@ function SingleProductTabSection() {
         </TabList>
         <TabPanel className="mt-10">
           <ul>
-            <li className="flex items-center py-3 px-6 odd:bg-NeutralN10 even:bg-white">
-              <span className="text-NeutralN100 text-sm w-[13.4375rem] border-l border-NeutralN30 h-10 flex items-center">نوع باتری</span>
-              <span className="text-sm text-NeutralN500 font-semibold flex-grow pr-10">کتابی</span>
-            </li>
+            {data.map(({ Q, A }, index) => {
+              return (
+                <li key={index} className="flex items-center py-3 px-6 odd:bg-NeutralN10 even:bg-white">
+                  <span className="text-NeutralN100 text-sm w-[13.4375rem] border-l border-NeutralN30 h-10 flex items-center">{Q}</span>
+                  <span className="text-sm text-NeutralN500 font-semibold flex-grow pr-10">{A}</span>
+                </li>
+              );
+            })}
           </ul>
         </TabPanel>
         <TabPanel className="mt-10">a324423</TabPanel>
