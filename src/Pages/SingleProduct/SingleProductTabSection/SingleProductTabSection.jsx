@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import styles from "./styles.module.css";
 import { Rating } from "react-simple-star-rating";
 
 function SingleProductTabSection() {
+  const [, setRating5] = useState(0);
   const data = [
     {
       Q: "نوع باتری",
