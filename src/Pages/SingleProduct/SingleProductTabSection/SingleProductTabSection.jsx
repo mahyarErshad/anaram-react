@@ -44,7 +44,16 @@ function SingleProductTabSection() {
             })}
           </ul>
         </TabPanel>
-        <TabPanel className="mt-10">a324423</TabPanel>
+        <TabPanel className="mt-10 flex items-center">
+          <div className="bg-white border border-NeutralN20 rounded-lg p-6 min-w-[21.875rem]">
+            <form className="flex-col items-start">
+              <label htmlFor="text-area" className="text-NeutralN500 font-semibold text-xs">
+                نظر خود را برای ما بنویسید
+              </label>
+              <textarea id="text-area" className="mt-2 p-3 border border-NeutralN30 rounded-lg w-full resize-none text-xs focus:border-primary2 duration-300 outline-none h-[9.0625rem]" placeholder="متن نظر ..."></textarea>
+            </form>
+          </div>
+        </TabPanel>
       </Tabs>
     </section>
   );
