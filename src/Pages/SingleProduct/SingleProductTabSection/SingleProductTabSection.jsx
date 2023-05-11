@@ -37,7 +37,7 @@ function SingleProductTabSection() {
         </TabList>
         <TabPanel className="mt-10">
           <ul>
-            {data.map(({ Q, A }, index) => {
+            {data.map(({ Q , A }, index) => {
               return (
                 <li key={index} className="flex items-center py-3 px-6 odd:bg-NeutralN10 even:bg-white">
                   <span className="text-NeutralN100 text-sm w-[13.4375rem] border-l border-NeutralN30 h-10 flex items-center">{Q}</span>
