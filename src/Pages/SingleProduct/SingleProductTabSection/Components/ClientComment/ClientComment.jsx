@@ -20,6 +20,10 @@ function ClientComment({ data }) {
             <span className="text-sm text-NeutralN300 font-semibold">{data.dislikes}</span>
             <DislikeIcon />
           </button>
+          <button className="flex-center py-2 pl-2 pr-4 gap-3 bg-NeutralN10 rounded-5px">
+            <span className="text-sm text-NeutralN300 font-semibold">{data.likes}</span>
+            <LikeIcon />
+          </button>
         </div>
       </div>
     </div>
