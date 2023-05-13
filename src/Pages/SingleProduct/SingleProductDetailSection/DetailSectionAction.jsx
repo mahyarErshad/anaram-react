@@ -28,6 +28,11 @@ const DetailSectionAction = ({ state }) => {
       <ActionSectionQuantity title="تعداد سفارش :" quantity={state} counter />
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
       {!addToCart && <PrimaryButton onClick={() => setAddToCart(true)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
+      {addToCart && (
+        <div className="flex justify-between items-center">
+          <span>به سبد خرید افزوده شد</span>
+        </div>
+      )}
     </section>
   );
 };
