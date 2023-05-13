@@ -1,6 +1,7 @@
 import React from "react";
 import { Rating } from "react-simple-star-rating";
 import { ReactComponent as DislikeIcon } from "../../../../../assets/images/icons/dislike-icon.svg";
+import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/like-icon.svg";
 
 function ClientComment({ data }) {
   return (
