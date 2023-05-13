@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { Rating } from "react-simple-star-rating";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import SingleProductTable from "./Components/SingleProductTable/SingleProductTable";
+import SingleProductComments from "./Components/SingleProductComments/SingleProductComments";
 
 function SingleProductTabSection() {
   const [rating, setRating] = useState(0);
@@ -15,11 +16,10 @@ function SingleProductTabSection() {
           <Tab className={`${styles.tab} relative pb-4 cursor-pointer`}>نظرات</Tab>
         </TabList>
         <TabPanel className="mt-10">
-        <SingleProductTable />
+          <SingleProductTable />
         </TabPanel>
         <TabPanel className="mt-10 flex items-center gap-14">
-
-
+          <SingleProductComments />
         </TabPanel>
       </Tabs>
     </section>
