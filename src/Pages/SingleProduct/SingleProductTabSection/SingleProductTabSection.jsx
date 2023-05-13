@@ -47,7 +47,7 @@ function SingleProductTabSection() {
             })}
           </ul>
         </TabPanel>
-        <TabPanel className="mt-10 flex items-center">
+        <TabPanel className="mt-10 flex items-center gap-14">
           <div className="bg-white border border-NeutralN20 rounded-lg p-6 min-w-[21.875rem]">
             <form onSubmit={(e) => e.preventDefault()} className="flex-col items-start">
               <label htmlFor="text-area" className="text-NeutralN500 font-semibold text-xs">
@@ -61,6 +61,7 @@ function SingleProductTabSection() {
               <PrimaryButton text="ثبت دیدگاه" className="w-full" />
             </form>
           </div>
+          
         </TabPanel>
       </Tabs>
     </section>
