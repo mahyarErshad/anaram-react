@@ -31,6 +31,7 @@ module.exports = {
         NeutralN700: "#1C1C1C",
         // magenta
         Magenta: "#E0144C",
+        Red1: "#FBEBEB",
         // green
         Green6: "#3BA53D",
         Green7: "#328C34",
