@@ -5,6 +5,7 @@ import DeliveryOptionCard from "./DeliveryOptionCard";
 import ActionSectionQuantity from "./ActionSectionQuantity";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
+import { Link } from "react-router-dom";
 
 const DetailSectionAction = ({ state }) => {
   const [addToCart, setAddToCart] = useState(false);
@@ -29,8 +30,11 @@ const DetailSectionAction = ({ state }) => {
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
       {!addToCart && <PrimaryButton onClick={() => setAddToCart(true)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
       {addToCart && (
-        <div className="flex justify-between items-center">
-          <span>به سبد خرید افزوده شد</span>
+        <div className="flex justify-between items-center h-full">
+          <span className="text-Green6 text-sm font-semibold">به سبد خرید افزوده شد</span>
+          <Link className="text-primary6 text-sm font-semibold" to="/products/product/id-1234">
+            مشاهده سبد خرید
+          </Link>
         </div>
       )}
     </section>
