@@ -26,7 +26,7 @@ function ClientComment({ data }) {
         </div>
         <div className="flex-center gap-2">
           <LikeDislikeButton onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={data.dislikes} />
-          <LikeDislikeButton onClick={handleLike} icon={<LikeIcon className={`${likeState === "liked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={data.likes} />
+          <LikeDislikeButton onClick={handleLike} icon={<LikeIcon className={`${likeState === "liked" ? "stroke-primary6 fill-primary6" : "stroke-NeutralN300"}`} />} counter={data.likes} />
         </div>
       </div>
       <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
