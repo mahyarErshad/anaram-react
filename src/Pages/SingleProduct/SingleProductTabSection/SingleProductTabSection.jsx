@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import styles from "./styles.module.css";
-import { Rating } from "react-simple-star-rating";
-import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import SingleProductTable from "./Components/SingleProductTable/SingleProductTable";
 import SingleProductComments from "./Components/SingleProductComments/SingleProductComments";
 
 function SingleProductTabSection() {
-  const [rating, setRating] = useState(0);
+
   return (
     <section className="large-container p-10 flex-col">
       <Tabs>
