@@ -8,10 +8,10 @@ import { useState } from "react";
 function ClientComment({ data }) {
   const [likeState, setLikeState] = useState("");
   const handleDislike = () => {
-    likeState === "liked" ? setLikeState("") : setLikeState("liked");
+    likeState === "disliked" ? setLikeState("") : setLikeState("disliked");
   };
   const handleLike = () => {
-    likeState === "disliked" ? setLikeState("") : setLikeState("disliked");
+    likeState === "liked" ? setLikeState("") : setLikeState("liked");
   };
   return (
     <div className="pb-8 border-b border-NeutralN30 flex-col gap-4 w-full">
@@ -25,8 +25,8 @@ function ClientComment({ data }) {
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
-          <LikeDislikeButton onClick={handleDislike} icon={<DislikeIcon className="stroke-NeutralN300" />} counter={data.dislikes} />
-          <LikeDislikeButton onClick={handleLike} icon={<LikeIcon className="stroke-NeutralN300" />} counter={data.likes} />
+          <LikeDislikeButton onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={data.dislikes} />
+          <LikeDislikeButton onClick={handleLike} icon={<LikeIcon className={`${likeState === "liked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={data.likes} />
         </div>
       </div>
       <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
