@@ -25,7 +25,7 @@ function ClientComment({ data }) {
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
-          <LikeDislikeButton className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "bg-NeutralN10"}`} onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={likeState === "disliked" ? data.dislikes + 1 : data.dislikes} />
+          <LikeDislikeButton className={`${likeState === "disliked" ? "bg-Red1" : "bg-NeutralN10"}`} onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={likeState === "disliked" ? data.dislikes + 1 : data.dislikes} />
           <LikeDislikeButton className={`${likeState === "liked" ? "bg-primary1" : "bg-NeutralN10"}`} onClick={handleLike} icon={<LikeIcon className={`${likeState === "liked" ? "stroke-primary6 fill-primary6" : "stroke-NeutralN300"}`} />} counter={likeState === "liked" ? data.likes + 1 : data.likes} />
         </div>
       </div>
