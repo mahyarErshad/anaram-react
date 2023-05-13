@@ -1,6 +1,10 @@
 import React from "react";
+import { Rating } from "react-simple-star-rating";
+import PrimaryButton from "../../../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
+import { useState } from "react";
 
 function SingleProductForm() {
+  const [rating, setRating] = useState(0);
   return (
     <form onSubmit={(e) => e.preventDefault()} className="flex-col items-start">
       <label htmlFor="text-area" className="text-NeutralN500 font-semibold text-xs">
