@@ -3,31 +3,10 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import styles from "./styles.module.css";
 import { Rating } from "react-simple-star-rating";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
+import SingleProductTable from "./Components/SingleProductTable/SingleProductTable";
 
 function SingleProductTabSection() {
   const [rating, setRating] = useState(0);
-  const data = [
-    {
-      Q: "نوع باتری",
-      A: "کتابی",
-    },
-    {
-      Q: "ولتاژ باتری باتری",
-      A: "۹ ولت",
-    },
-    {
-      Q: "نوع تکنولوژی باتری",
-      A: "آلکالاین",
-    },
-    {
-      Q: "قابلیت های باتری",
-      A: "ماندگاری طولانی",
-    },
-    {
-      Q: "تعداد باتری‌های موجود در پک",
-      A: "۱ عدد",
-    },
-  ];
   return (
     <section className="large-container p-10 flex-col">
       <Tabs>
@@ -36,16 +15,7 @@ function SingleProductTabSection() {
           <Tab className={`${styles.tab} relative pb-4 cursor-pointer`}>نظرات</Tab>
         </TabList>
         <TabPanel className="mt-10">
-          <ul>
-            {data.map(({ Q , A }, index) => {
-              return (
-                <li key={index} className="flex items-center py-3 px-6 odd:bg-NeutralN10 even:bg-white">
-                  <span className="text-NeutralN100 text-sm w-[13.4375rem] border-l border-NeutralN30 h-10 flex items-center">{Q}</span>
-                  <span className="text-sm text-NeutralN500 font-semibold flex-grow pr-10">{A}</span>
-                </li>
-              );
-            })}
-          </ul>
+        <SingleProductTable />
         </TabPanel>
         <TabPanel className="mt-10 flex items-center gap-14">
           <div className="bg-white border border-NeutralN20 rounded-lg p-6 min-w-[21.875rem]">
@@ -61,7 +31,7 @@ function SingleProductTabSection() {
               <PrimaryButton text="ثبت دیدگاه" className="w-full" />
             </form>
           </div>
-          
+
         </TabPanel>
       </Tabs>
     </section>
