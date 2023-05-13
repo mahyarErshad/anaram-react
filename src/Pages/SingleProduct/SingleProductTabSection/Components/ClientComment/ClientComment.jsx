@@ -11,7 +11,7 @@ function ClientComment({ data }) {
             <span className="text-NeutralN500 text-xs font-semibold">{data.name}</span>
             <span className="text-[0.5625rem] text-NeutralN70">{data.date}</span>
           </div>
-          <Rating initialValue={data.rating} size={14} onClick={function noRefCheck() {}} readonly />
+          <Rating initialValue={data.rating} size={14} readonly />
         </div>
       </div>
     </div>
