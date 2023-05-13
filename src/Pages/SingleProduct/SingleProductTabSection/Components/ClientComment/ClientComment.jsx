@@ -19,8 +19,8 @@ function ClientComment({ data }) {
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
-          <LikeDislikeButton icon={<DislikeIcon />} counter={data.dislikes} />
-          <LikeDislikeButton icon={<LikeIcon />} counter={data.likes} />
+          <LikeDislikeButton icon={<DislikeIcon className="stroke-NeutralN300" />} counter={data.dislikes} />
+          <LikeDislikeButton icon={<LikeIcon className="stroke-NeutralN300" />} counter={data.likes} />
         </div>
       </div>
       <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
