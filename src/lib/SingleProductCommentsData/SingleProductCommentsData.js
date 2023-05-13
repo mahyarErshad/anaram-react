@@ -1,6 +1,8 @@
+import avatar1 from "../../assets/images/data/single-product-comments/1.svg";
+
 const SingleProductCommentsData = [
   {
-    avatar: "https://img.icons8.com/office/40/user.png",
+    avatar: avatar1,
     name: "حسین نادری",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 5,
