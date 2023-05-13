@@ -4,6 +4,7 @@ import { ReactComponent as DislikeIcon } from "../../../../../assets/images/icon
 import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/like-icon.svg";
 import LikeDislikeButton from "./LikeDislikeButton";
 import { useState } from "react";
+import adminAvatar from "../../../../../assets/images/data/single-product-comments/5.svg";
 
 function ClientComment({ data }) {
   const [likeState, setLikeState] = useState("");
@@ -14,7 +15,7 @@ function ClientComment({ data }) {
     likeState === "liked" ? setLikeState("") : setLikeState("liked");
   };
   return (
-    <div className="pb-8 border-b border-NeutralN30 flex-col gap-4 w-full">
+    <div className="pb-8 border-b border-NeutralN30 flex-col gap-2 w-full">
       <div className="flex justify-between items-center">
         <div className="flex gap-3">
           <img className="w-10 h-10 rounded-full" src={data.avatar} alt="avatar" />
@@ -30,6 +31,18 @@ function ClientComment({ data }) {
         </div>
       </div>
       <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
+      {data.AdminReply && (
+        <div className="flex-col gap-2 mt-6 mr-[3.25rem]">
+          <div className="flex gap-3">
+            <img className="w-10 h-10 rounded-full" src={adminAvatar} alt="Anaram admin avatar" />
+            <div className="flex-col justify-center gap-1">
+              <span className="text-NeutralN500 text-xs font-semibold">کارشناس آنارام</span>
+              <span className="text-[0.5625rem] text-NeutralN70">{data.AdminReply.date}</span>
+            </div>
+          </div>
+          <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.AdminReply.comment}</p>
+        </div>
+      )}
     </div>
   );
 }
