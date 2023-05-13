@@ -13,6 +13,11 @@ function ClientComment({ data }) {
           </div>
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
+        <div className="flex-center gap-2">
+        <button className="flex-center py-2 pl-2 pr-4 gap-3">
+        
+        </button>
+        </div>
       </div>
     </div>
   );
