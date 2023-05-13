@@ -21,6 +21,7 @@ function ClientComment({ data }) {
           <LikeDislikeButton icon={<LikeIcon />} counter={data.likes} />
         </div>
       </div>
+      <p className="text-sm text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
     </div>
   );
 }
