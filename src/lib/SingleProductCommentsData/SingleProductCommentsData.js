@@ -1,4 +1,4 @@
-const data = [
+const SingleProductCommentsData = [
   {
     avatar: "https://img.icons8.com/fluency/40/person-male.png",
     name: "حسین نادری",
@@ -10,4 +10,4 @@ const data = [
   },
 ];
 
-export default data;
+export default SingleProductCommentsData;
