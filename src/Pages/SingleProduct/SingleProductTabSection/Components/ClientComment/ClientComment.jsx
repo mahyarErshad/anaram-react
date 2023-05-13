@@ -1,5 +1,6 @@
 import React from "react";
 import { Rating } from "react-simple-star-rating";
+import { ReactComponent as DislikeIcon } from "../../../../../assets/images/icons/dislike-icon.svg";
 
 function ClientComment({ data }) {
   return (
@@ -15,7 +16,7 @@ function ClientComment({ data }) {
         </div>
         <div className="flex-center gap-2">
         <button className="flex-center py-2 pl-2 pr-4 gap-3">
-        
+
         </button>
         </div>
       </div>
