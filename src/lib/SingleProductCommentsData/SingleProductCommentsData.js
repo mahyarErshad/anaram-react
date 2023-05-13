@@ -17,7 +17,7 @@ const SingleProductCommentsData = [
     avatar: avatar2,
     name: "نازنین صادقی",
     date: "۱۴۰۲/۰۵/۱۲",
-    rating: 4,
+    rating: 5,
     dislikes: 0,
     likes: 100,
     comment: "خیلی چیز خوبیه واقعا خیلی قویه و عمرش خیلی طولانیه من الانم استفاده میکنم بازم خیلی خوبه",
