@@ -6,7 +6,7 @@ import LikeDislikeButton from "./LikeDislikeButton";
 import { useState } from "react";
 
 function ClientComment({ data }) {
-    const [likeState, setLikeState] = useState("")
+  const [likeState, setLikeState] = useState(null);
   return (
     <div className="pb-8 border-b border-NeutralN30 flex-col gap-4 w-full">
       <div className="flex justify-between items-center">
