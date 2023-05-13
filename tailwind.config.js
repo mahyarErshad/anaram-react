@@ -32,6 +32,7 @@ module.exports = {
         // magenta
         Magenta: "#E0144C",
         // green
+        Green6: "#3BA53D",
         Green7: "#328C34",
       },
     },
