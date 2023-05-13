@@ -5,3 +5,6 @@
   opacity: 1;
   transform: scaleY(1);
 }
+.cartButton::after{
+  
+}
