@@ -3,8 +3,10 @@ import { Rating } from "react-simple-star-rating";
 import { ReactComponent as DislikeIcon } from "../../../../../assets/images/icons/dislike-icon.svg";
 import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/like-icon.svg";
 import LikeDislikeButton from "./LikeDislikeButton";
+import { useState } from "react";
 
 function ClientComment({ data }) {
+    const [likeState, setLikeState] = useState("")
   return (
     <div className="pb-8 border-b border-NeutralN30 flex-col gap-4 w-full">
       <div className="flex justify-between items-center">
