@@ -1,6 +1,6 @@
 const SingleProductCommentsData = [
   {
-    avatar: "https://img.icons8.com/fluency/40/person-male.png",
+    avatar: "https://img.icons8.com/office/40/user.png",
     name: "حسین نادری",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 5,
