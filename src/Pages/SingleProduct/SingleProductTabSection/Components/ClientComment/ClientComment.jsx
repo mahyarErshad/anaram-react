@@ -2,6 +2,7 @@ import React from "react";
 import { Rating } from "react-simple-star-rating";
 import { ReactComponent as DislikeIcon } from "../../../../../assets/images/icons/dislike-icon.svg";
 import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/like-icon.svg";
+import LikeDislikeButton from "./LikeDislikeButton";
 
 function ClientComment({ data }) {
   return (
@@ -16,14 +17,8 @@ function ClientComment({ data }) {
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
-          <button className="flex-center py-2 pl-2 pr-4 gap-3 bg-NeutralN10 rounded-5px">
-            <span className="text-sm text-NeutralN300 font-semibold">{data.dislikes}</span>
-            <DislikeIcon />
-          </button>
-          <button className="flex-center py-2 pl-2 pr-4 gap-3 bg-NeutralN10 rounded-5px">
-            <span className="text-sm text-NeutralN300 font-semibold">{data.likes}</span>
-            <LikeIcon />
-          </button>
+          <LikeDislikeButton icon={<DislikeIcon />} counter={data.dislikes} />
+          <LikeDislikeButton icon={<LikeIcon />} counter={data.likes} />
         </div>
       </div>
     </div>
