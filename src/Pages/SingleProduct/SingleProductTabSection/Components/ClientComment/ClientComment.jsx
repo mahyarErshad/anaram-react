@@ -16,9 +16,10 @@ function ClientComment({ data }) {
           <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
-        <button className="flex-center py-2 pl-2 pr-4 gap-3">
-
-        </button>
+          <button className="flex-center py-2 pl-2 pr-4 gap-3 bg-NeutralN10 rounded-5px">
+            <span className="text-sm text-NeutralN300 font-semibold">{data.dislikes}</span>
+            <DislikeIcon />
+          </button>
         </div>
       </div>
     </div>
