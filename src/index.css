@@ -136,3 +136,15 @@ button[aria-expanded="true"] .arrow-icon {
 .star-svg {
   display: inline-block;
 }
+/* Single product page red before */
+.discount-red-flag::before {
+  content: "";
+  width: 97%;
+  height: 5px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: var(--magenta);
+  position: absolute;
+  top: 0;
+  right: 1.5%;
+}
