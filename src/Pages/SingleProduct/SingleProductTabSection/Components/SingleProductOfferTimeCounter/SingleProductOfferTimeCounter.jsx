@@ -11,4 +11,4 @@ const SingleProductOfferTimeCounter = ({ number, text }) => {
   );
 };
 
-export default ProductCardTimeCounter;
+export default SingleProductOfferTimeCounter;
