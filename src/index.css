@@ -148,3 +148,14 @@ button[aria-expanded="true"] .arrow-icon {
   top: 0;
   right: 1.5%;
 }
+/* For discount text */
+.lineThrough::before {
+  content: "";
+  position: absolute;
+  height: 0.0625rem;
+  width: 120%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-200%);
+  background-color: #858585;
+}
