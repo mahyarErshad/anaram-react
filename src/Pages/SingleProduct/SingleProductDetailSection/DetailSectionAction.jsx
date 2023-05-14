@@ -6,7 +6,7 @@ import ActionSectionQuantity from "./ActionSectionQuantity";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 import { Link } from "react-router-dom";
-import ProductCardTimeCounter from "../../../Components/ProductCards/ProductCardComponents/ProductCardTimeCounter/ProductCardTimeCounter";
+import SingleProductOfferTimeCounter from "../SingleProductTabSection/Components/SingleProductOfferTimeCounter/SingleProductOfferTimeCounter";
 
 const DetailSectionAction = ({ state }) => {
   const [addToCart, setAddToCart] = useState(false);
@@ -20,7 +20,7 @@ const DetailSectionAction = ({ state }) => {
             <span className="text-sm text-Magenta font-semibold">شگفت انگــیز</span>
           </div>
           <div className="flex-center gap-2">
-            <ProductCardTimeCounter number={3} text="ثانیه" />
+            <SingleProductOfferTimeCounter number={3} text="ثانیه" />
           </div>
         </div>
       )}
