@@ -1,5 +1,5 @@
 import React from "react";
-import { separateNumberByThousand } from "../../../../lib/function/convertToPersianDigits";
+import { separateNumberByThousand } from "../../../../../lib/function/convertToPersianDigits";
 
 const SingleProductOfferTimeCounter = ({ number, text }) => {
   const formattedNumber = separateNumberByThousand(number).padStart(2, "0");
