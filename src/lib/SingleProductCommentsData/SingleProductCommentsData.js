@@ -1,12 +1,12 @@
-import avatar1 from "../../assets/images/data/single-product-comments/1.svg";
-import avatar2 from "../../assets/images/data/single-product-comments/2.svg";
-import avatar3 from "../../assets/images/data/single-product-comments/3.svg";
-import avatar4 from "../../assets/images/data/single-product-comments/4.svg";
+import avatar1 from "../../assets/images/data/single-product-comments/1.jpg";
+import avatar2 from "../../assets/images/data/single-product-comments/2.jpg";
+import avatar3 from "../../assets/images/data/single-product-comments/3.jpg";
+import avatar4 from "../../assets/images/data/single-product-comments/4.jpg";
 
 const SingleProductCommentsData = [
   {
     avatar: avatar1,
-    name: "حسین نادری",
+    name: "نیکا شاکرمی",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 5,
     dislikes: 2,
@@ -15,7 +15,7 @@ const SingleProductCommentsData = [
   },
   {
     avatar: avatar2,
-    name: "نازنین صادقی",
+    name: "سارینا اسماعیل زاده",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 5,
     dislikes: 0,
@@ -24,7 +24,7 @@ const SingleProductCommentsData = [
   },
   {
     avatar: avatar3,
-    name: "برکه احمدی",
+    name: "کیان پیرفلک",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 4,
     dislikes: 5,
@@ -33,7 +33,7 @@ const SingleProductCommentsData = [
   },
   {
     avatar: avatar4,
-    name: "ساحل سماواتی",
+    name: "مهسا امینی",
     date: "۱۴۰۲/۰۵/۱۲",
     rating: 1,
     dislikes: 28,
