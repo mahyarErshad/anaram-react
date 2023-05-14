@@ -9,8 +9,17 @@ import { Link } from "react-router-dom";
 
 const DetailSectionAction = ({ state }) => {
   const [addToCart, setAddToCart] = useState(false);
+  const [hasDiscount, setHasDiscount] = useState(true);
   return (
     <section className="justify-self-end bg-NeutralN10 border border-NeutralN10 rounded-2xl pt-10 pb-6 px-6 flex-col gap-7 min-w-[24.375rem]">
+      {hasDiscount && (
+        <div className="flex justify-between items-center w-full">
+          <div className="flex-col gap-[0.375rem]">
+            <span className="text-sm text-NeutralN500 font-semibold">پیشنــهاد</span>
+            <span className="text-sm text-Magenta font-semibold">شگفت انگــیز</span>
+          </div>
+        </div>
+      )}
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
         <ShieldTick />
         <span className="text-sm text-NeutralN100">گارانتی و تضمین اصالت کالا</span>
