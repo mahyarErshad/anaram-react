@@ -8,6 +8,7 @@ const ActionSectionQuantity = ({ title, quantity, toman, counter, hasDiscount })
       <span className="text-NeutralN500 font-medium text-base">{title}</span>
       <div className="flex items-center gap-2">
         <div className="flex-col justify-center items-end">
+        
           <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(quantity)}</span>
         </div>
         {toman && <TomanIcon className="w-5 h-4" />}
