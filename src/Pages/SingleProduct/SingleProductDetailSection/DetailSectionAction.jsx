@@ -11,8 +11,12 @@ import SingleProductOfferTimeCounter from "../SingleProductTabSection/Components
 const DetailSectionAction = ({ state }) => {
   const [addToCart, setAddToCart] = useState(false);
   const [hasDiscount, setHasDiscount] = useState(true);
+  const handleClick = () => {
+    setAddToCart((prev) => !prev);
+    setHasDiscount((prev) => !prev);
+  };
   return (
-    <section className="justify-self-end bg-NeutralN10 border border-NeutralN10 rounded-2xl pt-10 pb-6 px-6 flex-col gap-7 min-w-[24.375rem]">
+    <section className={`justify-self-end bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-2" : "pt-10"} pb-6 px-6 flex-col gap-7 min-w-[24.375rem]`}>
       {hasDiscount && (
         <div className="flex justify-between items-center w-full">
           <div className="flex-col gap-[0.375rem]">
@@ -21,6 +25,9 @@ const DetailSectionAction = ({ state }) => {
           </div>
           <div className="flex-center gap-2">
             <SingleProductOfferTimeCounter number={3} text="ثانیه" />
+            <SingleProductOfferTimeCounter number={26} text="دقیقه" />
+            <SingleProductOfferTimeCounter number={17} text="ساعت" />
+            <SingleProductOfferTimeCounter number={2} text="روز" />
           </div>
         </div>
       )}
@@ -41,11 +48,11 @@ const DetailSectionAction = ({ state }) => {
       <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
       <ActionSectionQuantity title="تعداد سفارش :" quantity={state} counter />
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
-      {!addToCart && <PrimaryButton onClick={() => setAddToCart(true)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
+      {!addToCart && <PrimaryButton onClick={handleClick} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
       {addToCart && (
         <div className="flex justify-between items-center h-full">
           <span className="text-Green6 text-sm font-semibold">به سبد خرید افزوده شد</span>
-          <Link className="text-primary6 text-sm font-semibold" to="/products/product/id-1234">
+          <Link onClick={handleClick} className="text-primary6 text-sm font-semibold" to="/products/product/id-1234">
             مشاهده سبد خرید
           </Link>
         </div>
