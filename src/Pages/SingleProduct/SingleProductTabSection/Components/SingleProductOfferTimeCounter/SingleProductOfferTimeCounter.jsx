@@ -4,8 +4,8 @@ import { separateNumberByThousand } from "../../../../../lib/function/convertToP
 const SingleProductOfferTimeCounter = ({ number, text }) => {
   const formattedNumber = separateNumberByThousand(number).padStart(2, "0");
   return (
-    <div className={`flex-col justify-between items-center h-full w-1/4 border-r border-NeutralN30`}>
-      <span className="text-xs font-semibold text-Magenta">{formattedNumber}</span>
+    <div className={`flex-col gap-2 items-center`}>
+      <span className="text-sm font-semibold text-Magenta bg-NeutralN20 py-2 px-3 rounded-5px h-10 w-10 flex-center">{formattedNumber}</span>
       <span className="text-[0.5rem] text-NeutralN50 transition-all duration-300">{text}</span>
     </div>
   );
