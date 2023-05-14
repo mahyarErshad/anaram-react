@@ -45,7 +45,7 @@ const DetailSectionAction = ({ state }) => {
           <DeliveryOptionCard text="ارسال رایگان" />
         </div>
       </div>
-      <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman />
+      <ActionSectionQuantity title="قیمت محصول :" quantity={124000} toman hasDiscount={hasDiscount} />
       <ActionSectionQuantity title="تعداد سفارش :" quantity={state} counter />
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
       {!addToCart && <PrimaryButton onClick={handleClick} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
