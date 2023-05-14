@@ -159,3 +159,7 @@ button[aria-expanded="true"] .arrow-icon {
   transform: translateY(-200%);
   background-color: #858585;
 }
+/*  */
+.discount-percentage-icon {
+  background: url(./assets/images/icons/product-card-discount-background.svg) center/cover no-repeat;
+}
