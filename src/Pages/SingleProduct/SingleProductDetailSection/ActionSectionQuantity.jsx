@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as TomanIcon } from "../../../assets/images/icons/toman-icon-black.svg";
 import { separateNumberByThousand } from "../../../lib/function/convertToPersianDigits";
 
-const ActionSectionQuantity = ({ title, quantity, toman, counter }) => {
+const ActionSectionQuantity = ({ title, quantity, toman, counter, hasDiscount }) => {
   return (
     <div className="flex justify-between items-center pb-6 border-b border-NeutralN30 last-of-type:border-none">
       <span className="text-NeutralN500 font-medium text-base">{title}</span>
