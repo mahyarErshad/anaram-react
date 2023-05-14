@@ -1,7 +1,3 @@
-.discount-percentage {
-  background: url(../../../assets/images/icons/product-card-discount-background.svg) center/cover no-repeat;
-}
-
 .card:hover {
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
 }
