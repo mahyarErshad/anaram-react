@@ -5,6 +5,7 @@ import { useState } from "react";
 
 function SingleProductForm() {
   const [rating, setRating] = useState(0);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   return (
     <form onSubmit={(e) => e.preventDefault()} className="flex-col items-start">
       <label htmlFor="text-area" className="text-NeutralN500 font-semibold text-xs">
