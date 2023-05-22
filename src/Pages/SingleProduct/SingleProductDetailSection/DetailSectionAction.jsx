@@ -37,9 +37,9 @@ const DetailSectionAction = ({ state }) => {
       <ActionSectionQuantity title="قیمت نهایی محصولات :" quantity={state * 124000} toman />
       {!addToCart && <PrimaryButton onClick={handleClick} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
       {addToCart && (
-        <div className="flex justify-between items-center h-full">
-          <span className="text-Green6 text-sm font-semibold">به سبد خرید افزوده شد</span>
-          <Link onClick={handleClick} className="text-primary6 text-sm font-semibold" to="/products/product/id-1234">
+        <div className="flex justify-between items-center h-full gap-2">
+          <span className="text-Green6 text-sm font-semibold text-center">به سبد خرید افزوده شد</span>
+          <Link onClick={handleClick} className="text-primary6 text-sm font-semibold text-center" to="/products/product/id-1234">
             مشاهده سبد خرید
           </Link>
         </div>
