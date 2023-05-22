@@ -12,11 +12,6 @@
   padding: 1.5rem 0;
 }
 
-/* Swiper Single Product */
-.swiper-single-product {
-  height: 6rem;
-}
-
 .swiper-single-product .swiper-slide {
   width: 25%;
   height: 100%;
