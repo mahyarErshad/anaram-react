@@ -34,8 +34,10 @@
 @media (max-width: 1024px) {
   .swiper-single-product-large-image {
     flex-grow: 1;
+    flex-shrink: 1;
   }
   .swiper-single-product {
     width: 20%;
+    flex-shrink: 0;
   }
 }
