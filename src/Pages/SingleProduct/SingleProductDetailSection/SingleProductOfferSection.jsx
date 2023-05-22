@@ -3,7 +3,7 @@ import SingleProductOfferTimeCounter from "../SingleProductTabSection/Components
 
 function SingleProductOfferSection() {
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="flex justify-between items-center w-full gap-2">
       <div className="flex-col gap-[0.375rem]">
         <span className="text-sm text-NeutralN500 font-semibold">پیشنــهاد</span>
         <span className="text-sm text-Magenta font-semibold">شگفت انگــیز</span>
