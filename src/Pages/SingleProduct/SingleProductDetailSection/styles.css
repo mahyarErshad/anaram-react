@@ -31,3 +31,11 @@
   opacity: 1;
   background-color: var(--NeutralN40);
 }
+@media (max-width: 1024px) {
+  .swiper-single-product-large-image {
+    flex-grow: 1;
+  }
+  .swiper-single-product {
+    width: 20%;
+  }
+}
