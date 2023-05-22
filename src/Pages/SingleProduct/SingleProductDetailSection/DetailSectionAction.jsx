@@ -6,7 +6,7 @@ import ActionSectionQuantity from "./ActionSectionQuantity";
 import PrimaryButton from "../../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 import { ReactComponent as CartIcon } from "../../../assets/images/icons/bag-icon.svg";
 import { Link } from "react-router-dom";
-import SingleProductOfferTimeCounter from "../SingleProductTabSection/Components/SingleProductOfferTimeCounter/SingleProductOfferTimeCounter";
+import SingleProductOfferSection from "./SingleProductOfferSection";
 
 const DetailSectionAction = ({ state }) => {
   const [addToCart, setAddToCart] = useState(false);
@@ -17,9 +17,7 @@ const DetailSectionAction = ({ state }) => {
   };
   return (
     <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 w-1/4 flex-shrink-0`}>
-      {hasDiscount && (
-
-      )}
+      {hasDiscount && <SingleProductOfferSection />}
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
         <ShieldTick />
         <span className="text-sm text-NeutralN100">گارانتی و تضمین اصالت کالا</span>
