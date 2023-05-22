@@ -1,4 +1,5 @@
 import React from "react";
+import SingleProductOfferTimeCounter from "../SingleProductTabSection/Components/SingleProductOfferTimeCounter/SingleProductOfferTimeCounter";
 
 function SingleProductOfferSection() {
   return (
