@@ -28,7 +28,7 @@ const DetailSectionImage = () => {
         <SmallButton className="p-3 bg-NeutralN10" icon={<CompareIcon className="w-6 h-6" />} />
         <SmallButton className="p-3 bg-NeutralN10" icon={<PresentationChart />} />
       </div>
-      <div className="w-full relative">
+      <div className="w-full flex lg:flex-col gap-4">
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {slides}
         </Swiper>
