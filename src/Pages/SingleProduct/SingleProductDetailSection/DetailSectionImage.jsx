@@ -32,7 +32,7 @@ const DetailSectionImage = () => {
         <Swiper style={{ "--swiper-pagination-color": "transparent" }} spaceBetween={10} keyboard={{ enabled: true }} thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }} modules={[Keyboard, FreeMode, Thumbs]} className="swiper-single-product-large-image">
           {slides}
         </Swiper>
-        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" direction="vertical" breakpoints={{ 1024: { direction: "horizontal" } }} freeMode modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
+        <Swiper onSwiper={setThumbsSwiper} slidesPerView="auto" breakpoints={{ 365: { direction: "vertical" }, 1024: { direction: "horizontal" } }} freeMode modules={[FreeMode, Thumbs]} className="swiper-single-product cursor-pointer">
           {slides}
         </Swiper>
       </div>
