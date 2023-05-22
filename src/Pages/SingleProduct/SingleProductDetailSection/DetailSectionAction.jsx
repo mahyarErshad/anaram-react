@@ -16,7 +16,7 @@ const DetailSectionAction = ({ state }) => {
     setHasDiscount((prev) => !prev);
   };
   return (
-    <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 min-w-[24.375rem]`}>
+    <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 w-1/4 flex-shrink-0`}>
       {hasDiscount && (
         <div className="flex justify-between items-center w-full">
           <div className="flex-col gap-[0.375rem]">
