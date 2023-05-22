@@ -26,7 +26,7 @@ const data = [
 
 function DetailSectionTextSection({state, setState}) {
   return (
-    <section className="flex-grow px-5 flex-col gap-10 lg:mr-16">
+    <section className="lg:flex-grow max-lg:w-full px-5 flex-col gap-10 lg:mr-16">
       <h1 className="text-lg text-NeutralN500 font-semibold">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</h1>
       <div className="flex-col gap-4">
         <h3 className="text-NeutralN500 font-semibold">ویژگی ها</h3>

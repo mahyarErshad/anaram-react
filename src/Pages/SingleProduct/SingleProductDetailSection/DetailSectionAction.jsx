@@ -16,7 +16,7 @@ const DetailSectionAction = ({ state }) => {
     setHasDiscount((prev) => !prev);
   };
   return (
-    <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 w-1/4 min-w-[17.1875rem]`}>
+    <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 w-1/4 max-lg:w-full min-w-[17.1875rem]`}>
       {hasDiscount && <SingleProductOfferSection />}
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
         <ShieldTick />
