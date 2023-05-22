@@ -18,18 +18,7 @@ const DetailSectionAction = ({ state }) => {
   return (
     <section className={`justify-self-end relative bg-NeutralN10 border border-NeutralN10 rounded-2xl ${hasDiscount ? "pt-4 discount-red-flag" : "pt-10"} pb-6 px-6 flex-col gap-7 w-1/4 flex-shrink-0`}>
       {hasDiscount && (
-        <div className="flex justify-between items-center w-full">
-          <div className="flex-col gap-[0.375rem]">
-            <span className="text-sm text-NeutralN500 font-semibold">پیشنــهاد</span>
-            <span className="text-sm text-Magenta font-semibold">شگفت انگــیز</span>
-          </div>
-          <div className="flex-center gap-2">
-            <SingleProductOfferTimeCounter number={3} text="ثانیه" />
-            <SingleProductOfferTimeCounter number={26} text="دقیقه" />
-            <SingleProductOfferTimeCounter number={17} text="ساعت" />
-            <SingleProductOfferTimeCounter number={2} text="روز" />
-          </div>
-        </div>
+
       )}
       <div className="flex justify-start items-center gap-2 pb-6 border-b border-NeutralN30">
         <ShieldTick />
