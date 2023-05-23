@@ -7,7 +7,7 @@ import DeliveryOptionCard from "./DeliveryOptionCard";
 import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add.svg";
 import SingleProductIncreaseDecreaseButton from "../../../Components/Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
 
-function SingleProductSmallScreenAction() {
+function SingleProductSmallScreenAction({state , setState}) {
   return (
     <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col">
       <div className="flex justify-between items-center px-6">
