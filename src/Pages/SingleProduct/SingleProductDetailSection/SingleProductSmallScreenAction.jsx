@@ -6,8 +6,10 @@ import { ReactComponent as TomanIcon } from "../../../assets/images/icons/toman-
 import DeliveryOptionCard from "./DeliveryOptionCard";
 import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add.svg";
 import SingleProductIncreaseDecreaseButton from "../../../Components/Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
+import { useState } from "react";
 
 function SingleProductSmallScreenAction({state , setState}) {
+  const [isBuying, setIsBuying] = useState()
   return (
     <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col">
       <div className="flex justify-between items-center px-6">
