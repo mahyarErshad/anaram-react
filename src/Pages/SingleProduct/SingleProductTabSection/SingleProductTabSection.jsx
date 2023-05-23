@@ -16,7 +16,7 @@ function SingleProductTabSection() {
         <TabPanel className="mt-10">
           <SingleProductTable />
         </TabPanel>
-        <TabPanel className="mt-10 flex items-start gap-14">
+        <TabPanel className="mt-10 flex items-start gap-14 max-lg:flex-col">
           <SingleProductComments />
         </TabPanel>
       </Tabs>
