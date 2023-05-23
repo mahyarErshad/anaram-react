@@ -14,7 +14,7 @@ import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/b
 const DetailSectionImage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [redHeart, setRedHeart] = useState(false);
-  const arr = [...Array(10).keys()];
+  const arr = [...Array(4).keys()];
   const slides = arr.map((index) => (
     <SwiperSlide key={index}>
       <img src={batteryImage} alt="battery" />
