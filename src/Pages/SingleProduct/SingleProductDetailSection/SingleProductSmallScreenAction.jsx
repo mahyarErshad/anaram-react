@@ -8,13 +8,13 @@ import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add
 import SingleProductIncreaseDecreaseButton from "../../../Components/Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
 import { useState } from "react";
 
-function SingleProductSmallScreenAction({state , setState}) {
-  const [isBuying, setIsBuying] = useState(false)
+function SingleProductSmallScreenAction({ state, setState }) {
+  const [isBuying, setIsBuying] = useState(false);
   return (
     <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col">
       <div className="flex justify-between items-center px-6">
-        <PrimaryButton onClick={()=>setIsBuying(true)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />
-        <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
+        <PrimaryButton onClick={() => setIsBuying(true)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />
+        {isBuying && <SingleProductIncreaseDecreaseButton state={state} setState={setState} />}
         <div className="flex items-center gap-2">
           <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(124000 * state)}</span>
           <TomanIcon className="w-5 h-4" />
