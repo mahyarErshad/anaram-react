@@ -40,7 +40,7 @@ function DetailSectionTextSection({state, setState}) {
           ))}
         </ul>
       </div>
-      <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
+      <SingleProductIncreaseDecreaseButton className="max-lg:hidden" state={state} setState={setState} />
     </section>
   );
 }
