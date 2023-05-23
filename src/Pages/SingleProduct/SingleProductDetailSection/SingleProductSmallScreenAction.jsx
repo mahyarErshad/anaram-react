@@ -14,7 +14,7 @@ function SingleProductSmallScreenAction({state , setState}) {
         <PrimaryButton icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />
         <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
         <div className="flex items-center gap-2">
-          <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(124000)}</span>
+          <span className="text-NeutralN500 font-semibold text-lg">{separateNumberByThousand(124000 * state)}</span>
           <TomanIcon className="w-5 h-4" />
         </div>
       </div>
