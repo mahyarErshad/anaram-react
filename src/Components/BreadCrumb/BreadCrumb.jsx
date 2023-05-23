@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./style.module.css"
+import styles from "./style.module.css";
 
 function BreadCrumbs() {
   const data = [
@@ -19,7 +19,7 @@ function BreadCrumbs() {
   ];
   const crumbs = data.map((crumb) => {
     return (
-      <div className={`text-xs text-NeutralN100 last-of-type:text-primary6 font-semibold hover:text-primary8 duration-300 relative px-2 ${styles.container}`} key={crumb.title}>
+      <div className={`text-xs text-NeutralN100 last-of-type:text-primary6 font-semibold hover:text-primary8 duration-300 relative px-2 max-lg:hidden ${styles.container}`} key={crumb.title}>
         <Link to={crumb.to}>{crumb.title}</Link>
       </div>
     );
