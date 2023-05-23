@@ -8,7 +8,7 @@ import { ReactComponent as ShopAdd } from "../../../assets/images/icons/shop-add
 
 function SingleProductSmallScreenAction() {
   return (
-    <section className="w-full bg-white rounded-lg px-3 pt-3 pb-4 flex-col">
+    <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col">
       <div className="flex justify-between items-center px-6">
         <PrimaryButton icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />
         <div className="flex items-center gap-2">
