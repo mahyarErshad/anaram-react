@@ -9,7 +9,7 @@ import SingleProductIncreaseDecreaseButton from "../../../Components/Utils/Butto
 
 function SingleProductSmallScreenAction({ state, setState }) {
   return (
-    <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col">
+    <section className="w-full bg-white rounded-lg px-3 pt-5 pb-4 flex-col lg:hidden">
       <div className="flex justify-between items-center px-6">
         {state === 1 && <PrimaryButton onClick={() => setState((prev) => prev + 1)} icon={<CartIcon className="stroke-white" />} text="افزودن به سبد" />}
         {state > 1 && <SingleProductIncreaseDecreaseButton state={state} setState={setState} />}
