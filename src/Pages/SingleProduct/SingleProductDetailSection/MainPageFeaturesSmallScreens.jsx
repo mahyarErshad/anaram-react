@@ -2,7 +2,9 @@ import React from 'react'
 
 function MainPageFeaturesSmallScreens() {
   return (
-    <div>MainPageFeaturesSmallScreens</div>
+    <section className='w-full flex-col gap-3'>
+
+    </section>
   )
 }
 
