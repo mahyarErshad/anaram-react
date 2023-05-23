@@ -7,10 +7,10 @@ import MainPageFeaturesSmallScreens from "../SingleProductDetailSection/MainPage
 import { useState } from "react";
 
 function SingleProductPage() {
-  const [state , setState] = useState(1)
+  const [state, setState] = useState(1);
   return (
     <section className="flex-col gap-6 w-full px-4 pt-10 pb-20">
-      <SingleProductDetailSection />
+      <SingleProductDetailSection state={state} setState={setState} />
       <SingleProductSmallScreenAction />
       <MainPageFeatures className="max-w-[102rem] max-lg:hidden" />
       <MainPageFeaturesSmallScreens />
