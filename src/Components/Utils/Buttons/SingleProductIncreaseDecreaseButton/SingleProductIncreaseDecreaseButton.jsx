@@ -3,9 +3,9 @@ import { ReactComponent as PlusIcon } from "../../../../assets/images/icons/incr
 import { ReactComponent as MinusIcon } from "../../../../assets/images/icons/decrease-singleProduct-icon.svg";
 import styles from "./style.module.css";
 
-function SingleProductIncreaseDecreaseButton({ state, setState }) {
+function SingleProductIncreaseDecreaseButton({ state, setState, className }) {
   return (
-    <div className="py-3 px-6 bg-NeutralN10 flex-center gap-9 w-fit rounded-lg max-w-[15rem]">
+    <div className={`py-3 px-6 bg-NeutralN10 flex-center gap-9 w-fit rounded-lg max-w-[15rem] ${className}`}>
       <span className="text-sm text-NeutralN100 font-semibold">تعداد</span>
       <div className="flex-center">
         <button disabled={state === 10} onClick={() => setState((prev) => prev + 1)} className={`h-full flex-center p-2 bg-NeutralN20 rounded-[0.25rem] ${styles.button}`}>
