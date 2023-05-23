@@ -4,7 +4,6 @@ import DetailSectionImage from "./DetailSectionImage";
 import DetailSectionTextSection from "./DetailSectionTextSection";
 import DetailSectionAction from "./DetailSectionAction";
 import { useState } from "react";
-import SingleProductSmallScreenAction from "./SingleProductSmallScreenAction";
 
 function SingleProductDetailSection() {
   const [state , setState] = useState(1)
@@ -15,7 +14,6 @@ function SingleProductDetailSection() {
         <DetailSectionImage />
         <DetailSectionTextSection state={state} setState={setState} />
         <DetailSectionAction state={state} />
-        <SingleProductSmallScreenAction />
       </div>
     </section>
   );
