@@ -3,6 +3,7 @@ import SingleProductDetailSection from "../SingleProductDetailSection/SingleProd
 import MainPageFeatures from "../../MainPage/MainPageFeatures/MainPageFeatures";
 import SingleProductTabSection from "../SingleProductTabSection/SingleProductTabSection";
 import SingleProductSmallScreenAction from "../SingleProductDetailSection/SingleProductSmallScreenAction";
+import MainPageFeaturesSmallScreens from "../SingleProductDetailSection/MainPageFeaturesSmallScreens";
 
 function SingleProductPage() {
   return (
@@ -10,6 +11,7 @@ function SingleProductPage() {
       <SingleProductDetailSection />
       <SingleProductSmallScreenAction />
       <MainPageFeatures className="max-w-[102rem] max-lg:hidden" />
+      <MainPageFeaturesSmallScreens />
       <SingleProductTabSection />
     </section>
   );
