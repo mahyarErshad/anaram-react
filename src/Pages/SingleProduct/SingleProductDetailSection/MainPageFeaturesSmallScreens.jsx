@@ -16,7 +16,7 @@ function MainPageFeaturesSmallScreens() {
     <section className="w-full flex-col gap-3 lg:hidden">
       <div className="flex-col gap-3 w-full">
         {features.map(({ icon, text }, index) => (
-          <MainPageFeatureCards key={index} icon={icon} text={text} />
+          <MainPageFeatureCards key={index} icon={icon} text={text} className="bg-white p-2 font-semibold rounded-lg" />
         ))}
       </div>
     </section>
