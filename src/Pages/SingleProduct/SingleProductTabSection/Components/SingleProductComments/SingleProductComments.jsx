@@ -6,7 +6,7 @@ import SingleProductCommentsData from "../../../../../lib/SingleProductCommentsD
 function SingleProductComments() {
   return (
     <>
-      <div className="bg-white border border-NeutralN20 rounded-lg p-6 min-w-[21.875rem]">
+      <div className="bg-white border border-NeutralN20 rounded-lg p-6 min-w-[21.875rem] max-lg:w-full">
         <SingleProductForm />
       </div>
       <div className="h-full w-full flex-col gap-8 justify-center items-start self-start">
