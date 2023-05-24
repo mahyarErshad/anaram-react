@@ -16,7 +16,7 @@ function ClientComment({ data }) {
   };
   return (
     <div className="pb-8 border-b border-NeutralN30 flex-col gap-2 w-full">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center comments-user-buttons">
         <div className="flex gap-3">
           <img className="w-10 h-10 rounded-full" src={data.avatar} alt="avatar" />
           <div className="flex-col justify-center gap-1">
