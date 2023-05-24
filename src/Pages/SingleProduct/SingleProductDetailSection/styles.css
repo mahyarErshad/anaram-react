@@ -63,12 +63,14 @@
   }
 }
 @media (max-width: 493px) {
-  .comments-user-buttons{
-    flex-direction: column-reverse;
-    gap: 0.75rem;
+  .like-dislike-buttons{
+    min-width: fit-content;
+    width: 3.375rem;
+    height: 2rem;
   }
-  .user-comment{
-    margin-top: 0.75rem;
+  .large-container{
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
 }
 @media (max-width: 475px) {
