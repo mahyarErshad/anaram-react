@@ -63,19 +63,22 @@
   }
 }
 @media (max-width: 493px) {
-  .like-dislike-buttons{
+  .like-dislike-buttons {
     min-width: fit-content;
-    width: 3.375rem;
-    height: 2rem;
+    max-width: 3.375rem;
+    max-height: 2rem;
   }
-  .large-container{
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+  .comments-user-buttons {
+    justify-content: center;
+    gap: 2rem;
   }
 }
 @media (max-width: 475px) {
   .swiper-single-product-large-image {
     background-color: transparent;
     border: none;
+  }
+  .comments-user-buttons div{
+    gap: 0.25rem;
   }
 }

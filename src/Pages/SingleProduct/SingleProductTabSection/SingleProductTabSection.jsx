@@ -7,7 +7,7 @@ import SingleProductComments from "./Components/SingleProductComments/SingleProd
 function SingleProductTabSection() {
 
   return (
-    <section className="large-container p-10 flex-col single-product-tab-section">
+    <section className={`large-container p-10 flex-col ${styles.container}`}>
       <Tabs>
         <TabList className="flex gap-10 border-b border-NeutralN30 text-sm text-NeutralN500 font-medium">
           <Tab className={`${styles.tab} relative pb-4 cursor-pointer`}>مشخصات</Tab>
