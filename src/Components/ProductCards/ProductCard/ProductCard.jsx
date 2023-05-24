@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../style/productCard.module.css";
 import batteryImage from "../../../assets/images/data/product-card/battery.png";
 import ProductCardPriceSection from "../ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
@@ -16,6 +16,47 @@ import goToTop from "../../../lib/function/goToTop";
 
 const ProductCard = ({ discountCard }) => {
   const [redHeart, setRedHeart] = useState(false);
+  const [numbers, setNumbers] = useState({
+    seconds: 3,
+    minutes: 26,
+    hours: 17,
+    days: 2,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNumbers((prevNumbers) => {
+        let updatedSeconds = prevNumbers.seconds - 1;
+        let updatedMinutes = prevNumbers.minutes;
+        let updatedHours = prevNumbers.hours;
+        let updatedDays = prevNumbers.days;
+
+        if (updatedSeconds === -1) {
+          updatedMinutes -= 1;
+          updatedSeconds = 59;
+        }
+
+        if (updatedMinutes === -1) {
+          updatedHours -= 1;
+          updatedMinutes = 59;
+        }
+
+        if (updatedHours === -1) {
+          updatedDays -= 1;
+          updatedHours = 23;
+        }
+
+        return {
+          seconds: updatedSeconds,
+          minutes: updatedMinutes,
+          hours: updatedHours,
+          days: updatedDays,
+        };
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
   const discountSection = discountCard && <ProductCardDiscountSection percentage={50} />;
   const priceSection = (
     <div className={`flex ${discountCard ? "justify-between" : "justify-end"} items-center w-full mb-3`}>
@@ -45,10 +86,10 @@ const ProductCard = ({ discountCard }) => {
         </div>
         {discountCard && (
           <div className="flex-center gap-0 bg-NeutralN20 rounded-[4px] py-1 mb-1 mt-3">
-            <ProductCardTimeCounter number={6} text="ثانیه" />
-            <ProductCardTimeCounter number={24} text="دقیقه" />
-            <ProductCardTimeCounter number={12} text="ساعت" />
-            <ProductCardTimeCounter number={2} text="روز" />
+            <ProductCardTimeCounter number={numbers.seconds} text="ثانیه" />
+            <ProductCardTimeCounter number={numbers.minutes} text="دقیقه" />
+            <ProductCardTimeCounter number={numbers.hours} text="ساعت" />
+            <ProductCardTimeCounter number={numbers.days} text="روز" />
           </div>
         )}
       </figure>
