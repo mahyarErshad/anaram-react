@@ -27,9 +27,9 @@ function SingleProductTable() {
     <ul>
       {data.map(({ Q, A }, index) => {
         return (
-          <li key={index} className="flex items-center py-3 px-6 odd:bg-NeutralN10 even:bg-white">
-            <span className="text-NeutralN100 text-sm w-[13.4375rem] border-l border-NeutralN30 h-10 flex items-center">{Q}</span>
-            <span className="text-sm text-NeutralN500 font-semibold flex-grow pr-10">{A}</span>
+          <li key={index} className="py-3 px-6 odd:bg-NeutralN10 even:bg-white grid max-md:grid-cols-2 md:grid-cols-4">
+            <span className="text-NeutralN100 text-sm border-l border-NeutralN30 h-10 flex items-center pl-2">{Q}</span>
+            <span className="text-sm text-NeutralN500 font-semibold pr-10 flex items-center md:col-span-3">{A}</span>
           </li>
         );
       })}
