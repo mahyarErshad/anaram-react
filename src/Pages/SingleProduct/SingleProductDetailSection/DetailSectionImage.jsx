@@ -10,7 +10,6 @@ import { ReactComponent as HeartIcon } from "../../../assets/images/icons/heart-
 import { ReactComponent as CompareIcon } from "../../../assets/images/icons/compare-arrows.svg";
 import { ReactComponent as PresentationChart } from "../../../assets/images/icons/presentation-chart.svg";
 import batteryImage from "../../../assets/images/data/SingleProductSwiperImage/battery.png";
-import SingleProductOfferSection from "./SingleProductOfferSection";
 
 const DetailSectionImage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -24,7 +23,6 @@ const DetailSectionImage = () => {
 
   return (
     <section className="flex justify-start items-start gap-3 w-1/4 max-lg:w-full max-lg:mb-2 single-image-wrapper">
-      <SingleProductOfferSection />
       <div className="flex-col gap-4 h-full single-buttons-wrapper">
         <SmallButton onClick={() => setRedHeart(!redHeart)} className="p-3 bg-NeutralN10" icon={<HeartIcon className={`w-6 h-6 stroke-NeutralN300 ${redHeart && "animate-pulse-heart fill-red-500 stroke-red-500"}`} />} />
         <SmallButton className="p-3 bg-NeutralN10" icon={<CompareIcon className="w-6 h-6" />} />
