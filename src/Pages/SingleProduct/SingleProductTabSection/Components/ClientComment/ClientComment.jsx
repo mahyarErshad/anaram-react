@@ -30,7 +30,7 @@ function ClientComment({ data }) {
           <LikeDislikeButton className={`${likeState === "liked" ? "bg-primary1" : "bg-NeutralN10"}`} onClick={handleLike} icon={<LikeIcon className={`${likeState === "liked" ? "stroke-primary6 fill-primary6" : "stroke-NeutralN300"}`} />} counter={likeState === "liked" ? data.likes + 1 : data.likes} />
         </div>
       </div>
-      <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem] user-comment">{data.comment}</p>
+      <p className="text-xs text-NeutralN500 font-semibold mr-[3.25rem]">{data.comment}</p>
       {data.AdminReply && (
         <div className="flex-col gap-2 mt-6 mr-[3.25rem]">
           <div className="flex gap-3">
