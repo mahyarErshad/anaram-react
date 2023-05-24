@@ -64,8 +64,11 @@
 }
 @media (max-width: 493px) {
   .comments-user-buttons{
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 0.75rem;
+  }
+  .user-comment{
+    margin-top: 0.75rem;
   }
 }
 @media (max-width: 475px) {
