@@ -82,3 +82,8 @@
     gap: 0.25rem;
   }
 }
+@media (max-width: 397px) {
+  .comment-form{
+    min-width: fit-content;
+  }
+}
