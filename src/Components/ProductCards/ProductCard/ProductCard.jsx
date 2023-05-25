@@ -45,7 +45,6 @@ const ProductCard = ({ discountCard }) => {
           updatedDays -= 1;
           updatedHours = 23;
         }
-
         return {
           seconds: updatedSeconds,
           minutes: updatedMinutes,
