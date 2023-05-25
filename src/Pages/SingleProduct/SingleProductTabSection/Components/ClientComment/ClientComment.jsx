@@ -23,7 +23,7 @@ function ClientComment({ data }) {
             <span className="text-NeutralN500 text-xs font-semibold whitespace-nowrap">{data.name}</span>
             <span className="text-[0.5625rem] text-NeutralN70">{data.date}</span>
           </div>
-          <Rating initialValue={data.rating} size={14} readonly />
+          <Rating initialValue={data.rating} size={14} readonly className="comment-star" />
         </div>
         <div className="flex-center gap-2">
           <LikeDislikeButton className={`${likeState === "disliked" ? "bg-Red1" : "bg-NeutralN10"}`} onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={likeState === "disliked" ? data.dislikes + 1 : data.dislikes} />
