@@ -30,7 +30,6 @@ const ProductCard = ({ discountCard }) => {
         let updatedMinutes = prevNumbers.minutes;
         let updatedHours = prevNumbers.hours;
         let updatedDays = prevNumbers.days;
-
         if (updatedSeconds === -1) {
           updatedMinutes -= 1;
           updatedSeconds = 59;
