@@ -15,7 +15,7 @@ import CallToAction from "../CallToAction/CallToAction";
 import BatteryChargingComponent from "../../../Components/BatteryChargingComponent/BatteryChargingComponent";
 
 const MainPageWrapper = () => (
-  <main>
+  <section>
     <MainPageSlider />
     <BatteryCategories />
     <OtherProducts />
@@ -30,7 +30,7 @@ const MainPageWrapper = () => (
     <MainPageFeatures className="mt-[5.625rem] max-w-[80.5rem]" />
     <CallToAction />
     <BatteryChargingComponent />
-  </main>
+  </section>
 );
 
 export default MainPageWrapper;
