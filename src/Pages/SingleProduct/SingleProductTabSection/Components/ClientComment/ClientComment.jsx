@@ -5,6 +5,7 @@ import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/l
 import LikeDislikeButton from "./LikeDislikeButton";
 import { useState } from "react";
 import adminAvatar from "../../../../../assets/images/data/single-product-comments/5.svg";
+import styles from "./style.module.css"
 
 function ClientComment({ data }) {
   const [likeState, setLikeState] = useState("");
