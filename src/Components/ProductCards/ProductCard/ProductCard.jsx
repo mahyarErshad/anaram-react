@@ -40,7 +40,6 @@ const ProductCard = ({ discountCard }) => {
           updatedHours -= 1;
           updatedMinutes = 59;
         }
-
         if (updatedHours === -1) {
           updatedDays -= 1;
           updatedHours = 23;
