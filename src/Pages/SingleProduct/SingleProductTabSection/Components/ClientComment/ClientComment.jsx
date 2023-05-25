@@ -5,7 +5,6 @@ import { ReactComponent as LikeIcon } from "../../../../../assets/images/icons/l
 import LikeDislikeButton from "./LikeDislikeButton";
 import { useState } from "react";
 import adminAvatar from "../../../../../assets/images/data/single-product-comments/5.svg";
-import styles from "./style.module.css"
 
 function ClientComment({ data }) {
   const [likeState, setLikeState] = useState("");
@@ -18,13 +17,13 @@ function ClientComment({ data }) {
   return (
     <div className="pb-8 border-b border-NeutralN30 flex-col gap-2 w-full">
       <div className="flex justify-between items-center comments-user-buttons">
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap">
           <img className="w-10 h-10 rounded-full" src={data.avatar} alt="avatar" />
           <div className="flex-col justify-center gap-1">
             <span className="text-NeutralN500 text-xs font-semibold whitespace-nowrap">{data.name}</span>
             <span className="text-[0.5625rem] text-NeutralN70">{data.date}</span>
           </div>
-          <Rating initialValue={data.rating} size={14} readonly className={styles.star} />
+          <Rating initialValue={data.rating} size={14} readonly />
         </div>
         <div className="flex-center gap-2">
           <LikeDislikeButton className={`${likeState === "disliked" ? "bg-Red1" : "bg-NeutralN10"}`} onClick={handleDislike} icon={<DislikeIcon className={`${likeState === "disliked" ? "stroke-Magenta fill-Magenta" : "stroke-NeutralN300"}`} />} counter={likeState === "disliked" ? data.dislikes + 1 : data.dislikes} />
