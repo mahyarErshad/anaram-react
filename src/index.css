@@ -170,5 +170,4 @@ button[aria-expanded="true"] .arrow-icon {
   border-radius: 50%;
   background: linear-gradient(138.95deg, #1a4499 7.49%, #5678bc 98.55%);
   box-shadow: 0px 0px 0.625rem rgba(26, 68, 153, 0.46);
-  position: absolute;
 }
