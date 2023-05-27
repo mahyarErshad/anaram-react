@@ -1,7 +1,20 @@
 export const helpShopingData = [
   {
     title: "راهنمای خرید",
-    navLinks: ["شیوه های پرداخت", "نحوه ثبت سفارش", "پیگیری سفارش", "رویه ارسال"],
+    navLinks: [
+      {
+        text: "شیوه های پرداخت",
+      },
+      {
+        text: "نحوه ثبت سفارش",
+      },
+      {
+        text: "پیگیری سفارش",
+      },
+      {
+        text: "رویه ارسال",
+      },
+    ],
   },
 ];
 export const customerServicesData = [
