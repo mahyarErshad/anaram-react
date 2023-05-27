@@ -15,11 +15,13 @@ function AboutUs() {
         <h2 className="font-semibold text-xl">
           داستان <strong className="text-primary6">آنارام</strong>
         </h2>
-        <div className="w-full mt-2 flex justify-center">
-          <span className="about-page-circle relative">
+        <div className="w-full mt-2 flex justify-center relative divide-x">
+          <span className="about-page-circle absolute right-[50%]">
             <span className="about-page-circle__horizontal-line right-[-6.25rem]"></span>
             <span className="about-page-circle__horizontal-line right-4"></span>
           </span>
+          <div className="w-2/4 h-16"></div>
+          <div className="w-2/4 h-16"></div>
         </div>
       </section>
     </>
