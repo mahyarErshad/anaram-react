@@ -35,7 +35,7 @@ function AboutUs() {
             </div>
           </div>
           <div className="w-2/4 pr-6">
-            <span className="text-lg font-semibold text-white py-[0.875rem] w-[11.75rem] rounded-2xl">مرداد ۱۳۹۵</span>
+            <span className="text-lg text-white py-[0.875rem] inline-block flex-center w-[11.75rem] rounded-2xl about-page-gradient -translate-y-[35%]">مرداد ۱۳۹۵</span>
           </div>
         </div>
       </section>
