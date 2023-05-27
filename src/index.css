@@ -164,13 +164,15 @@ button[aria-expanded="true"] .arrow-icon {
   background: url(./assets/images/icons/product-card-discount-background.svg) center/cover no-repeat;
 }
 
-/* about page's circle */
+/* about page */
+.about-page-gradient {
+  background: linear-gradient(134.55deg, #1a4499 0%, #5678bc 100%);
+  box-shadow: 0px 0px 0.625rem rgba(26, 68, 153, 0.46);
+}
 .about-page-circle {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background: linear-gradient(138.95deg, #1a4499 7.49%, #5678bc 98.55%);
-  box-shadow: 0px 0px 0.625rem rgba(26, 68, 153, 0.46);
   position: relative;
 }
 .about-page-circle__horizontal-line {
