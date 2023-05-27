@@ -20,7 +20,17 @@ export const helpShopingData = [
 export const customerServicesData = [
   {
     title: "خدمات مشتریان",
-    navLinks: ["پرسش های متداول", "حریم خصوصی", "محصولات"],
+    navLinks: [
+      {
+        text: "پرسش های متداول",
+      },
+      {
+        text: "حریم خصوصی",
+      },
+      {
+        text: "محصولات",
+      },
+    ],
   },
 ];
 export const anaramNavLinksData = [
