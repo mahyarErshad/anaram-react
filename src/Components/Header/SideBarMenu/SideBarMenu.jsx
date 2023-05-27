@@ -52,6 +52,16 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
               )}
             </AccordionItem>
           ))}
+          {headerNavLinksData.slice(3).map((item, index) => (
+            <AccordionItem key={index}>
+              <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl min-w-[13.5rem] duration-300`}>
+                <Link className="h-full w-full p-5 flex justify-start items-center" onClick={handleMenuClick} to={item.href || "/"}>
+                  {item.icon}
+                  <h3 className="text-xs text-inherit font-semibold">{item.text}</h3>
+                </Link>
+              </AccordionHeader>
+            </AccordionItem>
+          ))}
           <AccordionItem>
             <AccordionHeader className={`stroke-white text-white bg-primary6 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
               <BatteryIcon className="ml-[0.625rem] stroke-inherit" />
