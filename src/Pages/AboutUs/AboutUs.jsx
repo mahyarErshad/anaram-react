@@ -23,6 +23,15 @@ function AboutUs() {
           <div className="w-2/4 h-20"></div>
           <div className="w-2/4 h-20"></div>
         </div>
+        <div className="w-full flex justify-center relative divide-x">
+          <span className="about-page-circle absolute right-[50%]"></span>
+          <div className="w-2/4 h-20">
+            <div className="flex-center gap-2">
+                <span className="">تولد آنارام</span>
+            </div>
+          </div>
+          <div className="w-2/4 h-20"></div>
+        </div>
       </section>
     </>
   );
