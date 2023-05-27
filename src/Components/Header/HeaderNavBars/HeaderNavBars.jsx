@@ -11,10 +11,10 @@ function HeaderNavBars() {
     <section className="flex items-center justify-between max-w-[101.5625rem] self-center w-full gap-2">
       <SearchBox className="flex-grow lg:hidden max-lg:mb-4" />
       <nav className="max-lg:hidden lg:visible">
-        <ul className="flex justify-start">
+        <div className="flex justify-start">
           {navLinks}
           <NavLinks text="وارتا" />
-        </ul>
+        </div>
       </nav>
       <a href="tel:02177989898" className="flex-center max-md:hidden md:mt-3 lg:mt-0 pb-7 gap-3 hover:text-primary6">
         <span className="text-sm font-semibold transition-all">۷۷۹۸۹۸۹۸ - ۰۲۱</span>
