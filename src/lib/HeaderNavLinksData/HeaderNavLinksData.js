@@ -25,6 +25,7 @@ const headerNavLinksData = [
     text: "درباره آنارام",
     hasSubMenu: false,
     icon: <UserIcon />,
+    href: "/about",
   },
   {
     text: "تماس با آنارام",
