@@ -33,7 +33,7 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
               </Link>
             </AccordionHeader>
           </AccordionItem>
-          {headerNavLinksData.map((item, index) => (
+          {headerNavLinksData.slice(0, 2).map((item, index) => (
             <AccordionItem key={index}>
               <AccordionHeader className={`${styles["accordion-header"]} ${item.hasSubMenu && styles.AccordionBodyHasMenu} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl p-5 flex justify-start items-center min-w-[13.5rem] duration-300`}>
                 {item.icon}
