@@ -7,7 +7,7 @@ const FooterNavLinks = ({ data }) => (
     <div className="flex-col gap-3">
       {data[0].navLinks.map((item, index) => (
         <Link to={item.href || "/"} key={index} className="text-sm text-NeutralN200">
-          {item}
+          {item.text}
         </Link>
       ))}
     </div>
