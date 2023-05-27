@@ -20,8 +20,8 @@ function AboutUs() {
             <span className="about-page-circle__horizontal-line right-[-6.25rem]"></span>
             <span className="about-page-circle__horizontal-line right-4"></span>
           </span>
-          <div className="w-2/4 h-16"></div>
-          <div className="w-2/4 h-16"></div>
+          <div className="w-2/4 h-20"></div>
+          <div className="w-2/4 h-20"></div>
         </div>
       </section>
     </>
