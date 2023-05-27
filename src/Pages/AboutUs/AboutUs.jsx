@@ -16,7 +16,7 @@ function AboutUs() {
           داستان <strong className="text-primary6">آنارام</strong>
         </h2>
         <div className="w-full mt-2 flex justify-center relative">
-          <span className="about-page-circle absolute right-[50%]">
+          <span className="about-page-circle about-page-gradient absolute right-[50%]">
             <span className="about-page-circle__horizontal-line right-[-6.25rem]"></span>
             <span className="about-page-circle__horizontal-line right-4"></span>
           </span>
@@ -24,7 +24,7 @@ function AboutUs() {
           <div className="w-2/4 h-20"></div>
         </div>
         <div className="w-full flex justify-center relative">
-          <span className="about-page-circle absolute right-[50%]"></span>
+          <span className="about-page-circle about-page-gradient absolute right-[50%]"></span>
           <div className="w-2/4 flex-col gap-4 border-l border-NeutralN30 pl-6 items-end pb-8">
             <div className="flex justify-start items-center gap-2 w-full max-w-[25.75rem]">
               <span className="text-primary7 text-sm font-semibold">تولد آنارام</span>
