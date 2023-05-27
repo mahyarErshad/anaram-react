@@ -15,7 +15,7 @@ function AboutUs() {
         <h2 className="font-semibold text-xl">
           داستان <strong className="text-primary6">آنارام</strong>
         </h2>
-        <span className="about-page-circle"></span>
+        <span className="about-page-circle mt-2 relative"></span>
       </section>
     </>
   );
