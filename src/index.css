@@ -172,19 +172,11 @@ button[aria-expanded="true"] .arrow-icon {
   box-shadow: 0px 0px 0.625rem rgba(26, 68, 153, 0.46);
   position: relative;
 }
-.about-page-circle::after,
-.about-page-circle::before {
-  content: "";
+.about-page-circle__horizontal-line {
   width: 6.25rem;
   height: 1px;
   background-color: var(--NeutralN30);
   position: absolute;
   top: 50%;
   transform: translateY(-100%);
-}
-.about-page-circle::after {
-  right: -6.25rem;
-}
-.about-page-circle::before {
-  right: 1rem;
 }
