@@ -36,6 +36,17 @@ export const customerServicesData = [
 export const anaramNavLinksData = [
   {
     title: "آنارام",
-    navLinks: ["تماس با آنارام", "درباره آنارام", "بلاگ"],
+    navLinks: [
+      {
+        text: "تماس با آنارام",
+      },
+      {
+        text: "درباره آنارام",
+        href: "/about",
+      },
+      {
+        text: "بلاگ",
+      },
+    ],
   },
 ];
