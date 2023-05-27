@@ -27,8 +27,8 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
         <Accordion className="flex-col items-center gap-2 h-full">
           <AccordionItem>
             <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl min-w-[13.5rem] duration-300`}>
-              <Link className="h-full w-full p-5 flex justify-start items-center" onClick={handleMenuClick} to="/">
-                <HomeIcon className="ml-[0.625rem] stroke-inherit" />
+              <Link className="h-full w-full p-5 flex justify-start items-center gap-[0.625rem]" onClick={handleMenuClick} to="/">
+                <HomeIcon className="stroke-inherit" />
                 <h3 className="text-xs text-inherit font-semibold">صفحه اصلی</h3>
               </Link>
             </AccordionHeader>
@@ -55,7 +55,7 @@ function SideBarMenu({ sideBarOpen, setSideBarOpen }) {
           {headerNavLinksData.slice(3).map((item, index) => (
             <AccordionItem key={index}>
               <AccordionHeader className={`${styles["accordion-header"]} stroke-NeutralN90 text-NeutralN700 bg-NeutralN10 border border-transparent hover:border-primary2 rounded-2xl min-w-[13.5rem] duration-300`}>
-                <Link className="h-full w-full p-5 flex justify-start items-center" onClick={handleMenuClick} to={item.href || "/"}>
+                <Link className="h-full w-full p-5 flex justify-start items-center gap-[0.625rem]" onClick={handleMenuClick} to={item.href || "/"}>
                   {item.icon}
                   <h3 className="text-xs text-inherit font-semibold">{item.text}</h3>
                 </Link>
