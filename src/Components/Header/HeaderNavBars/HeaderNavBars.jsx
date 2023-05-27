@@ -5,7 +5,7 @@ import SearchBox from "../../Utils/SearchBox/SearchBox";
 import headerNavLinksData from "../../../lib/HeaderNavLinksData/HeaderNavLinksData";
 
 function HeaderNavBars() {
-  const navLinks = headerNavLinksData.map((item, index) => <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} />);
+  const navLinks = headerNavLinksData.map((item, index) => <NavLinks key={index} hasSubMenu={item.hasSubMenu} text={item.text} href={item.href} />);
 
   return (
     <section className="flex items-center justify-between max-w-[101.5625rem] self-center w-full gap-2">
