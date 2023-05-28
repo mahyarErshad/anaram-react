@@ -183,3 +183,6 @@ button[aria-expanded="true"] .arrow-icon {
   top: 50%;
   transform: translateY(-100%);
 }
+.about-us-timeLine-card:last-child .about-us-timeLine-card__border{
+  border: none;
+}
