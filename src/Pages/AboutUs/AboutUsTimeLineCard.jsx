@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutUsTimeLineCard({ title, city, description, date }) {
+function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
   return (
     <div className="w-full flex justify-center relative">
       <span className="about-page-circle about-page-gradient absolute right-[50%]"></span>
