@@ -4,7 +4,7 @@ function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
   return (
     <div className="w-full flex justify-center relative">
       <span className="about-page-circle about-page-gradient absolute right-[50%]"></span>
-      <div className={`w-2/4 flex-col gap-4 border-NeutralN30 ${!leftPattern ? "border-l items-end" : "order-2 items-start pr-6"} pl-6 pb-8 border-r`}>
+      <div className={`w-2/4 flex-col gap-4 border-NeutralN30 ${!leftPattern ? "border-l items-end" : "order-2 items-start pr-6"} pl-6 pb-12 border-r`}>
         <div className="flex justify-start items-center gap-2 w-full max-w-[25.75rem]">
           <span className="text-primary7 text-sm font-semibold">{title}</span>
           <span className="text-Green7 text-xs font-semibold">{city}</span>
