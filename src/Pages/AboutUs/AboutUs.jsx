@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../assets/images/about-us-page-image.jpg";
+import AboutUsTimeLineCard from "./AboutUsTimeLineCard";
 
 function AboutUs() {
   return (
@@ -23,7 +24,7 @@ function AboutUs() {
           <div className="w-2/4 h-20 border-l border-NeutralN30"></div>
           <div className="w-2/4 h-20"></div>
         </div>
-
+        <AboutUsTimeLineCard title="تولد آنارام" city="تهران" description="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده" date="مرداد ۱۳۹۵" />
       </section>
     </>
   );
