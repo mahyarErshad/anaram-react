@@ -13,7 +13,7 @@ function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
           <p className="text-sm text-NeutralN80">{description}</p>
         </div>
       </div>
-      <div className="w-2/4 pr-6">
+      <div className={`w-2/4 ${leftPattern ? "pl-6 flex justify-end items-start" : "pr-6"}`}>
         <span className="text-lg text-white py-[0.875rem] inline-block flex-center w-[11.75rem] rounded-2xl about-page-gradient -translate-y-[35%]">{date}</span>
       </div>
     </div>
