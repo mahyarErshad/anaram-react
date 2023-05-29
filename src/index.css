@@ -13,7 +13,7 @@
   font-family: yekanBakh;
   src: url("./assets/fonts/YekanBakhFaNum-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -183,6 +183,6 @@ button[aria-expanded="true"] .arrow-icon {
   top: 50%;
   transform: translateY(-100%);
 }
-.about-us-timeLine-card:last-child .about-us-timeLine-card__border{
+.about-us-timeLine-card:last-child .about-us-timeLine-card__border {
   border: none;
 }
