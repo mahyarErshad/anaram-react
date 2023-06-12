@@ -1,18 +1,18 @@
 import React from "react";
 
 function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
-  const borderClass = !leftPattern ? "border-l items-end" : "order-2 items-start pr-6 border-r";
+  const borderClass = !leftPattern ? "border-l items-end" : "order-2 items-start md:pr-6 border-r";
   const alignClass = leftPattern ? "md:pl-6 flex justify-end items-start" : "md:pr-6";
 
   return (
     <div className="w-full flex max-md:flex-col max-md:items-center justify-center relative about-us-timeLine-card">
       <span className="about-page-circle about-page-gradient absolute right-[50%] max-md:hidden"></span>
-      <div className={`about-us-timeLine-card__border w-2/4 flex-col gap-4 border-NeutralN30 ${borderClass} pl-6 pb-12 max-md:border-none`}>
-        <div className="flex justify-start items-center gap-2 w-full max-w-[25.75rem]">
+      <div className={`about-us-timeLine-card__border w-2/4 flex-col gap-4 max-md:gap-6 border-NeutralN30 ${borderClass} md:pl-6 pb-12 max-md:border-none max-md:w-full`}>
+        <div className="flex justify-start max-md:justify-center items-center gap-2 w-full md:max-w-[25.75rem] max-md:mt-3">
           <span className="text-primary7 text-sm font-semibold">{title}</span>
           <span className="text-Green7 text-xs font-semibold">{city}</span>
         </div>
-        <div className="bg-[#FCFCFC] rounded-2xl p-4 max-w-[25.75rem]">
+        <div className="bg-[#FCFCFC] rounded-2xl p-4 max-md:w-full md:max-w-[25.75rem]">
           <p className="text-sm text-NeutralN80">{description}</p>
         </div>
       </div>
