@@ -6,7 +6,7 @@ function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
 
   return (
     <div className="w-full flex justify-center relative about-us-timeLine-card">
-      <span className="about-page-circle about-page-gradient absolute right-[50%]"></span>
+      <span className="about-page-circle about-page-gradient absolute right-[50%] max-md:hidden"></span>
       <div className={`about-us-timeLine-card__border w-2/4 flex-col gap-4 border-NeutralN30 ${borderClass} pl-6 pb-12`}>
         <div className="flex justify-start items-center gap-2 w-full max-w-[25.75rem]">
           <span className="text-primary7 text-sm font-semibold">{title}</span>
