@@ -19,8 +19,9 @@ function AboutUsTimeLineCard({ title, city, description, date, leftPattern }) {
       <div className={`w-2/4 max-md:-order-1 max-md:flex max-md:justify-center ${alignClass}`}>
         <span className="text-lg text-white py-[0.875rem] inline-block flex-center w-[11.75rem] rounded-2xl about-page-gradient md:-translate-y-[35%]">{date}</span>
       </div>
-      <div className="h-20 w-full order-10 md:hidden bg-red-500 group-last-of-type:hidden">
-
+      <div className="h-20 w-full order-10 flex-center flex-col md:hidden group-last-of-type:hidden relative">
+        <span className="w-[0.0625rem] h-full bg-NeutralN30"></span>
+        <span className="w-4 h-4 about-page-gradient rounded-full absolute top-6"></span>
       </div>
     </div>
   );
