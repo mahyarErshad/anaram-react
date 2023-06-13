@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as SupportHeadphone } from "../../assets/images/icons/support-headphone.svg";
 import { ReactComponent as SupportPhone } from "../../assets/images/icons/support-phone.svg";
 import { ReactComponent as LocationPin } from "../../assets/images/icons/location-pin.svg";
@@ -12,7 +12,6 @@ function ContactDetails() {
     lat: 35.71459463665646,
     lng: 51.40616952320622,
   };
-  const [position, setPosition] = useState(center);
   return (
     <section className="bg-white p-6 rounded-2xl w-full max-w-[40.4375rem] flex-col lg:max-h-[43.25rem]">
       <div className="flex justify-start items-center gap-3 mb-5">
@@ -23,7 +22,7 @@ function ContactDetails() {
       <div className="flex-col mb-12">
         {arr.map((_, index) => {
           return (
-            <div className="flex justify-between items-center py-4  border-b border-NeutralN30 first-of-type:pt-0 last-of-type:pb-0 last-of-type:border-none">
+            <div key={index} className="flex justify-between items-center py-4  border-b border-NeutralN30 first-of-type:pt-0 last-of-type:pb-0 last-of-type:border-none">
               <span className="text-sm text-Gray2">پشتیبانی</span>
               <span className="text-sm text-Gray4">مهیار ارشاد</span>
               <div className="flex-center gap-1">
@@ -45,7 +44,7 @@ function ContactDetails() {
       </a>
       <MapContainer center={center} className="w-full h-[17.5rem] mt-4" zoom={13} scrollWheelZoom={true}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <DraggableMarker position={position} setPosition={setPosition} center={center} />
+        <DraggableMarker center={center} />
       </MapContainer>
     </section>
   );

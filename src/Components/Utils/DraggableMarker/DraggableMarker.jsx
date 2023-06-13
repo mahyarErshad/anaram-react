@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Marker, Popup } from "react-leaflet";
+import { Marker } from "react-leaflet";
 import L from "leaflet";
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -10,16 +10,12 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
 });
 
-function DraggableMarker({ position }) {
+function DraggableMarker({ center }) {
   const markerRef = useRef(null);
 
   return (
     <>
-      <Marker draggable={false} position={position} ref={markerRef}>
-        <Popup minWidth={90}>
-          <span>برای مسیریابی روی آدرس کلیک کنید</span>
-        </Popup>
-      </Marker>
+      <Marker draggable={false} position={center} ref={markerRef}></Marker>
     </>
   );
 }
