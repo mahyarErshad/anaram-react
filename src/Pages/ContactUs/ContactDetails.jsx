@@ -32,6 +32,9 @@ function ContactDetails() {
         <LocationPin />
         <span className="font-semibold text-xl text-primary6">آدرس</span>
       </div>
+      <a href="https://goo.gl/maps/YZsfLFfkWPtmWvDz9" rel="noreferrer" target="_blank" className="text-Gray4 text-sm hover:text-primary6 duration-300">
+        تهران، خیابان دماوند ، خیابان ولیعصر (عج)، کوچه دانش کیان ، طبقه 3
+      </a>
     </section>
   );
 }
