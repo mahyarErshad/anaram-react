@@ -31,6 +31,7 @@ const headerNavLinksData = [
     text: "تماس با آنارام",
     hasSubMenu: false,
     icon: <UserIcon />,
+    href: "/contact",
   },
 ];
 export default headerNavLinksData;
