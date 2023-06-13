@@ -43,8 +43,8 @@ function ContactDetails() {
       <a href="https://goo.gl/maps/YZsfLFfkWPtmWvDz9" rel="noreferrer" target="_blank" className="text-Gray4 text-sm hover:text-primary6 duration-300">
         تهران، خیابان دماوند ، خیابان ولیعصر (عج)، کوچه دانش کیان ، طبقه 3
       </a>
-      <MapContainer center={center} className="w-[32.625rem] h-[17.5rem]" zoom={13} scrollWheelZoom={true}>
-        <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <MapContainer center={center} className="w-full h-[17.5rem] mt-4" zoom={13} scrollWheelZoom={true}>
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <DraggableMarker position={position} setPosition={setPosition} center={center} />
       </MapContainer>
     </section>
