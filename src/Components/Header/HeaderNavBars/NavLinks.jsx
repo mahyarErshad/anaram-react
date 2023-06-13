@@ -6,14 +6,25 @@ import headerDropDownMockData from "../../../lib/HeaderDropDownMock/HeaderDropDo
 import { Link } from "react-router-dom";
 
 function NavLinks({ textColor = "text-NeutralN300", text, hasSubMenu, href }) {
-  return (
-    <Link to={href || "/"} className={`gap-2 text-sm ${textColor} flex-center cursor-pointer px-4 pb-7 font-semibold ${styles.navlink}`}>
-      {text}
-      {hasSubMenu && <Icon className="stroke-NeutralN70 duration-300" />}
-      {hasSubMenu && <HeaderMenuOpenOnHover data={headerDropDownMockData} />}
-      <span className="w-[1px] h-[2.0625rem] bg-NeutralN30 translate-x-[-1rem] overflow-visible"></span>
-    </Link>
-  );
+  if (href) {
+    return (
+      <Link to={href} className={`gap-2 text-sm ${textColor} flex-center cursor-pointer px-4 pb-7 font-semibold ${styles.navlink}`}>
+        {text}
+        {hasSubMenu && <Icon className="stroke-NeutralN70 duration-300" />}
+        {hasSubMenu && <HeaderMenuOpenOnHover data={headerDropDownMockData} />}
+        <span className="w-[1px] h-[2.0625rem] bg-NeutralN30 translate-x-[-1rem] overflow-visible"></span>
+      </Link>
+    );
+  } else {
+    return (
+      <div className={`gap-2 text-sm ${textColor} flex-center cursor-pointer px-4 pb-7 font-semibold ${styles.navlink}`}>
+        {text}
+        {hasSubMenu && <Icon className="stroke-NeutralN70 duration-300" />}
+        {hasSubMenu && <HeaderMenuOpenOnHover data={headerDropDownMockData} />}
+        <span className="w-[1px] h-[2.0625rem] bg-NeutralN30 translate-x-[-1rem] overflow-visible"></span>
+      </div>
+    );
+  }
 }
 
 export default NavLinks;
