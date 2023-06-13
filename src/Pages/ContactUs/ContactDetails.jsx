@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as SupportHeadphone } from "../../assets/images/icons/support-headphone.svg";
+import { ReactComponent as SupportPhone } from "../../assets/images/icons/support-phone.svg";
 
 function ContactDetails() {
   return (
@@ -14,7 +15,7 @@ function ContactDetails() {
           <span className="text-sm text-Gray2">پشتیبانی</span>
           <span className="text-sm text-Gray4">مهیار ارشاد</span>
           <div className="flex-center gap-1">
-          
+
           </div>
         </div>
       </div>
