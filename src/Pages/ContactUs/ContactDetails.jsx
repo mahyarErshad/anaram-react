@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as SupportHeadphone } from "../../assets/images/icons/support-headphone.svg";
 import { ReactComponent as SupportPhone } from "../../assets/images/icons/support-phone.svg";
+import { ReactComponent as LocationPin } from "../../assets/images/icons/location-pin.svg";
 
 function ContactDetails() {
   const arr = [1, 2, 3];
@@ -25,6 +26,7 @@ function ContactDetails() {
           );
         })}
       </div>
+
     </section>
   );
 }
