@@ -19,14 +19,19 @@ function ContactDetails() {
               <span className="text-sm text-Gray2">پشتیبانی</span>
               <span className="text-sm text-Gray4">مهیار ارشاد</span>
               <div className="flex-center gap-1">
-                <a href="tel:09120343545" className="text-sm text-Gray4 hover:text-primary6 duration-300">09120343545</a>
+                <a href="tel:09120343545" className="text-sm text-Gray4 hover:text-primary6 duration-300">
+                  09120343545
+                </a>
                 <SupportPhone />
               </div>
             </div>
           );
         })}
       </div>
-
+      <div className="flex justify-start items-center gap-3 mb-6">
+        <LocationPin />
+        <span className="font-semibold text-xl text-primary6">آدرس</span>
+      </div>
     </section>
   );
 }
