@@ -39,6 +39,7 @@ export const anaramNavLinksData = [
     navLinks: [
       {
         text: "تماس با آنارام",
+        href: "/contact"
       },
       {
         text: "درباره آنارام",
