@@ -2,9 +2,17 @@ import React from "react";
 import { ReactComponent as SupportHeadphone } from "../../assets/images/icons/support-headphone.svg";
 import { ReactComponent as SupportPhone } from "../../assets/images/icons/support-phone.svg";
 import { ReactComponent as LocationPin } from "../../assets/images/icons/location-pin.svg";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { useState } from "react";
 
 function ContactDetails() {
   const arr = [1, 2, 3];
+  const center = {
+    lat: 35.71459463665646,
+    lng: 51.40616952320622,
+  };
+  const [position, setPosition] = useState(center);
   return (
     <section className="bg-white p-6 rounded-2xl w-full max-w-[40.4375rem] flex-col lg:max-h-[43.25rem]">
       <div className="flex justify-start items-center gap-3 mb-5">
@@ -35,6 +43,10 @@ function ContactDetails() {
       <a href="https://goo.gl/maps/YZsfLFfkWPtmWvDz9" rel="noreferrer" target="_blank" className="text-Gray4 text-sm hover:text-primary6 duration-300">
         تهران، خیابان دماوند ، خیابان ولیعصر (عج)، کوچه دانش کیان ، طبقه 3
       </a>
+      <MapContainer center={center} className="w-[32.625rem] h-[17.5rem]" zoom={13} scrollWheelZoom={true}>
+        <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        {/* <DraggableMarker position={position} setPosition={setPosition} center={center} /> */}
+      </MapContainer>
     </section>
   );
 }
