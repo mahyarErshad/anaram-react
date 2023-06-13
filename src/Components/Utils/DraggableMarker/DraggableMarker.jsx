@@ -1,5 +1,5 @@
-import React, { useCallback, useMemo, useRef, useState } from "react";
-import { Marker, Popup, useMapEvents } from "react-leaflet";
+import React, { useRef } from "react";
+import { Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -10,38 +10,14 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
 });
 
-function DraggableMarker({ position, setPosition }) {
-  const [draggable, setDraggable] = useState(false);
+function DraggableMarker({ position }) {
   const markerRef = useRef(null);
-  const eventHandlers = useMemo(
-    () => ({
-      dragend() {
-        const marker = markerRef.current;
-        if (marker != null) {
-          setPosition(marker.getLatLng());
-        }
-      },
-    }), // eslint-disable-next-line
-    []
-  );
-  const toggleDraggable = useCallback(() => {
-    setDraggable((d) => !d);
-  }, []);
-  const map = useMapEvents({
-    click() {
-      map.locate();
-    },
-    locationfound(e) {
-      setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
-    },
-  });
 
   return (
     <>
-      <Marker draggable={draggable} eventHandlers={eventHandlers} position={position} ref={markerRef}>
+      <Marker draggable={false} position={position} ref={markerRef}>
         <Popup minWidth={90}>
-          <span onClick={toggleDraggable}>{draggable ? "قابلیت حرکت نشانگر فعال شد" : "برای حرکت نشانگر کلیک کنید"}</span>
+          <span>برای مسیریابی روی آدرس کلیک کنید</span>
         </Popup>
       </Marker>
     </>
