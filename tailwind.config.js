@@ -36,6 +36,8 @@ module.exports = {
         // green
         Green6: "#3BA53D",
         Green7: "#328C34",
+        // gray
+        Gray4: "#515765",
       },
     },
   },
