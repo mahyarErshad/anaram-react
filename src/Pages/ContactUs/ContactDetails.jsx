@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as SupportHeadphone } from "../../assets/images/icons/support-headphone.svg";
 import { ReactComponent as SupportPhone } from "../../assets/images/icons/support-phone.svg";
 import { ReactComponent as LocationPin } from "../../assets/images/icons/location-pin.svg";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { useState } from "react";
+import DraggableMarker from "../../Components/Utils/DraggableMarker/DraggableMarker";
 
 function ContactDetails() {
   const arr = [1, 2, 3];
@@ -45,7 +45,7 @@ function ContactDetails() {
       </a>
       <MapContainer center={center} className="w-[32.625rem] h-[17.5rem]" zoom={13} scrollWheelZoom={true}>
         <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {/* <DraggableMarker position={position} setPosition={setPosition} center={center} /> */}
+        <DraggableMarker position={position} setPosition={setPosition} center={center} />
       </MapContainer>
     </section>
   );
