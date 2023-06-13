@@ -11,7 +11,7 @@ function ContactDetails() {
         <span className="font-semibold text-xl text-primary6">پشتیبانی</span>
       </div>
       <p className="text-sm text-Gray4 mb-12">۷ روز هفته، ۲۴ ساعت روز، پاسخگوی تماس های شما هستیم.</p>
-      <div className="flex-col">
+      <div className="flex-col mb-12">
         {arr.map((_, index) => {
           return (
             <div className="flex justify-between items-center py-4  border-b border-NeutralN30 first-of-type:pt-0 last-of-type:pb-0 last-of-type:border-none">
