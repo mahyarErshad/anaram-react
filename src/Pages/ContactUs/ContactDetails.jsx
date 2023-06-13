@@ -8,7 +8,12 @@ function ContactDetails() {
         <SupportHeadphone />
         <span className="font-semibold text-xl text-primary6">پشتیبانی</span>
       </div>
-      <p className="text-sm">۷ روز هفته، ۲۴ ساعت روز، پاسخگوی تماس های شما هستیم.</p>
+      <p className="text-sm text-Gray4 mb-12">۷ روز هفته، ۲۴ ساعت روز، پاسخگوی تماس های شما هستیم.</p>
+      <div className="flex-col">
+      <div className="flex justify-between items-center">
+        <span className="text-sm">پشتیبانی</span>
+      </div>
+      </div>
     </section>
   );
 }
