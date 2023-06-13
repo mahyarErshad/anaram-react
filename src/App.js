@@ -5,6 +5,7 @@ import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
 import ProductsPage from "./Pages/ProductsPage/ProductsPageContainer/ProductsPage";
 import SingleProductPage from "./Pages/SingleProduct/SingleProductPage/SingleProductPage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import ContactUs from "./Pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
         <Route path="product/:id" element={<SingleProductPage />} />
       </Route>
       <Route path="about" element={<AboutUs />} />
+      <Route path="contact" element={<ContactUs />} />
     </Route>
   )
 );
