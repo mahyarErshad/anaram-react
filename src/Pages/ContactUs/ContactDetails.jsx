@@ -40,7 +40,7 @@ function ContactDetails() {
         <span className="font-semibold text-xl text-primary6">آدرس</span>
       </div>
       <a href="https://goo.gl/maps/YZsfLFfkWPtmWvDz9" rel="noreferrer" target="_blank" className="text-Gray4 text-sm hover:text-primary6 duration-300">
-        تهران، خیابان دماوند ، خیابان ولیعصر (عج)، کوچه دانش کیان ، طبقه 3
+      تهران - بالاتر از میدان ولیعصر - کوی دانش کیان - پلاک ۱۷
       </a>
       <MapContainer center={center} className="w-full h-[17.5rem] mt-4" zoom={13} scrollWheelZoom={true}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
