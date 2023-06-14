@@ -3,11 +3,11 @@ import styles from "./styles.module.css"
 
 function Loading() {
   return (
-    <div className="container">
-      <div className="dash uno"></div>
-      <div className="dash dos"></div>
-      <div className="dash tres"></div>
-      <div className="dash cuatro"></div>
+    <div className={styles.container}>
+      <div className={styles.first}></div>
+      <div className={styles.second}></div>
+      <div className={styles.third}></div>
+      <div className={styles.fourth}></div>
     </div>
   );
 }
