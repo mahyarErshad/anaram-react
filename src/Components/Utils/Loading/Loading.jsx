@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Loading() {
   return (
-    <div>Loading</div>
-  )
+    <div className="container">
+      <div className="dash uno"></div>
+      <div className="dash dos"></div>
+      <div className="dash tres"></div>
+      <div className="dash cuatro"></div>
+    </div>
+  );
 }
 
-export default Loading
+export default Loading;
