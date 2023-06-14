@@ -2,6 +2,7 @@ import React from "react";
 import { ReactComponent as MessageIcon } from "../../assets/images/icons/contact-form-message-icon.svg";
 import Input from "../../Components/Utils/Input/Input";
 import TextArea from "../../Components/Utils/TextArea/TextArea";
+import PrimaryButton from "../../Components/Utils/Buttons/PrimaryButton/PrimaryButton";
 
 function ContactForm() {
   return (
@@ -11,12 +12,13 @@ function ContactForm() {
         <span className="font-semibold text-xl text-primary6">پشتیبانی</span>
       </div>
       <p className="text-Gray4 text-sm mb-6">با ما در تماس باشید.</p>
-      <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6 w-full">
+      <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6 w-full mb-10">
         <div className="flex-center gap-4 w-full">
           <Input label="نام" placeholder="محمد" />
           <Input label="نام خانوادگی" placeholder="غلامی" />
         </div>
         <TextArea className="h-[20.0625rem]" label="متن تیکت" placeholder="متن تیکت خود را اینجا بنویسید" />
+        <PrimaryButton />
       </form>
     </section>
   );
