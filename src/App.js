@@ -4,6 +4,7 @@ import PageLayout from "./Pages/PageLayout/PageLayout";
 import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
 import ProductsPage from "./Pages/ProductsPage/ProductsPageContainer/ProductsPage";
 import SingleProductPage from "./Pages/SingleProduct/SingleProductPage/SingleProductPage";
+import Loading from "./Components/Utils/Loading/Loading";
 const LazyAboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
 const LazyContactUs = lazy(() => import("./Pages/ContactUs/ContactUs"));
 
@@ -28,6 +29,14 @@ const router = createBrowserRouter(
         element={
           <Suspense fallback={<div>Loading...</div>}>
             <LazyContactUs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="loading"
+        element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Loading />
           </Suspense>
         }
       />
