@@ -12,7 +12,7 @@ function ContactForm() {
       <p className="text-Gray4 text-sm">با ما در تماس باشید.</p>
       <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6">
         <div className="flex-center gap-4">
-          <Input />
+          <Input label="نام" />
         </div>
       </form>
     </section>
