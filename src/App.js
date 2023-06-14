@@ -18,7 +18,7 @@ const router = createBrowserRouter(
       <Route
         path="about"
         element={
-          <Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
             <LazyAboutUs />
           </Suspense>
         }
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route
         path="contact"
         element={
-          <Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
             <LazyContactUs />
           </Suspense>
         }
