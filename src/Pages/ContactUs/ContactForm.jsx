@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as MessageIcon } from "../../assets/images/icons/contact-form-message-icon.svg";
+import Input from "../../Components/Utils/Input/Input";
 
 function ContactForm() {
   return (
@@ -11,7 +12,7 @@ function ContactForm() {
       <p className="text-Gray4 text-sm">با ما در تماس باشید.</p>
       <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6">
         <div className="flex-center gap-4">
-
+          <Input />
         </div>
       </form>
     </section>
