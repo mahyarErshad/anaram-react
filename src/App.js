@@ -1,11 +1,11 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import PageLayout from "./Pages/PageLayout/PageLayout";
 import MainPageWrapper from "./Pages/MainPage/MainPageWrapper/MainPageWrapper";
 import ProductsPage from "./Pages/ProductsPage/ProductsPageContainer/ProductsPage";
 import SingleProductPage from "./Pages/SingleProduct/SingleProductPage/SingleProductPage";
-import AboutUs from "./Pages/AboutUs/AboutUs";
-import ContactUs from "./Pages/ContactUs/ContactUs";
+const LazyAboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
+const LazyContactUs = lazy(() => import("./Pages/ContactUs/ContactUs"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,8 +15,22 @@ const router = createBrowserRouter(
         <Route index element={<ProductsPage />} />
         <Route path="product/:id" element={<SingleProductPage />} />
       </Route>
-      <Route path="about" element={<AboutUs />} />
-      <Route path="contact" element={<ContactUs />} />
+      <Route
+        path="about"
+        element={
+          <Suspense>
+            <LazyAboutUs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="contact"
+        element={
+          <Suspense>
+            <LazyContactUs />
+          </Suspense>
+        }
+      />
     </Route>
   )
 );
