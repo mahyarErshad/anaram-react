@@ -9,10 +9,11 @@ function ContactForm() {
         <MessageIcon />
         <span className="font-semibold text-xl text-primary6">پشتیبانی</span>
       </div>
-      <p className="text-Gray4 text-sm">با ما در تماس باشید.</p>
-      <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6">
-        <div className="flex-center gap-4">
-          <Input label="نام" />
+      <p className="text-Gray4 text-sm mb-6">با ما در تماس باشید.</p>
+      <form onSubmit={(e) => e.preventDefault} className="flex-col gap-6 w-full">
+        <div className="flex-center gap-4 w-full">
+          <Input label="نام" placeholder="محمد" />
+          <Input label="نام خانوادگی" placeholder="غلامی" />
         </div>
       </form>
     </section>

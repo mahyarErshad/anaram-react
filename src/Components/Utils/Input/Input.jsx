@@ -2,7 +2,7 @@ import React from "react";
 
 function Input({ label, className, placeholder }) {
   return (
-    <div className="flex-col gap-2">
+    <div className="flex-col gap-2 w-full">
       <label htmlFor={label} className="text-NeutralN500 text-xs font-semibold cursor-pointer">
         {label}
       </label>
