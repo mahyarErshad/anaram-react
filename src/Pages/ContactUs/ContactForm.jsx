@@ -16,7 +16,7 @@ function ContactForm() {
           <Input label="نام" placeholder="محمد" />
           <Input label="نام خانوادگی" placeholder="غلامی" />
         </div>
-        <TextArea label="متن تیکت" placeholder="متن تیکت خود را اینجا بنویسید" />
+        <TextArea className="h-[20.0625rem]" label="متن تیکت" placeholder="متن تیکت خود را اینجا بنویسید" />
       </form>
     </section>
   );
