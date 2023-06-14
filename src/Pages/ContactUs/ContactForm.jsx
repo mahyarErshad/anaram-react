@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as MessageIcon } from "../../assets/images/icons/contact-form-message-icon.svg";
 import Input from "../../Components/Utils/Input/Input";
+import TextArea from "../../Components/Utils/TextArea/TextArea";
 
 function ContactForm() {
   return (
@@ -15,6 +16,7 @@ function ContactForm() {
           <Input label="نام" placeholder="محمد" />
           <Input label="نام خانوادگی" placeholder="غلامی" />
         </div>
+        <TextArea label="متن تیکت" placeholder="متن تیکت خود را اینجا بنویسید" />
       </form>
     </section>
   );
