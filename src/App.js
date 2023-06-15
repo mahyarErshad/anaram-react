@@ -7,6 +7,7 @@ import SingleProductPage from "./Pages/SingleProduct/SingleProductPage/SinglePro
 import Loading from "./Components/Utils/Loading/Loading";
 const LazyAboutUs = lazy(() => import("./Pages/AboutUs/AboutUs"));
 const LazyContactUs = lazy(() => import("./Pages/ContactUs/ContactUs"));
+const LazyCart = lazy(() => import("./Pages/CartPage/CartPage"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
