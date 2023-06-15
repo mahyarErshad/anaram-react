@@ -32,6 +32,14 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
+      <Route
+        path="cart"
+        element={
+          <Suspense fallback={<Loading />}>
+            <LazyContactUs />
+          </Suspense>
+        }
+      />
     </Route>
   )
 );
