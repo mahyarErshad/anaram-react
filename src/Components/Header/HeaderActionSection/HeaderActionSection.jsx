@@ -29,7 +29,9 @@ function HeaderActionSection({ setSideBarOpen }) {
         <PrimaryButton className="max-md:hidden" text="ورود / ثبت نام" icon={<UserIcon />} />
         <SmallButton className="p-3 bg-NeutralN10 md:hidden" icon={<UserIconBlack />} />
         <div className={styles.cartIconWrapper}>
-          <SmallButton className={`${styles.cartButton} p-3 bg-NeutralN10 relative after:content-["3"]`} icon={<BagIcon stroke="#575757" />} />
+          <Link to="/cart" className={`flex-center rounded-5px p-3 bg-NeutralN10 relative after:content-["3"]  ${styles.cartButton}`}>
+            <BagIcon stroke="#575757" />
+          </Link>
           <HeaderShoppingCartModal />
         </div>
       </div>
