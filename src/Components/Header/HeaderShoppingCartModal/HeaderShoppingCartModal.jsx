@@ -5,6 +5,7 @@ import SideBySideProductCard from "../../ProductCards/SideBySideProductCard/Side
 import PrimaryButton from "../../Utils/Buttons/PrimaryButton/PrimaryButton";
 import ProductCardPriceSection from "../../ProductCards/ProductCardComponents/ProductCardPriceSection/ProductCardPriceSection";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 
 function HeaderShoppingCartModal() {
   const products = [
@@ -36,10 +37,10 @@ function HeaderShoppingCartModal() {
     <div className="max-lg:hidden max-h-[90vh] scale-y-0 origin-top opacity-0 duration-300 flex-col absolute left-0 top-12 bg-white border border-NeutralN10 rounded-2xl z-10">
       <div className="p-4 flex justify-between items-center w-full">
         <span className="text-xs text-NeutralN60">{`${products.length} محصول`}</span>
-        <div className="flex-center gap-3 text-primary6">
+        <Link to="/cart" className="flex-center gap-3 text-primary6">
           <span className="text-xs font-semibold">مشاهده سبد خرید</span>
           <ArrowIcon />
-        </div>
+        </Link>
       </div>
       <div className="flex-col overflow-y-auto">
         {products.map((product, index) => (
