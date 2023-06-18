@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as BagIcon } from "../../assets/images/icons/bag-icon.svg";
+import { ReactComponent as Dots } from "../../assets/images/icons/3dots.svg";
 
 function CartPage() {
   return (
