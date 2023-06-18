@@ -4,7 +4,7 @@ import { ReactComponent as Dots } from "../../assets/images/icons/3dots.svg";
 
 function CartPage() {
   return (
-    <section className="container bg-white rounded-2xl flex-row px-6">
+    <section className="container bg-white rounded-2xl flex-row p-6 mt-16 mb-72">
       <div className="flex-col flex-grow">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -14,6 +14,9 @@ function CartPage() {
             <span className="text-base text-NeutralN500 mr-2">سبد خرید</span>
             <span className="mr-1 font-semibold text-xs flex-center bg-primary6 text-white rounded-full w-6 h-6">3</span>
           </div>
+          <button className="bg-NeutralN10 rounded-5px flex-center">
+            <Dots />
+          </button>
         </div>
       </div>
       <div></div>
