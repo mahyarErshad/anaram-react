@@ -5,8 +5,8 @@ import { ReactComponent as Dots } from "../../assets/images/icons/3dots.svg";
 function CartPage() {
   return (
     <section className="container bg-white rounded-2xl flex-row p-6 mt-16 mb-72">
-      <div className="flex-col flex-grow">
-        <div className="flex justify-between items-center">
+      <div className="flex-col w-full">
+        <div className="flex justify-between items-center mb-3">
           <div className="flex items-center">
             <span className="flex-center rounded-5px p-3 bg-NeutralN10">
               <BagIcon stroke="#575757" />
