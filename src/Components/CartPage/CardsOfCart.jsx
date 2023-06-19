@@ -1,5 +1,6 @@
 import React from "react";
 import batteryImage from "../../assets/images/data/product-card/battery.png";
+import styles from "./styles.module.css"
 
 function CardsOfCart() {
   return (
