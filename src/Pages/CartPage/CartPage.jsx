@@ -12,7 +12,7 @@ function CartPage() {
   return (
     <section className="container bg-white rounded-2xl flex-row p-6 mt-16 mb-72">
       <div className="flex-col w-full">
-        <FirstCartPageTitleRow />
+        <FirstCartPageTitleRow counter={data.length} />
         {data.map((_, index) => (
           <CardsOfCart onClick={() => handleClick(index)} key={index} />
         ))}
