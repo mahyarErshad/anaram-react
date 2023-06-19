@@ -14,6 +14,9 @@ function CardsOfCart() {
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
       <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0 col-start-2" title="قیمت کل :" quantity={124000 * state} toman />
+      <button className="absolute top-0 left-0 flex-center gap-1 p-1 bg-NeutralN10 rounded-2xl">
+        
+      </button>
     </figure>
   );
 }
