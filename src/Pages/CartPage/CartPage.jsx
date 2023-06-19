@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import FirstCartPageTitleRow from "../../Components/CartPage/FirstCartPageTitleRow";
 import CardsOfCart from "../../Components/CartPage/CardsOfCart";
 
 function CartPage() {
   const [data, setData] = useState([1, 2, 3]);
 
-  function handleClick(index) {
-    setData(data.filter((_, i) => i !== index));
-  }
+  const handleClick = useCallback((index) => {
+    setData((prevData) => prevData.filter((_, i) => i !== index));
+  }, []);
 
   return (
     <section className="container bg-white rounded-2xl flex-row p-6 mt-16 mb-72">
