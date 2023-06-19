@@ -5,7 +5,7 @@ import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetail
 import SingleProductIncreaseDecreaseButton from "../Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
 import { ReactComponent as TrashIcon } from "../../assets/images/icons/trash-icon.svg";
 
-function CardsOfCart() {
+function CardsOfCart({ onClick }) {
   const [state, setState] = useState(1);
   return (
     <figure className={`relative mb-8 grid gap-6 pt-6 border-t border-NeutralN30 ${styles.card}`}>
@@ -14,7 +14,10 @@ function CardsOfCart() {
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
       <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0 col-start-2" title="قیمت کل :" quantity={124000 * state} toman />
-      <button className="absolute top-0 left-0 flex-center gap-1 p-1 bg-NeutralN10 rounded-2xl mt-6"></button>
+      <button onClick={onClick} className="absolute top-0 left-0 flex-center gap-1 p-2 bg-NeutralN10 rounded-2xl mt-6">
+        <TrashIcon />
+        <span className="text-NeutralN60 text-xs">حذف محصول</span>
+      </button>
     </figure>
   );
 }
