@@ -14,7 +14,7 @@ function CardsOfCart({ onClick }) {
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
       <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0 col-start-2" title="قیمت کل :" quantity={124000 * state} toman />
-      <button onClick={onClick} className="absolute top-0 left-0 flex-center gap-1 p-2 bg-NeutralN10 rounded-2xl mt-6">
+      <button onClick={onClick} className="absolute top-6 left-0 flex-center gap-1 p-2 bg-NeutralN10 rounded-2xl">
         <TrashIcon />
         <span className="text-NeutralN60 text-xs">حذف محصول</span>
       </button>
