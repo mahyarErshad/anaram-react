@@ -1,9 +1,9 @@
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 import batteryImage from "../../assets/images/data/SingleProductSwiperImage/battery.png";
 import styles from "./styles.module.css";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import SingleProductIncreaseDecreaseButton from "../Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
-import trashIcon from "../../assets/images/icons/trash-icon.svg"
+import { ReactComponent as TrashIcon } from "../../assets/images/icons/trash-icon.svg";
 
 function CardsOfCart() {
   const [state, setState] = useState(1);
@@ -14,9 +14,7 @@ function CardsOfCart() {
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
       <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0 col-start-2" title="قیمت کل :" quantity={124000 * state} toman />
-      <button className="absolute top-0 left-0 flex-center gap-1 p-1 bg-NeutralN10 rounded-2xl mt-6">
-
-      </button>
+      <button className="absolute top-0 left-0 flex-center gap-1 p-1 bg-NeutralN10 rounded-2xl mt-6"></button>
     </figure>
   );
 }
