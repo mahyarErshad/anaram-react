@@ -3,7 +3,7 @@ import batteryImage from "../../assets/images/data/SingleProductSwiperImage/batt
 import styles from "./styles.module.css";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import SingleProductIncreaseDecreaseButton from "../Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
-import trashIcon from "../../assets/images/icons/arrow-icon-to-left.svg"
+import trashIcon from "../../assets/images/icons/trash-icon.svg"
 
 function CardsOfCart() {
   const [state, setState] = useState(1);
