@@ -10,14 +10,14 @@ function CartPage() {
   }, []);
 
   return (
-    <section className="container bg-white rounded-2xl flex-row p-6 mt-16 mb-72">
-      <div className="flex-col w-full">
+    <section className="flex items-start max-w-[82.5rem] w-full mx-auto rounded-2xl p-6 bg-white mt-16 mb-72 gap-14">
+      <div className="flex-col flex-grow">
         <FirstCartPageTitleRow counter={data.length} />
         {data.map((_, index) => (
           <CardsOfCart onClick={() => handleClick(index)} key={index} />
         ))}
       </div>
-      <div></div>
+      <div className="pt-10 pb-6 px-6 flex-col bg-NeutralN10 border border-NeutralN20 rounded-2xl"></div>
     </section>
   );
 }
