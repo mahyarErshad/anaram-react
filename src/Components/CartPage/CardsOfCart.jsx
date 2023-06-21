@@ -4,12 +4,15 @@ import styles from "./styles.module.css";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import SingleProductIncreaseDecreaseButton from "../Utils/Buttons/SingleProductIncreaseDecreaseButton/SingleProductIncreaseDecreaseButton";
 import { ReactComponent as TrashIcon } from "../../assets/images/icons/trash-icon.svg";
+import { Link } from "react-router-dom";
 
 function CardsOfCart({ onClick }) {
   const [state, setState] = useState(1);
   return (
     <figure className={`relative mb-8 grid gap-6 pt-6 border-t border-NeutralN30 first-of-type:border-t-0 ${styles.card}`}>
-      <img src={batteryImage} alt="Varta Battery" className="row-span-3 max-h-[12.5rem]" />
+      <Link className="row-span-3" to="product/id-1234">
+        <img src={batteryImage} alt="Varta Battery" className="max-h-[12.5rem]" />
+      </Link>
       <h2 className="text-NeutralN500 text-lg font-semibold">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</h2>
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
       <SingleProductIncreaseDecreaseButton state={state} setState={setState} />
