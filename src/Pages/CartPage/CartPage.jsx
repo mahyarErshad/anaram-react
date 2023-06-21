@@ -20,8 +20,8 @@ function CartPage() {
       </div>
       <div className="pt-10 pb-6 px-6 flex-col bg-NeutralN10 border border-NeutralN20 rounded-2xl min-w-[24.375rem]">
         <ActionSectionQuantity className="pb-8 border-b border-NeutralN30" title="تعداد محصولات :" quantity="3" counter />
-        <ActionSectionQuantity className="pb-8 border-b border-NeutralN30 pt-8 mb-4" title="قیمت نهایی محصولات :" quantity={620000} toman />
-        <p >مبلغ نهایی سفارش شامل مالیات بر ارزش افزوده است.</p>
+        <ActionSectionQuantity className="border-b border-NeutralN30 pt-8 pb-4" title="قیمت نهایی محصولات :" quantity={620000} toman />
+        <p className="text-NeutralN100 text-center text-xs pb-6 border-b border-NeutralN30">مبلغ نهایی سفارش شامل مالیات بر ارزش افزوده است.</p>
       </div>
     </section>
   );
