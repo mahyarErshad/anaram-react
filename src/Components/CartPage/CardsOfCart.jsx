@@ -8,7 +8,7 @@ import { ReactComponent as TrashIcon } from "../../assets/images/icons/trash-ico
 function CardsOfCart({ onClick }) {
   const [state, setState] = useState(1);
   return (
-    <figure className={`relative mb-8 grid gap-6 pt-6 border-t border-NeutralN30 ${styles.card}`}>
+    <figure className={`relative mb-8 grid gap-6 pt-6 border-t border-NeutralN30 first-of-type:border-t-0 ${styles.card}`}>
       <img src={batteryImage} alt="Varta Battery" className="row-span-3 max-h-[12.5rem]" />
       <h2 className="text-NeutralN500 text-lg font-semibold">باتری نیم قلمی آلکالاین وارتا Longlife Power بسته 6 عددی</h2>
       <ActionSectionQuantity className="max-w-fit gap-6 border-none pb-0" title="قیمت محصول :" quantity={124000} toman />
