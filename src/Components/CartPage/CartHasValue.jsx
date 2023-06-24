@@ -3,16 +3,8 @@ import FirstCartPageTitleRow from "./FirstCartPageTitleRow";
 import CardsOfCart from "./CardsOfCart";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import PrimaryButton from "../Utils/Buttons/PrimaryButton/PrimaryButton";
-import { useState } from "react";
-import { useCallback } from "react";
 
 function CartHasValue() {
-  const [data, setData] = useState([1, 2, 3]);
-
-  const handleClick = useCallback((index) => {
-    setData((prevData) => prevData.filter((_, i) => i !== index));
-  }, []);
-
   return (
     <>
       <div className="flex-col flex-grow">
