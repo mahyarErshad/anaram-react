@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import FirstCartPageTitleRow from "./FirstCartPageTitleRow";
 
-function CartIsEmpty() {
+function CartIsEmpty({ data }) {
   return (
-    <div>CartIsEmpty</div>
-  )
+    <div className="flex-grow">
+      <FirstCartPageTitleRow counter={data.length} />
+    </div>
+  );
 }
 
-export default CartIsEmpty
+export default CartIsEmpty;
