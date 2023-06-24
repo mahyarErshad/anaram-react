@@ -8,6 +8,13 @@ function CartModal({ setModalOpen }) {
       <button className="self-end mb-2" onClick={() => setModalOpen(false)}>
         <CloseIcon />
       </button>
+      <div className="flex gap-2">
+        <DeleteCartIcon className="col-start-1 col-span-2" />
+        <div className="flex-col gap-2">
+          <p className="text-black text-lg font-semibold">آیا از حذف کل سبد خرید اطمینان دارید ؟</p>
+          <p className="text-[#717171] text-sm">پس از حذف دیگر امکان بازگشت محصولات به سبد خرید وجود ندارد.</p>
+        </div>
+      </div>
     </div>
   );
 }
