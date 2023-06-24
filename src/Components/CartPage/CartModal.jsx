@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as CloseIcon } from "../../assets/images/icons/close-icon.svg";
+import { ReactComponent as DeleteCartIcon } from "../../assets/images/icons/delete-cart-red-bin.svg";
 
 function CartModal({ setModalOpen }) {
   return (
