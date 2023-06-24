@@ -3,7 +3,8 @@ import { ReactComponent as CloseIcon } from "../../assets/images/icons/close-ico
 import { ReactComponent as DeleteCartIcon } from "../../assets/images/icons/delete-cart-red-bin.svg";
 import GhostButton from "../Utils/Buttons/GhostButton/GhostButton";
 
-function CartModal({ setModalOpen }) {
+function CartModal({ setModalOpen, setData }) {
+  
   return (
     <div className="flex-col flex-center bg-white rounded-2xl w-full max-w-[40.625rem] px-4 pt-4 pb-11">
       <button className="self-end mb-2" onClick={() => setModalOpen(false)}>
@@ -18,7 +19,7 @@ function CartModal({ setModalOpen }) {
       </div>
       <div className="flex-center w-full gap-2">
         <GhostButton onClick={() => setModalOpen(false)} className="border-transparent hover:border-primary2" text="انصراف" />
-        <GhostButton className="border-Red text-Red hover:text-Red6 hover:border-Red6" text="حذف" />
+        <GhostButton  onClick={() => setData([])} className="border-Red text-Red hover:text-Red6 hover:border-Red6" text="حذف" />
       </div>
     </div>
   );
