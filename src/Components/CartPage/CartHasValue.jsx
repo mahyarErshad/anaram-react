@@ -4,7 +4,7 @@ import CardsOfCart from "./CardsOfCart";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import PrimaryButton from "../Utils/Buttons/PrimaryButton/PrimaryButton";
 
-function CartHasValue() {
+function CartHasValue({ data, handleClick }) {
   return (
     <>
       <div className="flex-col flex-grow">
