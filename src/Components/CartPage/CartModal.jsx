@@ -17,8 +17,8 @@ function CartModal({ setModalOpen }) {
         </div>
       </div>
       <div className="flex-center w-full gap-2">
-        <GhostButton className="border-transparent duration-150 hover:border-primary2" text="انصراف" />
-        <GhostButton className="border-Red text-Red" text="انصراف" />
+        <GhostButton className="border-transparent hover:border-primary2" text="انصراف" />
+        <GhostButton className="border-Red text-Red hover:text-Red6 hover:border-Red6" text="انصراف" />
       </div>
     </div>
   );
