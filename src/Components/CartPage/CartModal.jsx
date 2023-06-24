@@ -16,7 +16,8 @@ function CartModal({ setModalOpen }) {
         </div>
       </div>
       <div className="flex-center w-full gap-2">
-        <button className="flex-center rounded-md bg-transparent border border-transparent duration-150 hover:border-primary2 py-[0.625rem] w-[8rem]">انصراف</button>
+        <button className="flex-center rounded-md bg-transparent border border-transparent duration-150 hover:border-primary2 py-[0.625rem] w-[8rem] text-sm">انصراف</button>
+        <button className="flex-center rounded-md bg-transparent border border-Red text-Red py-[0.625rem] w-[8rem] text-sm">حذف</button>
       </div>
     </div>
   );
