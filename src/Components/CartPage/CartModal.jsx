@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as CloseIcon } from "../../assets/images/icons/close-icon.svg";
 import { ReactComponent as DeleteCartIcon } from "../../assets/images/icons/delete-cart-red-bin.svg";
+import GhostButton from "../Utils/Buttons/GhostButton/GhostButton";
 
 function CartModal({ setModalOpen }) {
   return (
@@ -16,8 +17,8 @@ function CartModal({ setModalOpen }) {
         </div>
       </div>
       <div className="flex-center w-full gap-2">
-        <button className="flex-center rounded-md bg-transparent border border-transparent duration-150 hover:border-primary2 py-[0.625rem] w-[8rem] text-sm">انصراف</button>
-        <button className="flex-center rounded-md bg-transparent border border-Red text-Red py-[0.625rem] w-[8rem] text-sm">حذف</button>
+        <GhostButton className="border-transparent duration-150 hover:border-primary2" text="انصراف" />
+        <GhostButton className="border-Red text-Red" text="انصراف" />
       </div>
     </div>
   );
