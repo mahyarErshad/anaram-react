@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CartModal() {
+function CartModal({setModalOpen}) {
   return (
     <div>CartModal</div>
   )
