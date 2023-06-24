@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as BagIcon } from "../../assets/images/icons/bag-icon.svg";
 import { ReactComponent as Dots } from "../../assets/images/icons/3dots.svg";
 
-function FirstCartPageTitleRow({ counter }) {
+function FirstCartPageTitleRow({ counter, setModalOpen }) {
   return (
     <div className="flex justify-between items-center border-b border-NeutralN30 pb-3">
       <div className="flex items-center">
@@ -13,7 +13,7 @@ function FirstCartPageTitleRow({ counter }) {
         {counter > 0 && <span className="mr-1 font-semibold text-xs flex-center bg-primary6 text-white rounded-full w-6 h-6">{counter}</span>}
       </div>
       {counter > 0 && (
-        <button className="bg-NeutralN10 rounded-5px flex-center">
+        <button onClick={() => setModalOpen(true)} className="bg-NeutralN10 rounded-5px flex-center">
           <Dots />
         </button>
       )}
