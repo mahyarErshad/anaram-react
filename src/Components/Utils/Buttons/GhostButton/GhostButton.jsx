@@ -1,8 +1,8 @@
 import React from 'react'
 
-function GhostButton() {
+function GhostButton({text, className}) {
   return (
-    <div>GhostButton</div>
+    <button className={`flex-center rounded-md bg-transparent border border-transparent duration-150 hover:border-primary2 py-[0.625rem] w-[8rem] text-sm ${className}`}>{text}</button>
   )
 }
 
