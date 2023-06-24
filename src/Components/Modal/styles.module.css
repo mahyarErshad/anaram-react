@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-fadeIn {
+  animation: fadeIn 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.5rem);
+}
