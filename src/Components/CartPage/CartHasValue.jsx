@@ -4,11 +4,11 @@ import CardsOfCart from "./CardsOfCart";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import PrimaryButton from "../Utils/Buttons/PrimaryButton/PrimaryButton";
 
-function CartHasValue({ data, handleClick }) {
+function CartHasValue({ data, handleClick, setModalOpen }) {
   return (
     <>
       <div className="flex-col flex-grow">
-        <FirstCartPageTitleRow counter={data.length} />
+        <FirstCartPageTitleRow setModalOpen={setModalOpen} counter={data.length} />
         {data.map((_, index) => (
           <CardsOfCart onClick={() => handleClick(index)} key={index} />
         ))}
