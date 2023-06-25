@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import FirstCartPageTitleRow from "./FirstCartPageTitleRow";
 import CardsOfCart from "./CardsOfCart";
 import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetailSection/ActionSectionQuantity";
 import PrimaryButton from "../Utils/Buttons/PrimaryButton/PrimaryButton";
 
 function CartHasValue({ data, handleClick, setModalOpen }) {
+  const [coupon, setCoupon] = useState(false)
   return (
     <>
       <div className="flex-col flex-grow">
