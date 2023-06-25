@@ -8,6 +8,7 @@ function CartHasValue({ data, handleClick, setModalOpen }) {
   const [coupon, setCoupon] = useState(false);
   function handleSubmit(e) {
     e.preventDefault();
+    setCoupon(false);
   }
   return (
     <>
