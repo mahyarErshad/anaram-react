@@ -5,7 +5,7 @@ import ActionSectionQuantity from "../../Pages/SingleProduct/SingleProductDetail
 import PrimaryButton from "../Utils/Buttons/PrimaryButton/PrimaryButton";
 
 function CartHasValue({ data, handleClick, setModalOpen }) {
-  const [coupon, setCoupon] = useState(false)
+  const [coupon, setCoupon] = useState(false);
   return (
     <>
       <div className="flex-col flex-grow">
@@ -18,7 +18,10 @@ function CartHasValue({ data, handleClick, setModalOpen }) {
         <ActionSectionQuantity className="pb-8 border-b border-NeutralN30" title="تعداد محصولات :" quantity="3" counter />
         <ActionSectionQuantity className="border-b border-NeutralN30 pt-8 pb-4" title="قیمت نهایی محصولات :" quantity={620000} toman />
         <p className="text-NeutralN100 text-center text-xs pb-6 mb-6 border-b border-NeutralN30">مبلغ نهایی سفارش شامل مالیات بر ارزش افزوده است.</p>
-        <button className="bg-transparent p-0 mb-8 self-start text-primary6 text-xs hover:text-primary8 duration-300">کد تخفیف دارم</button>
+        <button onClick={setCoupon((prev) => !prev)} className="bg-transparent p-0 mb-8 self-start text-primary6 text-xs hover:text-primary8 duration-300">
+          کد تخفیف دارم
+        </button>
+        <input type="search" />
         <PrimaryButton text="ادامه" />
       </div>
     </>
