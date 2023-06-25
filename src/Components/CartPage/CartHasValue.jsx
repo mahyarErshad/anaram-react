@@ -26,8 +26,9 @@ function CartHasValue({ data, handleClick, setModalOpen }) {
           کد تخفیف دارم
         </button>
         {coupon && (
-          <form onSubmit={(e) => handleSubmit(e)} className="w-full min-h-8 bg-white rounded-lg border border-NeutralN30 pr-2 py-1 pl-1 flex-center mt-4 hover:border-primary2 focus-within:border-primary2 duration-300">
+          <form onSubmit={(e) => handleSubmit(e)} className="w-full bg-white rounded-lg border border-NeutralN30 pr-2 py-1 pl-1 flex-center mt-4 hover:border-primary2 focus-within:border-primary2 duration-300">
             <input className="border-none outline-none flex-grow h-full placeholder:text-NeutralN70 placeholder:text-xs" placeholder="کد تخفیف خود را وارد کنید" />
+            <PrimaryButton className="flex-grow-0 py-[0.375rem] max-w-[3.25rem]" text="اعمال" />
           </form>
         )}
         <PrimaryButton className="mt-8" text="ادامه" />
